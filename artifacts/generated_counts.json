@@ -1,0 +1,162 @@
+[
+  {
+    "file": "canonical/proxies.list",
+    "rules": 35,
+    "purpose": "Policy projection; do not use to reorder global calls"
+  },
+  {
+    "file": "mihomo/proxies.yaml",
+    "rules": 35,
+    "purpose": "Policy projection"
+  },
+  {
+    "file": "shadowrocket/proxies.list",
+    "rules": 35,
+    "purpose": "Policy projection"
+  },
+  {
+    "file": "canonical/direct.list",
+    "rules": 131,
+    "purpose": "Policy projection; do not use to reorder global calls"
+  },
+  {
+    "file": "mihomo/direct.yaml",
+    "rules": 131,
+    "purpose": "Policy projection"
+  },
+  {
+    "file": "shadowrocket/direct.list",
+    "rules": 123,
+    "purpose": "Policy projection"
+  },
+  {
+    "file": "canonical/japan.list",
+    "rules": 110,
+    "purpose": "Policy projection; do not use to reorder global calls"
+  },
+  {
+    "file": "mihomo/japan.yaml",
+    "rules": 110,
+    "purpose": "Policy projection"
+  },
+  {
+    "file": "shadowrocket/japan.list",
+    "rules": 110,
+    "purpose": "Policy projection"
+  },
+  {
+    "file": "canonical/hongkong.list",
+    "rules": 5,
+    "purpose": "Policy projection; do not use to reorder global calls"
+  },
+  {
+    "file": "mihomo/hongkong.yaml",
+    "rules": 5,
+    "purpose": "Policy projection"
+  },
+  {
+    "file": "shadowrocket/hongkong.list",
+    "rules": 5,
+    "purpose": "Policy projection"
+  },
+  {
+    "file": "mihomo/segments/005-boost.yaml",
+    "rules": 8,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "shadowrocket/segments/005-boost.list",
+    "rules": 8,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "mihomo/segments/023-downloadpatch.yaml",
+    "rules": 63,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "shadowrocket/segments/023-downloadpatch.list",
+    "rules": 60,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "mihomo/segments/026-steamdownload.yaml",
+    "rules": 49,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "shadowrocket/segments/026-steamdownload.list",
+    "rules": 49,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "mihomo/segments/032-gameplatform.yaml",
+    "rules": 27,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "shadowrocket/segments/032-gameplatform.list",
+    "rules": 27,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "mihomo/segments/038-dmmdlfz.yaml",
+    "rules": 110,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "shadowrocket/segments/038-dmmdlfz.list",
+    "rules": 110,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "mihomo/segments/041-notjp.yaml",
+    "rules": 5,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "shadowrocket/segments/041-notjp.list",
+    "rules": 5,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "mihomo/segments/052-windowsoft.yaml",
+    "rules": 7,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "shadowrocket/segments/052-windowsoft.list",
+    "rules": 3,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "mihomo/segments/053-kaspersky.yaml",
+    "rules": 2,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "shadowrocket/segments/053-kaspersky.list",
+    "rules": 1,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "mihomo/segments/054-unbanpatch.yaml",
+    "rules": 9,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "shadowrocket/segments/054-unbanpatch.list",
+    "rules": 9,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "mihomo/segments/060-inline.yaml",
+    "rules": 1,
+    "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "shadowrocket/segments/060-inline.list",
+    "rules": 1,
+    "purpose": "Ordered usage segment"
+  }
+]

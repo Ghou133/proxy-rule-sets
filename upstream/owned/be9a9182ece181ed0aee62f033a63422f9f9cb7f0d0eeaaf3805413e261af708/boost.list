@@ -1,0 +1,15 @@
+#微软CDN，慢死了
+DOMAIN-SUFFIX, azureedge-test.net
+DOMAIN-SUFFIX, azureedge.net
+#微软社区，都是日常被阻断
+DOMAIN-SUFFIX, answers.microsoft.com
+DOMAIN-SUFFIX, answerscdn.microsoft.com
+DOMAIN-SUFFIX, techcommunity.microsoft.com
+#bing可以直连
+#DOMAIN-SUFFIX, bing.com
+#根本上不去的首页
+DOMAIN-SUFFIX, onedrive.live.com
+#切换分流很麻烦
+DOMAIN-KEYWORD, picacomic
+#大多数地区都无法访问
+DOMAIN-KEYWORD, mangafuna

@@ -1,0 +1,18 @@
+# upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list:5; policy=DIRECT; UNSUPPORTED
+PROCESS-NAME,DownloadSDKServer.exe
+# upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list:7; policy=DIRECT; UNSUPPORTED
+PROCESS-NAME,BitComet.exe
+# upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list:9; policy=DIRECT; UNSUPPORTED
+PROCESS-NAME,svchost.exe
+# upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list:2; policy=DIRECT; UNSUPPORTED
+PROCESS-NAME,RadeonSoftware.exe
+# upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list:6; policy=DIRECT; UNSUPPORTED
+PROCESS-NAME,Razer Synapse Service.exe
+# upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list:7; policy=DIRECT; UNSUPPORTED
+PROCESS-NAME,RazerCentralService.exe
+# upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list:11; policy=DIRECT; UNSUPPORTED
+PROCESS-NAME,SearchHost.exe
+# upstream/owned/73f635cbf30123ebf9873924615c71df9fc2fa70320e414521b3ed60e9e2437a/kaspersky.list:2; policy=DIRECT; UNSUPPORTED
+PROCESS-NAME,avp.exe
+# upstream/4.ini:61; policy=Others; UNSUPPORTED
+FINAL

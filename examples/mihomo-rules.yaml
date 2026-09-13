@@ -1,0 +1,173 @@
+# Rules-only fragment. Replace explicit policy/raw placeholders.
+# Original external text includes 10 unsupported Mihomo rules; see compatibility report.
+rule-providers:
+  source-005:
+    type: http
+    behavior: classical
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/segments/005-boost.yaml
+    path: ./ruleset/source-005.yaml
+    interval: 86400
+  source-006:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
+    path: ./ruleset/source-006.yaml
+    interval: 86400
+  source-007:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+    path: ./ruleset/source-007.list
+    interval: 86400
+  source-023:
+    type: http
+    behavior: classical
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/segments/023-downloadpatch.yaml
+    path: ./ruleset/source-023.yaml
+    interval: 86400
+  source-024:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+    path: ./ruleset/source-024.list
+    interval: 86400
+  source-026:
+    type: http
+    behavior: classical
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/segments/026-steamdownload.yaml
+    path: ./ruleset/source-026.yaml
+    interval: 86400
+  source-032:
+    type: http
+    behavior: classical
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/segments/032-gameplatform.yaml
+    path: ./ruleset/source-032.yaml
+    interval: 86400
+  source-034:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
+    path: ./ruleset/source-034.list
+    interval: 86400
+  source-036:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DMM/DMM_No_Resolve.yaml
+    path: ./ruleset/source-036.yaml
+    interval: 86400
+  source-038:
+    type: http
+    behavior: classical
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/segments/038-dmmdlfz.yaml
+    path: ./ruleset/source-038.yaml
+    interval: 86400
+  source-041:
+    type: http
+    behavior: classical
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/segments/041-notjp.yaml
+    path: ./ruleset/source-041.yaml
+    interval: 86400
+  source-044:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    path: ./ruleset/source-044.list
+    interval: 86400
+  source-045:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml
+    path: ./ruleset/source-045.yaml
+    interval: 86400
+  source-048:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Apple.yaml
+    path: ./ruleset/source-048.yaml
+    interval: 86400
+  source-052:
+    type: http
+    behavior: classical
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/segments/052-windowsoft.yaml
+    path: ./ruleset/source-052.yaml
+    interval: 86400
+  source-053:
+    type: http
+    behavior: classical
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/segments/053-kaspersky.yaml
+    path: ./ruleset/source-053.yaml
+    interval: 86400
+  source-054:
+    type: http
+    behavior: classical
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/segments/054-unbanpatch.yaml
+    path: ./ruleset/source-054.yaml
+    interval: 86400
+  source-056:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+    path: ./ruleset/source-056.list
+    interval: 86400
+  source-058:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
+    path: ./ruleset/source-058.yaml
+    interval: 86400
+  source-059:
+    type: http
+    behavior: ipcidr
+    format: yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml
+    path: ./ruleset/source-059.yaml
+    interval: 86400
+  source-060:
+    type: http
+    behavior: classical
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/segments/060-inline.yaml
+    path: ./ruleset/source-060.yaml
+    interval: 86400
+rules:
+- RULE-SET,source-005,<YOUR_POLICY_FOR_Proxies>
+- RULE-SET,source-006,DIRECT
+- RULE-SET,source-007,DIRECT
+- RULE-SET,source-023,DIRECT
+- RULE-SET,source-024,DIRECT
+- RULE-SET,source-026,DIRECT
+- RULE-SET,source-032,<YOUR_POLICY_FOR_Proxies>
+- RULE-SET,source-034,DIRECT
+- RULE-SET,source-036,<YOUR_POLICY_FOR_DMM>
+- RULE-SET,source-038,<YOUR_POLICY_FOR_Japan>
+- RULE-SET,source-041,<YOUR_POLICY_FOR_Hongkong>
+- RULE-SET,source-044,DIRECT
+- RULE-SET,source-045,DIRECT
+- RULE-SET,source-048,DIRECT
+- RULE-SET,source-052,DIRECT
+- RULE-SET,source-053,DIRECT
+- RULE-SET,source-054,DIRECT
+- RULE-SET,source-056,<YOUR_POLICY_FOR_Proxies>
+- RULE-SET,source-058,DIRECT
+- RULE-SET,source-059,DIRECT,no-resolve
+- RULE-SET,source-060,DIRECT
+- MATCH,<YOUR_POLICY_FOR_Others>

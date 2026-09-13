@@ -1,0 +1,179 @@
+{
+  "total_lines": 87,
+  "blank_lines": 7,
+  "comment_lines": 43,
+  "comment_locations": [
+    2,
+    3,
+    4,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    25,
+    27,
+    28,
+    29,
+    30,
+    31,
+    33,
+    35,
+    37,
+    40,
+    42,
+    47,
+    49,
+    50,
+    62,
+    64,
+    65,
+    67,
+    70,
+    71,
+    72,
+    73,
+    75,
+    76,
+    77
+  ],
+  "sections": [
+    {
+      "line": 1,
+      "name": "custom"
+    }
+  ],
+  "valid_rules": 22,
+  "rule_type_counts": {
+    "DOMAIN": 0,
+    "DOMAIN-SUFFIX": 0,
+    "DOMAIN-KEYWORD": 0,
+    "IP-CIDR": 0,
+    "IP-CIDR6": 0,
+    "IP-ASN": 0,
+    "GEOIP": 1,
+    "USER-AGENT": 0,
+    "URL-REGEX": 0,
+    "PROCESS-NAME": 0,
+    "PROCESS-PATH": 0,
+    "DEST-PORT": 0,
+    "DST-PORT": 0,
+    "SRC-IP-CIDR": 0,
+    "AND": 0,
+    "OR": 0,
+    "NOT": 0,
+    "RULE-SET": 20,
+    "FINAL": 1,
+    "MATCH": 0
+  },
+  "policy_counts": {
+    "Proxies": 3,
+    "DIRECT": 15,
+    "DMM": 1,
+    "Japan": 1,
+    "Hongkong": 1,
+    "Others": 1
+  },
+  "non_rule_config": [
+    {
+      "line": 66,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 68,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 69,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 74,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 78,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 79,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 80,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 81,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 82,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 83,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 84,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 85,
+      "key": "custom_proxy_group",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 86,
+      "key": "enable_rule_generator",
+      "reason": "Non-rule configuration outside project scope"
+    },
+    {
+      "line": 87,
+      "key": "overwrite_original_rules",
+      "reason": "Non-rule configuration outside project scope"
+    }
+  ],
+  "unknown_syntax": [],
+  "invalid_lines": [],
+  "policyless_rules": [],
+  "unsupported_rules": [
+    61
+  ],
+  "no_resolve_count": 0,
+  "exact_duplicate_count": 0,
+  "same_matcher_multiple_policy_count": 0,
+  "order": "PRESERVE SOURCE ORDER; no sorting, deduplication or conflict resolution",
+  "source_accounting": {
+    "input_valid_rules": 22,
+    "generated": 1,
+    "unsupported": 1,
+    "ambiguous": 0,
+    "external_dependency": 20,
+    "invalid_with_evidence": 0,
+    "unexplained_loss": 0,
+    "definition": "All active rule declarations, including invalid candidates and unknown syntax conservatively accounted; excludes comments/sections/known non-rule config"
+  }
+}

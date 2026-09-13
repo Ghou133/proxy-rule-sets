@@ -1,0 +1,15 @@
+#pixlite
+DOMAIN-SUFFIX, pixivlite.cn
+DOMAIN-SUFFIX, pixivlite.com
+DOMAIN-SUFFIX, bravedefault.com
+#错误报告
+DOMAIN-SUFFIX, appcenter.ms
+
+#用了代理就上不去
+DOMAIN-SUFFIX, baozimh.com
+DOMAIN-SUFFIX, webmota.com
+DOMAIN-SUFFIX, hxcy.moe
+DOMAIN-SUFFIX, bemani.cc
+DOMAIN-KEYWORD, diyibanzhu
+#不能是日本服务器，但图片服务器无限制
+#DOMAIN-KEYWORD, copymanga

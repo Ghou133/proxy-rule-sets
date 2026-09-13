@@ -1,0 +1,110 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/master/archives/boost.list",
+    "pinned_url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/a29c67805b1dd7721fe896d0a64eb93ba7e29813/archives/boost.list",
+    "repository": "Ghou133/Ghou133.github.io",
+    "branch": "master",
+    "commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
+    "sha256": "be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708",
+    "fetched_at": "2026-09-13T12:02:59.707618+00:00",
+    "snapshot": "upstream/owned/be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708/boost.list",
+    "policy": "Proxies",
+    "parent_line": 5
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/master/archives/DownloadPatch.list",
+    "pinned_url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/a29c67805b1dd7721fe896d0a64eb93ba7e29813/archives/DownloadPatch.list",
+    "repository": "Ghou133/Ghou133.github.io",
+    "branch": "master",
+    "commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
+    "sha256": "29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e",
+    "fetched_at": "2026-09-13T12:03:00.047686+00:00",
+    "snapshot": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+    "policy": "DIRECT",
+    "parent_line": 23
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/master/archives/steamdownload.list",
+    "pinned_url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/a29c67805b1dd7721fe896d0a64eb93ba7e29813/archives/steamdownload.list",
+    "repository": "Ghou133/Ghou133.github.io",
+    "branch": "master",
+    "commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
+    "sha256": "b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de",
+    "fetched_at": "2026-09-13T12:03:00.398301+00:00",
+    "snapshot": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+    "policy": "DIRECT",
+    "parent_line": 26
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/master/archives/gameplatform.list",
+    "pinned_url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/a29c67805b1dd7721fe896d0a64eb93ba7e29813/archives/gameplatform.list",
+    "repository": "Ghou133/Ghou133.github.io",
+    "branch": "master",
+    "commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
+    "sha256": "c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652",
+    "fetched_at": "2026-09-13T12:03:00.722959+00:00",
+    "snapshot": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+    "policy": "Proxies",
+    "parent_line": 32
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/master/archives/DmmDLFz.list",
+    "pinned_url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/a29c67805b1dd7721fe896d0a64eb93ba7e29813/archives/DmmDLFz.list",
+    "repository": "Ghou133/Ghou133.github.io",
+    "branch": "master",
+    "commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
+    "sha256": "12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9",
+    "fetched_at": "2026-09-13T12:03:01.315544+00:00",
+    "snapshot": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+    "policy": "Japan",
+    "parent_line": 38
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/master/archives/notJP.list",
+    "pinned_url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/a29c67805b1dd7721fe896d0a64eb93ba7e29813/archives/notJP.list",
+    "repository": "Ghou133/Ghou133.github.io",
+    "branch": "master",
+    "commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
+    "sha256": "b581123aff551c45d33efd21b9a86dd0cd1414be2834869be4eec5e70ccae23b",
+    "fetched_at": "2026-09-13T12:03:01.653274+00:00",
+    "snapshot": "upstream/owned/b581123aff551c45d33efd21b9a86dd0cd1414be2834869be4eec5e70ccae23b/notJP.list",
+    "policy": "Hongkong",
+    "parent_line": 41
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/master/archives/windowsoft.list",
+    "pinned_url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/a29c67805b1dd7721fe896d0a64eb93ba7e29813/archives/windowsoft.list",
+    "repository": "Ghou133/Ghou133.github.io",
+    "branch": "master",
+    "commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
+    "sha256": "3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7",
+    "fetched_at": "2026-09-13T12:03:01.991135+00:00",
+    "snapshot": "upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list",
+    "policy": "DIRECT",
+    "parent_line": 52
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/master/archives/kaspersky.list",
+    "pinned_url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/a29c67805b1dd7721fe896d0a64eb93ba7e29813/archives/kaspersky.list",
+    "repository": "Ghou133/Ghou133.github.io",
+    "branch": "master",
+    "commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
+    "sha256": "73f635cbf30123ebf9873924615c71df9fc2fa70320e414521b3ed60e9e2437a",
+    "fetched_at": "2026-09-13T12:03:02.324309+00:00",
+    "snapshot": "upstream/owned/73f635cbf30123ebf9873924615c71df9fc2fa70320e414521b3ed60e9e2437a/kaspersky.list",
+    "policy": "DIRECT",
+    "parent_line": 53
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/master/archives/UnBanPatch.list",
+    "pinned_url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/a29c67805b1dd7721fe896d0a64eb93ba7e29813/archives/UnBanPatch.list",
+    "repository": "Ghou133/Ghou133.github.io",
+    "branch": "master",
+    "commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
+    "sha256": "6983af50eaae2eb5e4dbf9634008f749db411129b37637f338a7a6d472b1d650",
+    "fetched_at": "2026-09-13T12:03:02.672439+00:00",
+    "snapshot": "upstream/owned/6983af50eaae2eb5e4dbf9634008f749db411129b37637f338a7a6d472b1d650/UnBanPatch.list",
+    "policy": "DIRECT",
+    "parent_line": 54
+  }
+]

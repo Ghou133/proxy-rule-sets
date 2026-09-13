@@ -1,0 +1,72 @@
+DOMAIN-SUFFIX, parsec.app
+DOMAIN-SUFFIX, parsecusercontent.com
+DOMAIN-SUFFIX, anydesk.com
+#迅雷
+PROCESS-NAME, DownloadSDKServer.exe
+#比特彗星
+PROCESS-NAME, BitComet.exe
+#Windows
+PROCESS-NAME, svchost.exe
+#OneDrive CN
+DOMAIN-KEYWORD, -my.sharepoint.cn
+#Steam CDN
+DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+DOMAIN-SUFFIX,cm.steampowered.com
+DOMAIN-SUFFIX,steamserver.net
+IP-CIDR,45.121.184.0/24,no-resolve
+IP-CIDR,103.10.124.0/23,no-resolve
+IP-CIDR,103.28.54.0/24,no-resolve
+IP-CIDR,146.66.152.0/24,no-resolve
+IP-CIDR,146.66.155.0/24,no-resolve
+IP-CIDR,153.254.86.0/24,no-resolve
+IP-CIDR,155.133.224.0/22,no-resolve
+IP-CIDR,155.133.230.0/24,no-resolve
+IP-CIDR,155.133.232.0/23,no-resolve
+IP-CIDR,155.133.234.0/24,no-resolve
+IP-CIDR,155.133.236.0/22,no-resolve
+IP-CIDR,155.133.240.0/23,no-resolve
+IP-CIDR,155.133.244.0/23,no-resolve
+IP-CIDR,155.133.246.0/24,no-resolve
+IP-CIDR,155.133.248.0/21,no-resolve
+IP-CIDR,162.254.192.0/21,no-resolve
+IP-CIDR,185.25.182.0/23,no-resolve
+IP-CIDR,190.217.32.0/22,no-resolve
+IP-CIDR,192.69.96.0/22,no-resolve
+IP-CIDR,205.196.6.0/24,no-resolve
+IP-CIDR,208.64.200.0/22,no-resolve
+IP-CIDR,208.78.164.0/22,no-resolve
+IP-CIDR,205.185.194.0/24,no-resolve
+DOMAIN,ext1-hkg1.steamserver.net
+DOMAIN,ext2-hkg1.steamserver.net
+DOMAIN,ext3-hkg1.steamserver.net
+DOMAIN,ext4-hkg1.steamserver.net
+DOMAIN,ext5-hkg1.steamserver.net
+DOMAIN,ext6-hkg1.steamserver.net
+DOMAIN,ext7-hkg1.steamserver.net
+DOMAIN,ext1-tyo3.steamserver.net
+DOMAIN,ext2-tyo3.steamserver.net
+DOMAIN,ext3-tyo3.steamserver.net
+DOMAIN,ext4-tyo3.steamserver.net
+DOMAIN,ext1-sgp1.steamserver.net
+DOMAIN,ext2-sgp1.steamserver.net
+DOMAIN,ext3-sgp1.steamserver.net
+DOMAIN,ext4-sgp1.steamserver.net
+DOMAIN,ext1-lax1.steamserver.net
+DOMAIN,ext2-lax1.steamserver.net
+#Steam下载
+DOMAIN-SUFFIX, akamaized.net
+DOMAIN-SUFFIX, steamcontent.com
+DOMAIN-SUFFIX, dl.steam.ksyna.com
+DOMAIN-SUFFIX, st.dl.eccdnx.com
+DOMAIN-SUFFIX, st.dl.bscstorage.net
+DOMAIN-SUFFIX, client-update.akamai.steamstatic.com
+DOMAIN-SUFFIX, st.dl.pinyuncloud.com
+DOMAIN-SUFFIX, cdn.mileweb.cs.steampowered.com.8686c.com
+#uplay游戏下载
+DOMAIN, uplaypc-s-ubisoft.cdn.ubi.com
+#origin游戏下载
+DOMAIN, origin-a.akamaihd.net
+DOMAIN-SUFFIX, ssl-lvlt.cdn.ea.com
+#windows更新
+DOMAIN-SUFFIX, update.microsoft.com
+DOMAIN-SUFFIX, update.windows.com

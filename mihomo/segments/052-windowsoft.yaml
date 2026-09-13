@@ -1,0 +1,8 @@
+payload:
+  - "PROCESS-NAME,RadeonSoftware.exe"
+  - "DOMAIN-SUFFIX,nvidia.com"
+  - "PROCESS-NAME,Razer Synapse Service.exe"
+  - "PROCESS-NAME,RazerCentralService.exe"
+  - "DOMAIN-SUFFIX,razersynapse.com"
+  - "DOMAIN-SUFFIX,razer.com"
+  - "PROCESS-NAME,SearchHost.exe"

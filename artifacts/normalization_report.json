@@ -1,0 +1,544 @@
+[
+  {
+    "id": "5:2",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, azureedge-test.net",
+        "after": "DOMAIN-SUFFIX,azureedge-test.net",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "5:3",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, azureedge.net",
+        "after": "DOMAIN-SUFFIX,azureedge.net",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "5:5",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, answers.microsoft.com",
+        "after": "DOMAIN-SUFFIX,answers.microsoft.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "5:6",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, answerscdn.microsoft.com",
+        "after": "DOMAIN-SUFFIX,answerscdn.microsoft.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "5:7",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, techcommunity.microsoft.com",
+        "after": "DOMAIN-SUFFIX,techcommunity.microsoft.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "5:11",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, onedrive.live.com",
+        "after": "DOMAIN-SUFFIX,onedrive.live.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "5:13",
+    "changes": [
+      {
+        "before": "DOMAIN-KEYWORD, picacomic",
+        "after": "DOMAIN-KEYWORD,picacomic",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "5:15",
+    "changes": [
+      {
+        "before": "DOMAIN-KEYWORD, mangafuna",
+        "after": "DOMAIN-KEYWORD,mangafuna",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:1",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, parsec.app",
+        "after": "DOMAIN-SUFFIX,parsec.app",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:2",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, parsecusercontent.com",
+        "after": "DOMAIN-SUFFIX,parsecusercontent.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:3",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, anydesk.com",
+        "after": "DOMAIN-SUFFIX,anydesk.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:5",
+    "changes": [
+      {
+        "before": "PROCESS-NAME, DownloadSDKServer.exe",
+        "after": "PROCESS-NAME,DownloadSDKServer.exe",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:7",
+    "changes": [
+      {
+        "before": "PROCESS-NAME, BitComet.exe",
+        "after": "PROCESS-NAME,BitComet.exe",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:9",
+    "changes": [
+      {
+        "before": "PROCESS-NAME, svchost.exe",
+        "after": "PROCESS-NAME,svchost.exe",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:11",
+    "changes": [
+      {
+        "before": "DOMAIN-KEYWORD, -my.sharepoint.cn",
+        "after": "DOMAIN-KEYWORD,-my.sharepoint.cn",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:57",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, akamaized.net",
+        "after": "DOMAIN-SUFFIX,akamaized.net",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:58",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, steamcontent.com",
+        "after": "DOMAIN-SUFFIX,steamcontent.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:59",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, dl.steam.ksyna.com",
+        "after": "DOMAIN-SUFFIX,dl.steam.ksyna.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:60",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, st.dl.eccdnx.com",
+        "after": "DOMAIN-SUFFIX,st.dl.eccdnx.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:61",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, st.dl.bscstorage.net",
+        "after": "DOMAIN-SUFFIX,st.dl.bscstorage.net",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:62",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, client-update.akamai.steamstatic.com",
+        "after": "DOMAIN-SUFFIX,client-update.akamai.steamstatic.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:63",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, st.dl.pinyuncloud.com",
+        "after": "DOMAIN-SUFFIX,st.dl.pinyuncloud.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:64",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, cdn.mileweb.cs.steampowered.com.8686c.com",
+        "after": "DOMAIN-SUFFIX,cdn.mileweb.cs.steampowered.com.8686c.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:66",
+    "changes": [
+      {
+        "before": "DOMAIN, uplaypc-s-ubisoft.cdn.ubi.com",
+        "after": "DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:68",
+    "changes": [
+      {
+        "before": "DOMAIN, origin-a.akamaihd.net",
+        "after": "DOMAIN,origin-a.akamaihd.net",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:69",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, ssl-lvlt.cdn.ea.com",
+        "after": "DOMAIN-SUFFIX,ssl-lvlt.cdn.ea.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:71",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, update.microsoft.com",
+        "after": "DOMAIN-SUFFIX,update.microsoft.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "23:72",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, update.windows.com",
+        "after": "DOMAIN-SUFFIX,update.windows.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "38:1",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, cygames.jp",
+        "after": "DOMAIN-SUFFIX,cygames.jp",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "38:2",
+    "changes": [
+      {
+        "before": "DOMAIN-KEYWORD, umamusume",
+        "after": "DOMAIN-KEYWORD,umamusume",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "41:1",
+    "changes": [
+      {
+        "before": "DOMAIN-KEYWORD, 18comic",
+        "after": "DOMAIN-KEYWORD,18comic",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "41:2",
+    "changes": [
+      {
+        "before": "DOMAIN-KEYWORD, copymanga",
+        "after": "DOMAIN-KEYWORD,copymanga",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "41:3",
+    "changes": [
+      {
+        "before": "DOMAIN-KEYWORD, jmcomic",
+        "after": "DOMAIN-KEYWORD,jmcomic",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "41:4",
+    "changes": [
+      {
+        "before": "DOMAIN-KEYWORD, jm-comic",
+        "after": "DOMAIN-KEYWORD,jm-comic",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "41:5",
+    "changes": [
+      {
+        "before": "DOMAIN-KEYWORD, hanime",
+        "after": "DOMAIN-KEYWORD,hanime",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "52:2",
+    "changes": [
+      {
+        "before": "PROCESS-NAME, RadeonSoftware.exe",
+        "after": "PROCESS-NAME,RadeonSoftware.exe",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "52:4",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, nvidia.com",
+        "after": "DOMAIN-SUFFIX,nvidia.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "52:6",
+    "changes": [
+      {
+        "before": "PROCESS-NAME, Razer Synapse Service.exe",
+        "after": "PROCESS-NAME,Razer Synapse Service.exe",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "52:7",
+    "changes": [
+      {
+        "before": "PROCESS-NAME, RazerCentralService.exe",
+        "after": "PROCESS-NAME,RazerCentralService.exe",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "52:8",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, razersynapse.com",
+        "after": "DOMAIN-SUFFIX,razersynapse.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "52:9",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, razer.com",
+        "after": "DOMAIN-SUFFIX,razer.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "52:11",
+    "changes": [
+      {
+        "before": "PROCESS-NAME, SearchHost.exe",
+        "after": "PROCESS-NAME,SearchHost.exe",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "53:1",
+    "changes": [
+      {
+        "before": "DOMAIN-KEYWORD, kaspersky",
+        "after": "DOMAIN-KEYWORD,kaspersky",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "53:2",
+    "changes": [
+      {
+        "before": "PROCESS-NAME, avp.exe",
+        "after": "PROCESS-NAME,avp.exe",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "54:2",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, pixivlite.cn",
+        "after": "DOMAIN-SUFFIX,pixivlite.cn",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "54:3",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, pixivlite.com",
+        "after": "DOMAIN-SUFFIX,pixivlite.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "54:4",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, bravedefault.com",
+        "after": "DOMAIN-SUFFIX,bravedefault.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "54:6",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, appcenter.ms",
+        "after": "DOMAIN-SUFFIX,appcenter.ms",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "54:9",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, baozimh.com",
+        "after": "DOMAIN-SUFFIX,baozimh.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "54:10",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, webmota.com",
+        "after": "DOMAIN-SUFFIX,webmota.com",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "54:11",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, hxcy.moe",
+        "after": "DOMAIN-SUFFIX,hxcy.moe",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "54:12",
+    "changes": [
+      {
+        "before": "DOMAIN-SUFFIX, bemani.cc",
+        "after": "DOMAIN-SUFFIX,bemani.cc",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "54:13",
+    "changes": [
+      {
+        "before": "DOMAIN-KEYWORD, diyibanzhu",
+        "after": "DOMAIN-KEYWORD,diyibanzhu",
+        "reason": "Delimiter whitespace and type only"
+      }
+    ]
+  },
+  {
+    "id": "60:0",
+    "changes": [
+      "Removed subconverter [] inline marker; policy retained separately"
+    ]
+  },
+  {
+    "id": "61:0",
+    "changes": [
+      "Removed subconverter [] inline marker; policy retained separately"
+    ]
+  }
+]

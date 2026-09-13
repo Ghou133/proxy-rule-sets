@@ -1,0 +1,5866 @@
+{
+  "description": "Canonical truth: local leaf records + unexpanded third-party dependencies + original ordered calls",
+  "records": [
+    {
+      "id": "5:2",
+      "file": "upstream/owned/be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708/boost.list",
+      "line": 2,
+      "parent_line": 5,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX, azureedge-test.net",
+      "matcher": "DOMAIN-SUFFIX,azureedge-test.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, azureedge-test.net",
+          "after": "DOMAIN-SUFFIX,azureedge-test.net",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "5:3",
+      "file": "upstream/owned/be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708/boost.list",
+      "line": 3,
+      "parent_line": 5,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX, azureedge.net",
+      "matcher": "DOMAIN-SUFFIX,azureedge.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, azureedge.net",
+          "after": "DOMAIN-SUFFIX,azureedge.net",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "5:5",
+      "file": "upstream/owned/be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708/boost.list",
+      "line": 5,
+      "parent_line": 5,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX, answers.microsoft.com",
+      "matcher": "DOMAIN-SUFFIX,answers.microsoft.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, answers.microsoft.com",
+          "after": "DOMAIN-SUFFIX,answers.microsoft.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "5:6",
+      "file": "upstream/owned/be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708/boost.list",
+      "line": 6,
+      "parent_line": 5,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX, answerscdn.microsoft.com",
+      "matcher": "DOMAIN-SUFFIX,answerscdn.microsoft.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, answerscdn.microsoft.com",
+          "after": "DOMAIN-SUFFIX,answerscdn.microsoft.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "5:7",
+      "file": "upstream/owned/be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708/boost.list",
+      "line": 7,
+      "parent_line": 5,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX, techcommunity.microsoft.com",
+      "matcher": "DOMAIN-SUFFIX,techcommunity.microsoft.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, techcommunity.microsoft.com",
+          "after": "DOMAIN-SUFFIX,techcommunity.microsoft.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "5:11",
+      "file": "upstream/owned/be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708/boost.list",
+      "line": 11,
+      "parent_line": 5,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX, onedrive.live.com",
+      "matcher": "DOMAIN-SUFFIX,onedrive.live.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, onedrive.live.com",
+          "after": "DOMAIN-SUFFIX,onedrive.live.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "5:13",
+      "file": "upstream/owned/be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708/boost.list",
+      "line": 13,
+      "parent_line": 5,
+      "policy": "Proxies",
+      "raw": "DOMAIN-KEYWORD, picacomic",
+      "matcher": "DOMAIN-KEYWORD,picacomic",
+      "type": "DOMAIN-KEYWORD",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-KEYWORD, picacomic",
+          "after": "DOMAIN-KEYWORD,picacomic",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "5:15",
+      "file": "upstream/owned/be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708/boost.list",
+      "line": 15,
+      "parent_line": 5,
+      "policy": "Proxies",
+      "raw": "DOMAIN-KEYWORD, mangafuna",
+      "matcher": "DOMAIN-KEYWORD,mangafuna",
+      "type": "DOMAIN-KEYWORD",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-KEYWORD, mangafuna",
+          "after": "DOMAIN-KEYWORD,mangafuna",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:1",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 1,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, parsec.app",
+      "matcher": "DOMAIN-SUFFIX,parsec.app",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, parsec.app",
+          "after": "DOMAIN-SUFFIX,parsec.app",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:2",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 2,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, parsecusercontent.com",
+      "matcher": "DOMAIN-SUFFIX,parsecusercontent.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, parsecusercontent.com",
+          "after": "DOMAIN-SUFFIX,parsecusercontent.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:3",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 3,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, anydesk.com",
+      "matcher": "DOMAIN-SUFFIX,anydesk.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, anydesk.com",
+          "after": "DOMAIN-SUFFIX,anydesk.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:5",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 5,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "PROCESS-NAME, DownloadSDKServer.exe",
+      "matcher": "PROCESS-NAME,DownloadSDKServer.exe",
+      "type": "PROCESS-NAME",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "PROCESS-NAME, DownloadSDKServer.exe",
+          "after": "PROCESS-NAME,DownloadSDKServer.exe",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "id": "23:7",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 7,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "PROCESS-NAME, BitComet.exe",
+      "matcher": "PROCESS-NAME,BitComet.exe",
+      "type": "PROCESS-NAME",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "PROCESS-NAME, BitComet.exe",
+          "after": "PROCESS-NAME,BitComet.exe",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "id": "23:9",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 9,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "PROCESS-NAME, svchost.exe",
+      "matcher": "PROCESS-NAME,svchost.exe",
+      "type": "PROCESS-NAME",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "PROCESS-NAME, svchost.exe",
+          "after": "PROCESS-NAME,svchost.exe",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "id": "23:11",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 11,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-KEYWORD, -my.sharepoint.cn",
+      "matcher": "DOMAIN-KEYWORD,-my.sharepoint.cn",
+      "type": "DOMAIN-KEYWORD",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-KEYWORD, -my.sharepoint.cn",
+          "after": "DOMAIN-KEYWORD,-my.sharepoint.cn",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:13",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 13,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net",
+      "matcher": "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:14",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 14,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX,cm.steampowered.com",
+      "matcher": "DOMAIN-SUFFIX,cm.steampowered.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:15",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 15,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX,steamserver.net",
+      "matcher": "DOMAIN-SUFFIX,steamserver.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:16",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 16,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,45.121.184.0/24,no-resolve",
+      "matcher": "IP-CIDR,45.121.184.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:17",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 17,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,103.10.124.0/23,no-resolve",
+      "matcher": "IP-CIDR,103.10.124.0/23,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:18",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 18,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,103.28.54.0/24,no-resolve",
+      "matcher": "IP-CIDR,103.28.54.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:19",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 19,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,146.66.152.0/24,no-resolve",
+      "matcher": "IP-CIDR,146.66.152.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:20",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 20,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,146.66.155.0/24,no-resolve",
+      "matcher": "IP-CIDR,146.66.155.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:21",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 21,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,153.254.86.0/24,no-resolve",
+      "matcher": "IP-CIDR,153.254.86.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:22",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 22,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.224.0/22,no-resolve",
+      "matcher": "IP-CIDR,155.133.224.0/22,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:23",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 23,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.230.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.230.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:24",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 24,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.232.0/23,no-resolve",
+      "matcher": "IP-CIDR,155.133.232.0/23,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:25",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 25,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.234.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.234.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:26",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 26,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.236.0/22,no-resolve",
+      "matcher": "IP-CIDR,155.133.236.0/22,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:27",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 27,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.240.0/23,no-resolve",
+      "matcher": "IP-CIDR,155.133.240.0/23,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:28",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 28,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.244.0/23,no-resolve",
+      "matcher": "IP-CIDR,155.133.244.0/23,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:29",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 29,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.246.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.246.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:30",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 30,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.248.0/21,no-resolve",
+      "matcher": "IP-CIDR,155.133.248.0/21,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:31",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 31,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,162.254.192.0/21,no-resolve",
+      "matcher": "IP-CIDR,162.254.192.0/21,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:32",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 32,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,185.25.182.0/23,no-resolve",
+      "matcher": "IP-CIDR,185.25.182.0/23,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:33",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 33,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,190.217.32.0/22,no-resolve",
+      "matcher": "IP-CIDR,190.217.32.0/22,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:34",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 34,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,192.69.96.0/22,no-resolve",
+      "matcher": "IP-CIDR,192.69.96.0/22,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:35",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 35,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,205.196.6.0/24,no-resolve",
+      "matcher": "IP-CIDR,205.196.6.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:36",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 36,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,208.64.200.0/22,no-resolve",
+      "matcher": "IP-CIDR,208.64.200.0/22,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:37",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 37,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,208.78.164.0/22,no-resolve",
+      "matcher": "IP-CIDR,208.78.164.0/22,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:38",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 38,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,205.185.194.0/24,no-resolve",
+      "matcher": "IP-CIDR,205.185.194.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:39",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 39,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext1-hkg1.steamserver.net",
+      "matcher": "DOMAIN,ext1-hkg1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:40",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 40,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext2-hkg1.steamserver.net",
+      "matcher": "DOMAIN,ext2-hkg1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:41",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 41,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext3-hkg1.steamserver.net",
+      "matcher": "DOMAIN,ext3-hkg1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:42",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 42,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext4-hkg1.steamserver.net",
+      "matcher": "DOMAIN,ext4-hkg1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:43",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 43,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext5-hkg1.steamserver.net",
+      "matcher": "DOMAIN,ext5-hkg1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:44",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 44,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext6-hkg1.steamserver.net",
+      "matcher": "DOMAIN,ext6-hkg1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:45",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 45,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext7-hkg1.steamserver.net",
+      "matcher": "DOMAIN,ext7-hkg1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:46",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 46,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext1-tyo3.steamserver.net",
+      "matcher": "DOMAIN,ext1-tyo3.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:47",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 47,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext2-tyo3.steamserver.net",
+      "matcher": "DOMAIN,ext2-tyo3.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:48",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 48,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext3-tyo3.steamserver.net",
+      "matcher": "DOMAIN,ext3-tyo3.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:49",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 49,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext4-tyo3.steamserver.net",
+      "matcher": "DOMAIN,ext4-tyo3.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:50",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 50,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext1-sgp1.steamserver.net",
+      "matcher": "DOMAIN,ext1-sgp1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:51",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 51,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext2-sgp1.steamserver.net",
+      "matcher": "DOMAIN,ext2-sgp1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:52",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 52,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext3-sgp1.steamserver.net",
+      "matcher": "DOMAIN,ext3-sgp1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:53",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 53,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext4-sgp1.steamserver.net",
+      "matcher": "DOMAIN,ext4-sgp1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:54",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 54,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext1-lax1.steamserver.net",
+      "matcher": "DOMAIN,ext1-lax1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:55",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 55,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,ext2-lax1.steamserver.net",
+      "matcher": "DOMAIN,ext2-lax1.steamserver.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:57",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 57,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, akamaized.net",
+      "matcher": "DOMAIN-SUFFIX,akamaized.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, akamaized.net",
+          "after": "DOMAIN-SUFFIX,akamaized.net",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:58",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 58,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, steamcontent.com",
+      "matcher": "DOMAIN-SUFFIX,steamcontent.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, steamcontent.com",
+          "after": "DOMAIN-SUFFIX,steamcontent.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:59",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 59,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, dl.steam.ksyna.com",
+      "matcher": "DOMAIN-SUFFIX,dl.steam.ksyna.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, dl.steam.ksyna.com",
+          "after": "DOMAIN-SUFFIX,dl.steam.ksyna.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:60",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 60,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, st.dl.eccdnx.com",
+      "matcher": "DOMAIN-SUFFIX,st.dl.eccdnx.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, st.dl.eccdnx.com",
+          "after": "DOMAIN-SUFFIX,st.dl.eccdnx.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:61",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 61,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, st.dl.bscstorage.net",
+      "matcher": "DOMAIN-SUFFIX,st.dl.bscstorage.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, st.dl.bscstorage.net",
+          "after": "DOMAIN-SUFFIX,st.dl.bscstorage.net",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:62",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 62,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, client-update.akamai.steamstatic.com",
+      "matcher": "DOMAIN-SUFFIX,client-update.akamai.steamstatic.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, client-update.akamai.steamstatic.com",
+          "after": "DOMAIN-SUFFIX,client-update.akamai.steamstatic.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:63",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 63,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, st.dl.pinyuncloud.com",
+      "matcher": "DOMAIN-SUFFIX,st.dl.pinyuncloud.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, st.dl.pinyuncloud.com",
+          "after": "DOMAIN-SUFFIX,st.dl.pinyuncloud.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:64",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 64,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, cdn.mileweb.cs.steampowered.com.8686c.com",
+      "matcher": "DOMAIN-SUFFIX,cdn.mileweb.cs.steampowered.com.8686c.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, cdn.mileweb.cs.steampowered.com.8686c.com",
+          "after": "DOMAIN-SUFFIX,cdn.mileweb.cs.steampowered.com.8686c.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:66",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 66,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN, uplaypc-s-ubisoft.cdn.ubi.com",
+      "matcher": "DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN, uplaypc-s-ubisoft.cdn.ubi.com",
+          "after": "DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:68",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 68,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN, origin-a.akamaihd.net",
+      "matcher": "DOMAIN,origin-a.akamaihd.net",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN, origin-a.akamaihd.net",
+          "after": "DOMAIN,origin-a.akamaihd.net",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:69",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 69,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, ssl-lvlt.cdn.ea.com",
+      "matcher": "DOMAIN-SUFFIX,ssl-lvlt.cdn.ea.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, ssl-lvlt.cdn.ea.com",
+          "after": "DOMAIN-SUFFIX,ssl-lvlt.cdn.ea.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:71",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 71,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, update.microsoft.com",
+      "matcher": "DOMAIN-SUFFIX,update.microsoft.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, update.microsoft.com",
+          "after": "DOMAIN-SUFFIX,update.microsoft.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "23:72",
+      "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+      "line": 72,
+      "parent_line": 23,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, update.windows.com",
+      "matcher": "DOMAIN-SUFFIX,update.windows.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, update.windows.com",
+          "after": "DOMAIN-SUFFIX,update.windows.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:1",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 1,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "DOMAIN,test.steampowered.com",
+      "matcher": "DOMAIN,test.steampowered.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:2",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 2,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX,cm.steampowered.com",
+      "matcher": "DOMAIN-SUFFIX,cm.steampowered.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:3",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 3,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX,steamserver.net",
+      "matcher": "DOMAIN-SUFFIX,steamserver.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:4",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 4,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,103.10.124.0/24,no-resolve",
+      "matcher": "IP-CIDR,103.10.124.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:5",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 5,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,103.10.125.0/24,no-resolve",
+      "matcher": "IP-CIDR,103.10.125.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:6",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 6,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,103.28.54.0/24,no-resolve",
+      "matcher": "IP-CIDR,103.28.54.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:7",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 7,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,146.66.152.0/24,no-resolve",
+      "matcher": "IP-CIDR,146.66.152.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:8",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 8,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,146.66.155.0/24,no-resolve",
+      "matcher": "IP-CIDR,146.66.155.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:9",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 9,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,153.254.86.0/24,no-resolve",
+      "matcher": "IP-CIDR,153.254.86.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:10",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 10,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.224.0/23,no-resolve",
+      "matcher": "IP-CIDR,155.133.224.0/23,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:11",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 11,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.226.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.226.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:12",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 12,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.227.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.227.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:13",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 13,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.230.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.230.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:14",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 14,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.232.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.232.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:15",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 15,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.233.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.233.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:16",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 16,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.234.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.234.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:17",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 17,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.236.0/23,no-resolve",
+      "matcher": "IP-CIDR,155.133.236.0/23,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:18",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 18,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.238.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.238.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:19",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 19,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.239.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.239.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:20",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 20,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.240.0/23,no-resolve",
+      "matcher": "IP-CIDR,155.133.240.0/23,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:21",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 21,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.245.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.245.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:22",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 22,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.246.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.246.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:23",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 23,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.248.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.248.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:24",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 24,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.249.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.249.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:25",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 25,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.250.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.250.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:26",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 26,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.251.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.251.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:27",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 27,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.252.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.252.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:28",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 28,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.253.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.253.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:29",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 29,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.254.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.254.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:30",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 30,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,155.133.255.0/24,no-resolve",
+      "matcher": "IP-CIDR,155.133.255.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:31",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 31,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,162.254.192.0/24,no-resolve",
+      "matcher": "IP-CIDR,162.254.192.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:32",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 32,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,162.254.193.0/24,no-resolve",
+      "matcher": "IP-CIDR,162.254.193.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:33",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 33,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,162.254.194.0/23,no-resolve",
+      "matcher": "IP-CIDR,162.254.194.0/23,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:34",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 34,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,162.254.195.0/24,no-resolve",
+      "matcher": "IP-CIDR,162.254.195.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:35",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 35,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,162.254.196.0/24,no-resolve",
+      "matcher": "IP-CIDR,162.254.196.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:36",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 36,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,162.254.197.0/24,no-resolve",
+      "matcher": "IP-CIDR,162.254.197.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:37",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 37,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,162.254.198.0/24,no-resolve",
+      "matcher": "IP-CIDR,162.254.198.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:38",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 38,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,162.254.199.0/24,no-resolve",
+      "matcher": "IP-CIDR,162.254.199.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:39",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 39,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,185.25.182.0/24,no-resolve",
+      "matcher": "IP-CIDR,185.25.182.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:40",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 40,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,185.25.183.0/24,no-resolve",
+      "matcher": "IP-CIDR,185.25.183.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:41",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 41,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,190.217.33.0/24,no-resolve",
+      "matcher": "IP-CIDR,190.217.33.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:42",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 42,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,192.69.96.0/22,no-resolve",
+      "matcher": "IP-CIDR,192.69.96.0/22,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:43",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 43,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,205.185.194.0/24,no-resolve",
+      "matcher": "IP-CIDR,205.185.194.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:44",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 44,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,205.196.6.0/24,no-resolve",
+      "matcher": "IP-CIDR,205.196.6.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:45",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 45,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,208.64.200.0/24,no-resolve",
+      "matcher": "IP-CIDR,208.64.200.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:46",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 46,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,208.64.201.0/24,no-resolve",
+      "matcher": "IP-CIDR,208.64.201.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:47",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 47,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,208.64.202.0/24,no-resolve",
+      "matcher": "IP-CIDR,208.64.202.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:48",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 48,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,208.64.203.0/24,no-resolve",
+      "matcher": "IP-CIDR,208.64.203.0/24,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "26:49",
+      "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+      "line": 49,
+      "parent_line": 26,
+      "policy": "DIRECT",
+      "raw": "IP-CIDR,208.78.164.0/22,no-resolve",
+      "matcher": "IP-CIDR,208.78.164.0/22,no-resolve",
+      "type": "IP-CIDR",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:1",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 1,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,api.steampowered.com",
+      "matcher": "DOMAIN,api.steampowered.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:5",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 5,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,fanatical.com",
+      "matcher": "DOMAIN-SUFFIX,fanatical.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:6",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 6,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,humblebundle.com",
+      "matcher": "DOMAIN-SUFFIX,humblebundle.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:7",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 7,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,steam-chat.com",
+      "matcher": "DOMAIN-SUFFIX,steam-chat.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:9",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 9,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,steamcommunity.com",
+      "matcher": "DOMAIN-SUFFIX,steamcommunity.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:10",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 10,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,steamcontent.com",
+      "matcher": "DOMAIN-SUFFIX,steamcontent.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:11",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 11,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,steamgames.com",
+      "matcher": "DOMAIN-SUFFIX,steamgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:12",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 12,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,steamstat.us",
+      "matcher": "DOMAIN-SUFFIX,steamstat.us",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:13",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 13,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,steamstatic.com",
+      "matcher": "DOMAIN-SUFFIX,steamstatic.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:14",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 14,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,steamusercontent.com",
+      "matcher": "DOMAIN-SUFFIX,steamusercontent.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:17",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 17,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,epicgames.com",
+      "matcher": "DOMAIN-SUFFIX,epicgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:18",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 18,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,ol.epicgames.com",
+      "matcher": "DOMAIN-SUFFIX,ol.epicgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:19",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 19,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,helpshift.com",
+      "matcher": "DOMAIN-SUFFIX,helpshift.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:20",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 20,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,paragon.com",
+      "matcher": "DOMAIN-SUFFIX,paragon.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:21",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 21,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN-SUFFIX,unrealengine.com",
+      "matcher": "DOMAIN-SUFFIX,unrealengine.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:27",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 27,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,static3.cdn.ubi.com",
+      "matcher": "DOMAIN,static3.cdn.ubi.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:29",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 29,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,ubisoft-uplay-savegames.s3.amazonaws.com",
+      "matcher": "DOMAIN,ubisoft-uplay-savegames.s3.amazonaws.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:30",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 30,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com",
+      "matcher": "DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:32",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 32,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,public-im-ubiservices.ubi.com",
+      "matcher": "DOMAIN,public-im-ubiservices.ubi.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:33",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 33,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,msr-public-ubiservices.ubi.com",
+      "matcher": "DOMAIN,msr-public-ubiservices.ubi.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:34",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 34,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,public-ws.aws-ubiservices.ubi.com",
+      "matcher": "DOMAIN,public-ws.aws-ubiservices.ubi.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:35",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 35,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,public.aws-ubiservices.ubi.com",
+      "matcher": "DOMAIN,public.aws-ubiservices.ubi.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:36",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 36,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,public-ws-ubiservices.ubi.com",
+      "matcher": "DOMAIN,public-ws-ubiservices.ubi.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:37",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 37,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,api-ubiservices.ubi.com",
+      "matcher": "DOMAIN,api-ubiservices.ubi.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:38",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 38,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,lb-upc-dmx.ubisoft.com",
+      "matcher": "DOMAIN,lb-upc-dmx.ubisoft.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:39",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 39,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,msr-api-ubiservices.ubi.com",
+      "matcher": "DOMAIN,msr-api-ubiservices.ubi.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "32:40",
+      "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+      "line": 40,
+      "parent_line": 32,
+      "policy": "Proxies",
+      "raw": "DOMAIN,dmx.upc.ubisoft.com",
+      "matcher": "DOMAIN,dmx.upc.ubisoft.com",
+      "type": "DOMAIN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:1",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 1,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX, cygames.jp",
+      "matcher": "DOMAIN-SUFFIX,cygames.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, cygames.jp",
+          "after": "DOMAIN-SUFFIX,cygames.jp",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:2",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 2,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-KEYWORD, umamusume",
+      "matcher": "DOMAIN-KEYWORD,umamusume",
+      "type": "DOMAIN-KEYWORD",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-KEYWORD, umamusume",
+          "after": "DOMAIN-KEYWORD,umamusume",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:4",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 4,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,dmm.com",
+      "matcher": "DOMAIN-SUFFIX,dmm.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:5",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 5,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:6",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 6,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:7",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 7,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,dmm.hk",
+      "matcher": "DOMAIN-SUFFIX,dmm.hk",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:8",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 8,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,dmm-extension.com",
+      "matcher": "DOMAIN-SUFFIX,dmm-extension.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:10",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 10,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,erogamescape.dyndns.org",
+      "matcher": "DOMAIN-SUFFIX,erogamescape.dyndns.org",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:12",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 12,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,granbluefantasy.jp",
+      "matcher": "DOMAIN-SUFFIX,granbluefantasy.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:13",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 13,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,mbga.jp",
+      "matcher": "DOMAIN-SUFFIX,mbga.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:15",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 15,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,wikiwiki.jp",
+      "matcher": "DOMAIN-SUFFIX,wikiwiki.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:16",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 16,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,ggpht.com",
+      "matcher": "DOMAIN-SUFFIX,ggpht.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:17",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 17,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,dmm.com",
+      "matcher": "DOMAIN-SUFFIX,dmm.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:18",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 18,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,www.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,www.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:19",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 19,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,my.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,my.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:20",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 20,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,osapi.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,osapi.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:21",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 21,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,sp.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,sp.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:22",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 22,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,point.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,point.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:23",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 23,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,dlcp2.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,dlcp2.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:24",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 24,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,book.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,book.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:25",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 25,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,dlsoft.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,dlsoft.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:26",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 26,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,app.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,app.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:27",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 27,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,img.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,img.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:28",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 28,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,img2.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,img2.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:29",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 29,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,img3.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,img3.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:30",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 30,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,img4.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,img4.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:31",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 31,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,img5.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,img5.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:32",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 32,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,www.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,www.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:33",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 33,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,www2.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,www2.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:34",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 34,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,www3.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,www3.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:35",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 35,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,www4.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,www4.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:36",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 36,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,www5.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,www5.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:37",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 37,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,login.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,login.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:38",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 38,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,www2-2.kanpani.jp",
+      "matcher": "DOMAIN-SUFFIX,www2-2.kanpani.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:39",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 39,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,203.104.209.55",
+      "matcher": "DOMAIN-SUFFIX,203.104.209.55",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:40",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 40,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,touken-ranbu.jp",
+      "matcher": "DOMAIN-SUFFIX,touken-ranbu.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:41",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 41,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,web.flower-knight-girls.co.jp",
+      "matcher": "DOMAIN-SUFFIX,web.flower-knight-girls.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:42",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 42,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,kancolle-db.net",
+      "matcher": "DOMAIN-SUFFIX,kancolle-db.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:43",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 43,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,res.nimg.jp",
+      "matcher": "DOMAIN-SUFFIX,res.nimg.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:47",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 47,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,203.104.209.102",
+      "matcher": "DOMAIN-SUFFIX,203.104.209.102",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:48",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 48,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,millennium-war.net",
+      "matcher": "DOMAIN-SUFFIX,millennium-war.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:49",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 49,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,flower-knight-girl.cdn.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,flower-knight-girl.cdn.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:50",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 50,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,senpro.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,senpro.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:51",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 51,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,img-r18-senpro.cdn.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,img-r18-senpro.cdn.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:52",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 52,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,assets.shiropro-re.net",
+      "matcher": "DOMAIN-SUFFIX,assets.shiropro-re.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:53",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 53,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,api.shiropro-re.net",
+      "matcher": "DOMAIN-SUFFIX,api.shiropro-re.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:54",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 54,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,nicovideo.jp",
+      "matcher": "DOMAIN-SUFFIX,nicovideo.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:55",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 55,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,kamihimeproject.net",
+      "matcher": "DOMAIN-SUFFIX,kamihimeproject.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:56",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 56,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,mbga.jp",
+      "matcher": "DOMAIN-SUFFIX,mbga.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:57",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 57,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,granbluefantasy.jp",
+      "matcher": "DOMAIN-SUFFIX,granbluefantasy.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:58",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 58,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,www.itchibanketsu.jp",
+      "matcher": "DOMAIN-SUFFIX,www.itchibanketsu.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:59",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 59,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,asset.itchibanketsu.jp",
+      "matcher": "DOMAIN-SUFFIX,asset.itchibanketsu.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:60",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 60,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,img.itchibanketsu.jp",
+      "matcher": "DOMAIN-SUFFIX,img.itchibanketsu.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:61",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 61,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,rcv.ixd.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,rcv.ixd.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:62",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 62,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,pc-play.games.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,pc-play.games.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:63",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 63,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,pics.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,pics.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:64",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 64,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,p.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,p.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:65",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 65,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,games.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,games.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:66",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 66,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,personal.games.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,personal.games.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:67",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 67,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,avatar.games.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,avatar.games.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:68",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 68,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,bungo.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,bungo.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:69",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 69,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,210.140.108.205",
+      "matcher": "DOMAIN-SUFFIX,210.140.108.205",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:70",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 70,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,yashiro.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,yashiro.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:71",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 71,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,203.104.248.5",
+      "matcher": "DOMAIN-SUFFIX,203.104.248.5",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:72",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 72,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,203.104.248.14",
+      "matcher": "DOMAIN-SUFFIX,203.104.248.14",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:73",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 73,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,accounts.dmm.co.jp",
+      "matcher": "DOMAIN-SUFFIX,accounts.dmm.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:74",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 74,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,image01.seesaawiki.jp",
+      "matcher": "DOMAIN-SUFFIX,image01.seesaawiki.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:75",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 75,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,image02.seesaawiki.jp",
+      "matcher": "DOMAIN-SUFFIX,image02.seesaawiki.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:76",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 76,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,r.aimia.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,r.aimia.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:77",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 77,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,r.cdn.aimia.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,r.cdn.aimia.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:78",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 78,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,mobage.jp",
+      "matcher": "DOMAIN-SUFFIX,mobage.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:79",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 79,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,a.school-alchemist.com",
+      "matcher": "DOMAIN-SUFFIX,a.school-alchemist.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:80",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 80,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,game.school-alchemist.com",
+      "matcher": "DOMAIN-SUFFIX,game.school-alchemist.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:81",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 81,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,cf.r.skh.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,cf.r.skh.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:82",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 82,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,cf.static.r.skh.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,cf.static.r.skh.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:83",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 83,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,w.kcwiki.moe",
+      "matcher": "DOMAIN-SUFFIX,w.kcwiki.moe",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:84",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 84,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,icchibanketu.wikiru.jp",
+      "matcher": "DOMAIN-SUFFIX,icchibanketu.wikiru.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:85",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 85,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,search.yahoo.co.jp",
+      "matcher": "DOMAIN-SUFFIX,search.yahoo.co.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:86",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 86,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,fkg.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,fkg.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:87",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 87,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,cf.fkg.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,cf.fkg.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:88",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 88,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,assets.smrtbeat.com",
+      "matcher": "DOMAIN-SUFFIX,assets.smrtbeat.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:89",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 89,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,control.smbeat.jp",
+      "matcher": "DOMAIN-SUFFIX,control.smbeat.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:90",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 90,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,rel-web1.sys.jewepri.com",
+      "matcher": "DOMAIN-SUFFIX,rel-web1.sys.jewepri.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:91",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 91,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,rel-res1.sys.jewepri.com",
+      "matcher": "DOMAIN-SUFFIX,rel-res1.sys.jewepri.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:92",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 92,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,nicovideo.cdn.nimg.jp",
+      "matcher": "DOMAIN-SUFFIX,nicovideo.cdn.nimg.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:93",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 93,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,destiny-child-blog.line.me",
+      "matcher": "DOMAIN-SUFFIX,destiny-child-blog.line.me",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:94",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 94,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,adweimk.cdn.aimia.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,adweimk.cdn.aimia.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:95",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 95,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,rkyfxfex.cdn.aimia.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,rkyfxfex.cdn.aimia.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:96",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 96,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,rkyfxfex.aimia.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,rkyfxfex.aimia.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:97",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 97,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,aimg-link.gree.net",
+      "matcher": "DOMAIN-SUFFIX,aimg-link.gree.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:98",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 98,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,cdn-r18.necro-sm.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,cdn-r18.necro-sm.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:99",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 99,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,www-r18.necro-sm.dmmgames.com",
+      "matcher": "DOMAIN-SUFFIX,www-r18.necro-sm.dmmgames.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:100",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 100,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,dmc.nico",
+      "matcher": "DOMAIN-SUFFIX,dmc.nico",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:101",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 101,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,getchu.com",
+      "matcher": "DOMAIN-SUFFIX,getchu.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:102",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 102,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,dlsite.com",
+      "matcher": "DOMAIN-SUFFIX,dlsite.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:103",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 103,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,dlsite.jp",
+      "matcher": "DOMAIN-SUFFIX,dlsite.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:104",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 104,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,code.createjs.com",
+      "matcher": "DOMAIN-SUFFIX,code.createjs.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:105",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 105,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,game.ayarabu.com",
+      "matcher": "DOMAIN-SUFFIX,game.ayarabu.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:106",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 106,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,sukebei.nyaa.si",
+      "matcher": "DOMAIN-SUFFIX,sukebei.nyaa.si",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:107",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 107,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,adult.symphony-ec.jp",
+      "matcher": "DOMAIN-SUFFIX,adult.symphony-ec.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:108",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 108,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,info.symphony-ec.jp",
+      "matcher": "DOMAIN-SUFFIX,info.symphony-ec.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:109",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 109,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,img.symphony-ec.jp",
+      "matcher": "DOMAIN-SUFFIX,img.symphony-ec.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:110",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 110,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,blhx.danmu9.com",
+      "matcher": "DOMAIN-SUFFIX,blhx.danmu9.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:111",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 111,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,api.magicami.jp",
+      "matcher": "DOMAIN-SUFFIX,api.magicami.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:112",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 112,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,asset.magicami.jp",
+      "matcher": "DOMAIN-SUFFIX,asset.magicami.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:113",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 113,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,game.magicami.jp",
+      "matcher": "DOMAIN-SUFFIX,game.magicami.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:114",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 114,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,static.magicami.jp",
+      "matcher": "DOMAIN-SUFFIX,static.magicami.jp",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:115",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 115,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,d66zh4czgmp8a.cloudfront.net",
+      "matcher": "DOMAIN-SUFFIX,d66zh4czgmp8a.cloudfront.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:116",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 116,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,taimanin-rpg.com",
+      "matcher": "DOMAIN-SUFFIX,taimanin-rpg.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "38:117",
+      "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+      "line": 117,
+      "parent_line": 38,
+      "policy": "Japan",
+      "raw": "DOMAIN-SUFFIX,zu9j1t6ekm.user-space.cdn.idcfcloud.net",
+      "matcher": "DOMAIN-SUFFIX,zu9j1t6ekm.user-space.cdn.idcfcloud.net",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "41:1",
+      "file": "upstream/owned/b581123aff551c45d33efd21b9a86dd0cd1414be2834869be4eec5e70ccae23b/notJP.list",
+      "line": 1,
+      "parent_line": 41,
+      "policy": "Hongkong",
+      "raw": "DOMAIN-KEYWORD, 18comic",
+      "matcher": "DOMAIN-KEYWORD,18comic",
+      "type": "DOMAIN-KEYWORD",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-KEYWORD, 18comic",
+          "after": "DOMAIN-KEYWORD,18comic",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "41:2",
+      "file": "upstream/owned/b581123aff551c45d33efd21b9a86dd0cd1414be2834869be4eec5e70ccae23b/notJP.list",
+      "line": 2,
+      "parent_line": 41,
+      "policy": "Hongkong",
+      "raw": "DOMAIN-KEYWORD, copymanga",
+      "matcher": "DOMAIN-KEYWORD,copymanga",
+      "type": "DOMAIN-KEYWORD",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-KEYWORD, copymanga",
+          "after": "DOMAIN-KEYWORD,copymanga",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "41:3",
+      "file": "upstream/owned/b581123aff551c45d33efd21b9a86dd0cd1414be2834869be4eec5e70ccae23b/notJP.list",
+      "line": 3,
+      "parent_line": 41,
+      "policy": "Hongkong",
+      "raw": "DOMAIN-KEYWORD, jmcomic",
+      "matcher": "DOMAIN-KEYWORD,jmcomic",
+      "type": "DOMAIN-KEYWORD",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-KEYWORD, jmcomic",
+          "after": "DOMAIN-KEYWORD,jmcomic",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "41:4",
+      "file": "upstream/owned/b581123aff551c45d33efd21b9a86dd0cd1414be2834869be4eec5e70ccae23b/notJP.list",
+      "line": 4,
+      "parent_line": 41,
+      "policy": "Hongkong",
+      "raw": "DOMAIN-KEYWORD, jm-comic",
+      "matcher": "DOMAIN-KEYWORD,jm-comic",
+      "type": "DOMAIN-KEYWORD",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-KEYWORD, jm-comic",
+          "after": "DOMAIN-KEYWORD,jm-comic",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "41:5",
+      "file": "upstream/owned/b581123aff551c45d33efd21b9a86dd0cd1414be2834869be4eec5e70ccae23b/notJP.list",
+      "line": 5,
+      "parent_line": 41,
+      "policy": "Hongkong",
+      "raw": "DOMAIN-KEYWORD, hanime",
+      "matcher": "DOMAIN-KEYWORD,hanime",
+      "type": "DOMAIN-KEYWORD",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-KEYWORD, hanime",
+          "after": "DOMAIN-KEYWORD,hanime",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "52:2",
+      "file": "upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list",
+      "line": 2,
+      "parent_line": 52,
+      "policy": "DIRECT",
+      "raw": "PROCESS-NAME, RadeonSoftware.exe",
+      "matcher": "PROCESS-NAME,RadeonSoftware.exe",
+      "type": "PROCESS-NAME",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "PROCESS-NAME, RadeonSoftware.exe",
+          "after": "PROCESS-NAME,RadeonSoftware.exe",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "id": "52:4",
+      "file": "upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list",
+      "line": 4,
+      "parent_line": 52,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, nvidia.com",
+      "matcher": "DOMAIN-SUFFIX,nvidia.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, nvidia.com",
+          "after": "DOMAIN-SUFFIX,nvidia.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "52:6",
+      "file": "upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list",
+      "line": 6,
+      "parent_line": 52,
+      "policy": "DIRECT",
+      "raw": "PROCESS-NAME, Razer Synapse Service.exe",
+      "matcher": "PROCESS-NAME,Razer Synapse Service.exe",
+      "type": "PROCESS-NAME",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "PROCESS-NAME, Razer Synapse Service.exe",
+          "after": "PROCESS-NAME,Razer Synapse Service.exe",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "id": "52:7",
+      "file": "upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list",
+      "line": 7,
+      "parent_line": 52,
+      "policy": "DIRECT",
+      "raw": "PROCESS-NAME, RazerCentralService.exe",
+      "matcher": "PROCESS-NAME,RazerCentralService.exe",
+      "type": "PROCESS-NAME",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "PROCESS-NAME, RazerCentralService.exe",
+          "after": "PROCESS-NAME,RazerCentralService.exe",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "id": "52:8",
+      "file": "upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list",
+      "line": 8,
+      "parent_line": 52,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, razersynapse.com",
+      "matcher": "DOMAIN-SUFFIX,razersynapse.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, razersynapse.com",
+          "after": "DOMAIN-SUFFIX,razersynapse.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "52:9",
+      "file": "upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list",
+      "line": 9,
+      "parent_line": 52,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, razer.com",
+      "matcher": "DOMAIN-SUFFIX,razer.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, razer.com",
+          "after": "DOMAIN-SUFFIX,razer.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "52:11",
+      "file": "upstream/owned/3067db7925597c1f6fbc8409ca27db49170985b8e23b2c8c63b7820298c10fd7/windowsoft.list",
+      "line": 11,
+      "parent_line": 52,
+      "policy": "DIRECT",
+      "raw": "PROCESS-NAME, SearchHost.exe",
+      "matcher": "PROCESS-NAME,SearchHost.exe",
+      "type": "PROCESS-NAME",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "PROCESS-NAME, SearchHost.exe",
+          "after": "PROCESS-NAME,SearchHost.exe",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "id": "53:1",
+      "file": "upstream/owned/73f635cbf30123ebf9873924615c71df9fc2fa70320e414521b3ed60e9e2437a/kaspersky.list",
+      "line": 1,
+      "parent_line": 53,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-KEYWORD, kaspersky",
+      "matcher": "DOMAIN-KEYWORD,kaspersky",
+      "type": "DOMAIN-KEYWORD",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-KEYWORD, kaspersky",
+          "after": "DOMAIN-KEYWORD,kaspersky",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "53:2",
+      "file": "upstream/owned/73f635cbf30123ebf9873924615c71df9fc2fa70320e414521b3ed60e9e2437a/kaspersky.list",
+      "line": 2,
+      "parent_line": 53,
+      "policy": "DIRECT",
+      "raw": "PROCESS-NAME, avp.exe",
+      "matcher": "PROCESS-NAME,avp.exe",
+      "type": "PROCESS-NAME",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "PROCESS-NAME, avp.exe",
+          "after": "PROCESS-NAME,avp.exe",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "id": "54:2",
+      "file": "upstream/owned/6983af50eaae2eb5e4dbf9634008f749db411129b37637f338a7a6d472b1d650/UnBanPatch.list",
+      "line": 2,
+      "parent_line": 54,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, pixivlite.cn",
+      "matcher": "DOMAIN-SUFFIX,pixivlite.cn",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, pixivlite.cn",
+          "after": "DOMAIN-SUFFIX,pixivlite.cn",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "54:3",
+      "file": "upstream/owned/6983af50eaae2eb5e4dbf9634008f749db411129b37637f338a7a6d472b1d650/UnBanPatch.list",
+      "line": 3,
+      "parent_line": 54,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, pixivlite.com",
+      "matcher": "DOMAIN-SUFFIX,pixivlite.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, pixivlite.com",
+          "after": "DOMAIN-SUFFIX,pixivlite.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "54:4",
+      "file": "upstream/owned/6983af50eaae2eb5e4dbf9634008f749db411129b37637f338a7a6d472b1d650/UnBanPatch.list",
+      "line": 4,
+      "parent_line": 54,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, bravedefault.com",
+      "matcher": "DOMAIN-SUFFIX,bravedefault.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, bravedefault.com",
+          "after": "DOMAIN-SUFFIX,bravedefault.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "54:6",
+      "file": "upstream/owned/6983af50eaae2eb5e4dbf9634008f749db411129b37637f338a7a6d472b1d650/UnBanPatch.list",
+      "line": 6,
+      "parent_line": 54,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, appcenter.ms",
+      "matcher": "DOMAIN-SUFFIX,appcenter.ms",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, appcenter.ms",
+          "after": "DOMAIN-SUFFIX,appcenter.ms",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "54:9",
+      "file": "upstream/owned/6983af50eaae2eb5e4dbf9634008f749db411129b37637f338a7a6d472b1d650/UnBanPatch.list",
+      "line": 9,
+      "parent_line": 54,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, baozimh.com",
+      "matcher": "DOMAIN-SUFFIX,baozimh.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, baozimh.com",
+          "after": "DOMAIN-SUFFIX,baozimh.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "54:10",
+      "file": "upstream/owned/6983af50eaae2eb5e4dbf9634008f749db411129b37637f338a7a6d472b1d650/UnBanPatch.list",
+      "line": 10,
+      "parent_line": 54,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, webmota.com",
+      "matcher": "DOMAIN-SUFFIX,webmota.com",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, webmota.com",
+          "after": "DOMAIN-SUFFIX,webmota.com",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "54:11",
+      "file": "upstream/owned/6983af50eaae2eb5e4dbf9634008f749db411129b37637f338a7a6d472b1d650/UnBanPatch.list",
+      "line": 11,
+      "parent_line": 54,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, hxcy.moe",
+      "matcher": "DOMAIN-SUFFIX,hxcy.moe",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, hxcy.moe",
+          "after": "DOMAIN-SUFFIX,hxcy.moe",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "54:12",
+      "file": "upstream/owned/6983af50eaae2eb5e4dbf9634008f749db411129b37637f338a7a6d472b1d650/UnBanPatch.list",
+      "line": 12,
+      "parent_line": 54,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-SUFFIX, bemani.cc",
+      "matcher": "DOMAIN-SUFFIX,bemani.cc",
+      "type": "DOMAIN-SUFFIX",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-SUFFIX, bemani.cc",
+          "after": "DOMAIN-SUFFIX,bemani.cc",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "id": "54:13",
+      "file": "upstream/owned/6983af50eaae2eb5e4dbf9634008f749db411129b37637f338a7a6d472b1d650/UnBanPatch.list",
+      "line": 13,
+      "parent_line": 54,
+      "policy": "DIRECT",
+      "raw": "DOMAIN-KEYWORD, diyibanzhu",
+      "matcher": "DOMAIN-KEYWORD,diyibanzhu",
+      "type": "DOMAIN-KEYWORD",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "normalizations": [
+        {
+          "before": "DOMAIN-KEYWORD, diyibanzhu",
+          "after": "DOMAIN-KEYWORD,diyibanzhu",
+          "reason": "Delimiter whitespace and type only"
+        }
+      ],
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 60,
+      "raw": "ruleset=DIRECT,[]GEOIP,CN",
+      "policy": "DIRECT",
+      "normalizations": [
+        "Removed subconverter [] inline marker; policy retained separately"
+      ],
+      "type": "GEOIP",
+      "matcher": "GEOIP,CN",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "id": "60:0",
+      "file": "upstream/4.ini",
+      "parent_line": 60,
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 61,
+      "raw": "ruleset=Others,[]FINAL",
+      "policy": "Others",
+      "normalizations": [
+        "Removed subconverter [] inline marker; policy retained separately"
+      ],
+      "type": "FINAL",
+      "matcher": "FINAL",
+      "status": "UNSUPPORTED",
+      "reason": "Terminal action belongs in parent rules, not a portable rule-provider",
+      "id": "61:0",
+      "file": "upstream/4.ini",
+      "parent_line": 61,
+      "targets": {
+        "mihomo": "UNSUPPORTED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    }
+  ],
+  "sequence": [
+    {
+      "parent_line": 5,
+      "kind": "owned",
+      "policy": "Proxies",
+      "segment": "005-boost",
+      "record_ids": [
+        "5:2",
+        "5:3",
+        "5:5",
+        "5:6",
+        "5:7",
+        "5:11",
+        "5:13",
+        "5:15"
+      ]
+    },
+    {
+      "parent_line": 6,
+      "kind": "external",
+      "policy": "DIRECT",
+      "dependency": {
+        "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list",
+        "policy": "DIRECT",
+        "parent_line": 6,
+        "repository": "ACL4SSR/ACL4SSR",
+        "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+        "repository_last_commit_at": "2026-09-12T02:36:23Z",
+        "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml",
+        "original_sha256": "0789504d97d8f5b14513c529c61c06f4f862c5cfd20f7cb30bbcd38357e54468",
+        "yaml_sha256": "4f283cc1838e4285479506c702816d363184ba43fbfa425ff72b4e0986e8af5e",
+        "original_count": 37,
+        "yaml_count": 37,
+        "ordered_equal": true,
+        "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml",
+        "format": "yaml",
+        "behavior": "classical",
+        "call_params": [],
+        "reason": "Ordered matcher sequence verified equal (including no-resolve)",
+        "only_original_count": 0,
+        "only_yaml_count": 0,
+        "mihomo_unsupported": [],
+        "materialized": false,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+      }
+    },
+    {
+      "parent_line": 7,
+      "kind": "external",
+      "policy": "DIRECT",
+      "dependency": {
+        "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list",
+        "policy": "DIRECT",
+        "parent_line": 7,
+        "repository": "ACL4SSR/ACL4SSR",
+        "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+        "repository_last_commit_at": "2026-09-12T02:36:23Z",
+        "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/UnBan.yaml",
+        "original_sha256": "016837560f1f0eeb576f81600c95b547bd82e27ba27a175a3b5010de9bd18ffa",
+        "yaml_sha256": "017365034b76942e796cf7aa46fcb7c3382c2d5db1d229e4109151d46f4a7602",
+        "original_count": 31,
+        "yaml_count": 52,
+        "ordered_equal": false,
+        "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list",
+        "format": "text",
+        "behavior": "classical",
+        "call_params": [],
+        "reason": "Candidate differs; original typed text reference preserved",
+        "only_original_count": 12,
+        "only_yaml_count": 33,
+        "mihomo_unsupported": [],
+        "materialized": false,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+      }
+    },
+    {
+      "parent_line": 23,
+      "kind": "owned",
+      "policy": "DIRECT",
+      "segment": "023-downloadpatch",
+      "record_ids": [
+        "23:1",
+        "23:2",
+        "23:3",
+        "23:5",
+        "23:7",
+        "23:9",
+        "23:11",
+        "23:13",
+        "23:14",
+        "23:15",
+        "23:16",
+        "23:17",
+        "23:18",
+        "23:19",
+        "23:20",
+        "23:21",
+        "23:22",
+        "23:23",
+        "23:24",
+        "23:25",
+        "23:26",
+        "23:27",
+        "23:28",
+        "23:29",
+        "23:30",
+        "23:31",
+        "23:32",
+        "23:33",
+        "23:34",
+        "23:35",
+        "23:36",
+        "23:37",
+        "23:38",
+        "23:39",
+        "23:40",
+        "23:41",
+        "23:42",
+        "23:43",
+        "23:44",
+        "23:45",
+        "23:46",
+        "23:47",
+        "23:48",
+        "23:49",
+        "23:50",
+        "23:51",
+        "23:52",
+        "23:53",
+        "23:54",
+        "23:55",
+        "23:57",
+        "23:58",
+        "23:59",
+        "23:60",
+        "23:61",
+        "23:62",
+        "23:63",
+        "23:64",
+        "23:66",
+        "23:68",
+        "23:69",
+        "23:71",
+        "23:72"
+      ]
+    },
+    {
+      "parent_line": 24,
+      "kind": "external",
+      "policy": "DIRECT",
+      "dependency": {
+        "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list",
+        "policy": "DIRECT",
+        "parent_line": 24,
+        "repository": "ACL4SSR/ACL4SSR",
+        "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+        "repository_last_commit_at": "2026-09-12T02:36:23Z",
+        "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Download.yaml",
+        "original_sha256": "62b72d16b8f2bcbc80eb2c7af35dc03b31c4d82e732af6d227c2a311f04bdadc",
+        "yaml_sha256": "2b465c1b883d1fc6875a1cc31c223aaf2e36c052e0bfcfa90af176abd478abd6",
+        "original_count": 22,
+        "yaml_count": 2,
+        "ordered_equal": false,
+        "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list",
+        "format": "text",
+        "behavior": "classical",
+        "call_params": [],
+        "reason": "Candidate differs; original typed text reference preserved",
+        "only_original_count": 20,
+        "only_yaml_count": 0,
+        "mihomo_unsupported": [
+          {
+            "line": 15,
+            "rule": "URL-REGEX,(Subject|HELO|SMTP)",
+            "reason": "Not supported by Mihomo classical parser"
+          },
+          {
+            "line": 16,
+            "rule": "URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com",
+            "reason": "Not supported by Mihomo classical parser"
+          },
+          {
+            "line": 17,
+            "rule": "URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)",
+            "reason": "Not supported by Mihomo classical parser"
+          },
+          {
+            "line": 18,
+            "rule": "URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?",
+            "reason": "Not supported by Mihomo classical parser"
+          },
+          {
+            "line": 20,
+            "rule": "URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)",
+            "reason": "Not supported by Mihomo classical parser"
+          },
+          {
+            "line": 23,
+            "rule": "URL-REGEX,(.+\\.|^)(360|so)\\.(cn|com)",
+            "reason": "Not supported by Mihomo classical parser"
+          },
+          {
+            "line": 29,
+            "rule": "URL-REGEX,assets\\d+\\.xboxlive\\.(com|cn)",
+            "reason": "Not supported by Mihomo classical parser"
+          }
+        ],
+        "materialized": false,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+      }
+    },
+    {
+      "parent_line": 26,
+      "kind": "owned",
+      "policy": "DIRECT",
+      "segment": "026-steamdownload",
+      "record_ids": [
+        "26:1",
+        "26:2",
+        "26:3",
+        "26:4",
+        "26:5",
+        "26:6",
+        "26:7",
+        "26:8",
+        "26:9",
+        "26:10",
+        "26:11",
+        "26:12",
+        "26:13",
+        "26:14",
+        "26:15",
+        "26:16",
+        "26:17",
+        "26:18",
+        "26:19",
+        "26:20",
+        "26:21",
+        "26:22",
+        "26:23",
+        "26:24",
+        "26:25",
+        "26:26",
+        "26:27",
+        "26:28",
+        "26:29",
+        "26:30",
+        "26:31",
+        "26:32",
+        "26:33",
+        "26:34",
+        "26:35",
+        "26:36",
+        "26:37",
+        "26:38",
+        "26:39",
+        "26:40",
+        "26:41",
+        "26:42",
+        "26:43",
+        "26:44",
+        "26:45",
+        "26:46",
+        "26:47",
+        "26:48",
+        "26:49"
+      ]
+    },
+    {
+      "parent_line": 32,
+      "kind": "owned",
+      "policy": "Proxies",
+      "segment": "032-gameplatform",
+      "record_ids": [
+        "32:1",
+        "32:5",
+        "32:6",
+        "32:7",
+        "32:9",
+        "32:10",
+        "32:11",
+        "32:12",
+        "32:13",
+        "32:14",
+        "32:17",
+        "32:18",
+        "32:19",
+        "32:20",
+        "32:21",
+        "32:27",
+        "32:29",
+        "32:30",
+        "32:32",
+        "32:33",
+        "32:34",
+        "32:35",
+        "32:36",
+        "32:37",
+        "32:38",
+        "32:39",
+        "32:40"
+      ]
+    },
+    {
+      "parent_line": 34,
+      "kind": "external",
+      "policy": "DIRECT",
+      "dependency": {
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+        "policy": "DIRECT",
+        "parent_line": 34,
+        "repository": "blackmatrix7/ios_rule_script",
+        "commit": "0087bb74e91b335e17a79fd07a8514277f7d77b4",
+        "repository_last_commit_at": "2026-09-11T20:24:14Z",
+        "yaml_candidate_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml",
+        "original_sha256": "a2854b28dc9f903a64933c74fff5b50166e9bbebc70fdfce18c592f75793ff14",
+        "yaml_sha256": "a289a1d52394e92ceee26a5c83953cd292609717d39fb2970d189dc7877b2a4d",
+        "original_count": 673,
+        "yaml_count": 670,
+        "ordered_equal": false,
+        "selected_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+        "format": "text",
+        "behavior": "classical",
+        "call_params": [],
+        "reason": "Candidate differs; original typed text reference preserved",
+        "only_original_count": 3,
+        "only_yaml_count": 0,
+        "mihomo_unsupported": [
+          {
+            "line": 679,
+            "rule": "USER-AGENT,Microsoft*",
+            "reason": "Not supported by Mihomo classical parser"
+          },
+          {
+            "line": 680,
+            "rule": "USER-AGENT,OneDrive*",
+            "reason": "Not supported by Mihomo classical parser"
+          },
+          {
+            "line": 681,
+            "rule": "USER-AGENT,OneDriveiOSApp*",
+            "reason": "Not supported by Mihomo classical parser"
+          }
+        ],
+        "materialized": false,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+      }
+    },
+    {
+      "parent_line": 36,
+      "kind": "external",
+      "policy": "DMM",
+      "dependency": {
+        "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DMM/DMM.list",
+        "policy": "DMM",
+        "parent_line": 36,
+        "repository": "blackmatrix7/ios_rule_script",
+        "commit": "0087bb74e91b335e17a79fd07a8514277f7d77b4",
+        "repository_last_commit_at": "2026-09-11T20:24:14Z",
+        "yaml_candidate_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DMM/DMM_No_Resolve.yaml",
+        "original_sha256": "255c924e26503a11d8f1d96b696ca623140686c7d34512c935fef27210f8b0b4",
+        "yaml_sha256": "6c15a189984e5d4d444d182ed8f5048bbfcfa2632e8194a93c235ec4bc7f696b",
+        "original_count": 20,
+        "yaml_count": 20,
+        "ordered_equal": true,
+        "selected_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DMM/DMM_No_Resolve.yaml",
+        "format": "yaml",
+        "behavior": "classical",
+        "call_params": [],
+        "reason": "Ordered matcher sequence verified equal (including no-resolve)",
+        "only_original_count": 0,
+        "only_yaml_count": 0,
+        "mihomo_unsupported": [],
+        "materialized": false,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+      }
+    },
+    {
+      "parent_line": 38,
+      "kind": "owned",
+      "policy": "Japan",
+      "segment": "038-dmmdlfz",
+      "record_ids": [
+        "38:1",
+        "38:2",
+        "38:4",
+        "38:5",
+        "38:6",
+        "38:7",
+        "38:8",
+        "38:10",
+        "38:12",
+        "38:13",
+        "38:15",
+        "38:16",
+        "38:17",
+        "38:18",
+        "38:19",
+        "38:20",
+        "38:21",
+        "38:22",
+        "38:23",
+        "38:24",
+        "38:25",
+        "38:26",
+        "38:27",
+        "38:28",
+        "38:29",
+        "38:30",
+        "38:31",
+        "38:32",
+        "38:33",
+        "38:34",
+        "38:35",
+        "38:36",
+        "38:37",
+        "38:38",
+        "38:39",
+        "38:40",
+        "38:41",
+        "38:42",
+        "38:43",
+        "38:47",
+        "38:48",
+        "38:49",
+        "38:50",
+        "38:51",
+        "38:52",
+        "38:53",
+        "38:54",
+        "38:55",
+        "38:56",
+        "38:57",
+        "38:58",
+        "38:59",
+        "38:60",
+        "38:61",
+        "38:62",
+        "38:63",
+        "38:64",
+        "38:65",
+        "38:66",
+        "38:67",
+        "38:68",
+        "38:69",
+        "38:70",
+        "38:71",
+        "38:72",
+        "38:73",
+        "38:74",
+        "38:75",
+        "38:76",
+        "38:77",
+        "38:78",
+        "38:79",
+        "38:80",
+        "38:81",
+        "38:82",
+        "38:83",
+        "38:84",
+        "38:85",
+        "38:86",
+        "38:87",
+        "38:88",
+        "38:89",
+        "38:90",
+        "38:91",
+        "38:92",
+        "38:93",
+        "38:94",
+        "38:95",
+        "38:96",
+        "38:97",
+        "38:98",
+        "38:99",
+        "38:100",
+        "38:101",
+        "38:102",
+        "38:103",
+        "38:104",
+        "38:105",
+        "38:106",
+        "38:107",
+        "38:108",
+        "38:109",
+        "38:110",
+        "38:111",
+        "38:112",
+        "38:113",
+        "38:114",
+        "38:115",
+        "38:116",
+        "38:117"
+      ]
+    },
+    {
+      "parent_line": 41,
+      "kind": "owned",
+      "policy": "Hongkong",
+      "segment": "041-notjp",
+      "record_ids": [
+        "41:1",
+        "41:2",
+        "41:3",
+        "41:4",
+        "41:5"
+      ]
+    },
+    {
+      "parent_line": 44,
+      "kind": "external",
+      "policy": "DIRECT",
+      "dependency": {
+        "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list",
+        "policy": "DIRECT",
+        "parent_line": 44,
+        "repository": "ACL4SSR/ACL4SSR",
+        "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+        "repository_last_commit_at": "2026-09-12T02:36:23Z",
+        "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCN.yaml",
+        "original_sha256": "00ffcc16d0eb1898cba4f9c2cc2ce76a8f70bef7a03aea436dad79982b77c8ca",
+        "yaml_sha256": "131781f1f036062eb2531c490c1cb810ead87e7c38d601ab9ad4d0bdaadb0f82",
+        "original_count": 29,
+        "yaml_count": 48,
+        "ordered_equal": false,
+        "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list",
+        "format": "text",
+        "behavior": "classical",
+        "call_params": [],
+        "reason": "Candidate differs; original typed text reference preserved",
+        "only_original_count": 0,
+        "only_yaml_count": 19,
+        "mihomo_unsupported": [],
+        "materialized": false,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+      }
+    },
+    {
+      "parent_line": 45,
+      "kind": "external",
+      "policy": "DIRECT",
+      "dependency": {
+        "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list",
+        "policy": "DIRECT",
+        "parent_line": 45,
+        "repository": "ACL4SSR/ACL4SSR",
+        "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+        "repository_last_commit_at": "2026-09-12T02:36:23Z",
+        "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml",
+        "original_sha256": "f115f84bef66a5aa931fd20f23d6914cdfdfe3d07795d65549d578b91a0f0c48",
+        "yaml_sha256": "88f05d1b0e49ebc713a94d691e8ecc89770bfa07f77ba2fc6cf81131d18efb4c",
+        "original_count": 44,
+        "yaml_count": 44,
+        "ordered_equal": true,
+        "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml",
+        "format": "yaml",
+        "behavior": "classical",
+        "call_params": [],
+        "reason": "Ordered matcher sequence verified equal (including no-resolve)",
+        "only_original_count": 0,
+        "only_yaml_count": 0,
+        "mihomo_unsupported": [],
+        "materialized": false,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+      }
+    },
+    {
+      "parent_line": 48,
+      "kind": "external",
+      "policy": "DIRECT",
+      "dependency": {
+        "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list",
+        "policy": "DIRECT",
+        "parent_line": 48,
+        "repository": "ACL4SSR/ACL4SSR",
+        "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+        "repository_last_commit_at": "2026-09-12T02:36:23Z",
+        "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Apple.yaml",
+        "original_sha256": "7b2e60cd0bf3c4bfb1369890d39cc3783bdfcb016089b78acee0ff6f0d4e51c5",
+        "yaml_sha256": "7fc92cb123123cfbd0eedc95463dbe49fac03547299db65026a4a25c2f0a3e9d",
+        "original_count": 29,
+        "yaml_count": 29,
+        "ordered_equal": true,
+        "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Apple.yaml",
+        "format": "yaml",
+        "behavior": "classical",
+        "call_params": [],
+        "reason": "Ordered matcher sequence verified equal (including no-resolve)",
+        "only_original_count": 0,
+        "only_yaml_count": 0,
+        "mihomo_unsupported": [],
+        "materialized": false,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+      }
+    },
+    {
+      "parent_line": 52,
+      "kind": "owned",
+      "policy": "DIRECT",
+      "segment": "052-windowsoft",
+      "record_ids": [
+        "52:2",
+        "52:4",
+        "52:6",
+        "52:7",
+        "52:8",
+        "52:9",
+        "52:11"
+      ]
+    },
+    {
+      "parent_line": 53,
+      "kind": "owned",
+      "policy": "DIRECT",
+      "segment": "053-kaspersky",
+      "record_ids": [
+        "53:1",
+        "53:2"
+      ]
+    },
+    {
+      "parent_line": 54,
+      "kind": "owned",
+      "policy": "DIRECT",
+      "segment": "054-unbanpatch",
+      "record_ids": [
+        "54:2",
+        "54:3",
+        "54:4",
+        "54:6",
+        "54:9",
+        "54:10",
+        "54:11",
+        "54:12",
+        "54:13"
+      ]
+    },
+    {
+      "parent_line": 56,
+      "kind": "external",
+      "policy": "Proxies",
+      "dependency": {
+        "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+        "policy": "Proxies",
+        "parent_line": 56,
+        "repository": "ACL4SSR/ACL4SSR",
+        "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+        "repository_last_commit_at": "2026-09-12T02:36:23Z",
+        "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml",
+        "original_sha256": "72d5f97cb3adedd7ef632962effda4aa3b9953da20427cd6050d55d1184de5ea",
+        "yaml_sha256": "c8f4eab7ae2ab1913a42d280d1f6964a408461d42530e622a556614f64440b33",
+        "original_count": 6986,
+        "yaml_count": 4319,
+        "ordered_equal": false,
+        "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+        "format": "text",
+        "behavior": "classical",
+        "call_params": [],
+        "reason": "Candidate differs; original typed text reference preserved",
+        "only_original_count": 3207,
+        "only_yaml_count": 540,
+        "mihomo_unsupported": [],
+        "materialized": false,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+      }
+    },
+    {
+      "parent_line": 58,
+      "kind": "external",
+      "policy": "DIRECT",
+      "dependency": {
+        "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list",
+        "policy": "DIRECT",
+        "parent_line": 58,
+        "repository": "ACL4SSR/ACL4SSR",
+        "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+        "repository_last_commit_at": "2026-09-12T02:36:23Z",
+        "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml",
+        "original_sha256": "362edd1f605742b360eaf138f151d7eea96cc17f20ef12da73acbfb80c350e08",
+        "yaml_sha256": "1c37f48790d6ff3427aa5176e06607ceab51cb8dd740c9ac8ca8d01039180260",
+        "original_count": 635,
+        "yaml_count": 635,
+        "ordered_equal": true,
+        "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml",
+        "format": "yaml",
+        "behavior": "classical",
+        "call_params": [],
+        "reason": "Ordered matcher sequence verified equal (including no-resolve)",
+        "only_original_count": 0,
+        "only_yaml_count": 0,
+        "mihomo_unsupported": [],
+        "materialized": false,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+      }
+    },
+    {
+      "parent_line": 59,
+      "kind": "external",
+      "policy": "DIRECT",
+      "dependency": {
+        "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list",
+        "policy": "DIRECT",
+        "parent_line": 59,
+        "repository": "ACL4SSR/ACL4SSR",
+        "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+        "repository_last_commit_at": "2026-09-12T02:36:23Z",
+        "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml",
+        "original_sha256": "cbc63e3daee0c0467558394ce0cfdd342f28e6c0f903bc4b35b6a5f06279d160",
+        "yaml_sha256": "2cf835ff10e7bf6f54fc615c6e00ed57f0eb2a008c6d332f318ccb39ad9178cb",
+        "original_count": 208,
+        "yaml_count": 208,
+        "ordered_equal": true,
+        "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml",
+        "format": "yaml",
+        "behavior": "ipcidr",
+        "call_params": [
+          "no-resolve"
+        ],
+        "reason": "Ordered matcher sequence verified equal (including no-resolve)",
+        "only_original_count": 0,
+        "only_yaml_count": 0,
+        "mihomo_unsupported": [],
+        "materialized": false,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+      }
+    },
+    {
+      "parent_line": 60,
+      "kind": "inline",
+      "policy": "DIRECT",
+      "segment": "060-inline",
+      "record_ids": [
+        "60:0"
+      ]
+    },
+    {
+      "parent_line": 61,
+      "kind": "inline",
+      "policy": "Others",
+      "segment": "061-inline",
+      "record_ids": [
+        "61:0"
+      ]
+    }
+  ]
+}

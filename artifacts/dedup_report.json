@@ -1,0 +1,129 @@
+{
+  "mode": "INFORMATIONAL_ONLY",
+  "exact_duplicate_count": 17,
+  "exact_duplicates_removed": 0,
+  "semantic_duplicates_removed": 0,
+  "semantic_analysis": "DISABLED_BY_USER",
+  "preserved_duplicates": [
+    {
+      "occurrence": "26:2",
+      "first_occurrence": "23:14",
+      "matcher": "DOMAIN-SUFFIX,cm.steampowered.com",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:3",
+      "first_occurrence": "23:15",
+      "matcher": "DOMAIN-SUFFIX,steamserver.net",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:6",
+      "first_occurrence": "23:18",
+      "matcher": "IP-CIDR,103.28.54.0/24,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:7",
+      "first_occurrence": "23:19",
+      "matcher": "IP-CIDR,146.66.152.0/24,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:8",
+      "first_occurrence": "23:20",
+      "matcher": "IP-CIDR,146.66.155.0/24,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:9",
+      "first_occurrence": "23:21",
+      "matcher": "IP-CIDR,153.254.86.0/24,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:13",
+      "first_occurrence": "23:23",
+      "matcher": "IP-CIDR,155.133.230.0/24,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:16",
+      "first_occurrence": "23:25",
+      "matcher": "IP-CIDR,155.133.234.0/24,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:20",
+      "first_occurrence": "23:27",
+      "matcher": "IP-CIDR,155.133.240.0/23,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:22",
+      "first_occurrence": "23:29",
+      "matcher": "IP-CIDR,155.133.246.0/24,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:42",
+      "first_occurrence": "23:34",
+      "matcher": "IP-CIDR,192.69.96.0/22,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:43",
+      "first_occurrence": "23:38",
+      "matcher": "IP-CIDR,205.185.194.0/24,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:44",
+      "first_occurrence": "23:35",
+      "matcher": "IP-CIDR,205.196.6.0/24,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "26:49",
+      "first_occurrence": "23:37",
+      "matcher": "IP-CIDR,208.78.164.0/22,no-resolve",
+      "policy": "DIRECT",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "38:17",
+      "first_occurrence": "38:4",
+      "matcher": "DOMAIN-SUFFIX,dmm.com",
+      "policy": "Japan",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "38:56",
+      "first_occurrence": "38:13",
+      "matcher": "DOMAIN-SUFFIX,mbga.jp",
+      "policy": "Japan",
+      "action": "PRESERVED"
+    },
+    {
+      "occurrence": "38:57",
+      "first_occurrence": "38:12",
+      "matcher": "DOMAIN-SUFFIX,granbluefantasy.jp",
+      "policy": "Japan",
+      "action": "PRESERVED"
+    }
+  ],
+  "removed_rules": []
+}

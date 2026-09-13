@@ -1,0 +1,12 @@
+{
+  "files_scanned": 81,
+  "checks": [
+    "github_token",
+    "private_key",
+    "proxy_subscription_or_node",
+    "url_credentials",
+    "url_secret_query"
+  ],
+  "findings": [],
+  "scope": "Project text, including frozen sources. No credentials supplied or written. Heuristic scan plus manual source/URL review; not a universal secret detector."
+}

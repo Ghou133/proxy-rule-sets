@@ -1,0 +1,15 @@
+{
+  "url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/refs/heads/master/archives/4.ini",
+  "repository": "Ghou133/Ghou133.github.io",
+  "branch": "master",
+  "commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
+  "sha256": "0fa1f5fa40ad4233f934e2a22ff14346b6083051b2ab0fa8531f5b172421c831",
+  "fetched_at": "2026-09-13T11:57:44.644121+00:00",
+  "snapshot": "upstream/4.ini",
+  "pinned_url": "https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/a29c67805b1dd7721fe896d0a64eb93ba7e29813/archives/4.ini",
+  "license": {
+    "status": "NOT_DECLARED",
+    "paths": [],
+    "scope": "complete recursive repository tree; LICENSE/LICENCE/COPYING filenames"
+  }
+}

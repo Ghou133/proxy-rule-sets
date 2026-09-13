@@ -1,0 +1,137 @@
+{
+  "core": "Mihomo Meta v1.19.30 windows amd64 with go1.26.6 Sun Aug 16 10:03:02 UTC 2026\nUse tags: with_gvisor",
+  "binary_sha256": "6ac25fcb26afe8e1bea24b6e6e80805bf884a33232d12e2d78dfa0b6c529ac14",
+  "providers": {
+    "local-0": {
+      "file": "mihomo/direct.yaml",
+      "rules": 131,
+      "actual": 131
+    },
+    "local-1": {
+      "file": "mihomo/hongkong.yaml",
+      "rules": 5,
+      "actual": 5
+    },
+    "local-2": {
+      "file": "mihomo/japan.yaml",
+      "rules": 110,
+      "actual": 110
+    },
+    "local-3": {
+      "file": "mihomo/proxies.yaml",
+      "rules": 35,
+      "actual": 35
+    },
+    "local-4": {
+      "file": "mihomo/segments/005-boost.yaml",
+      "rules": 8,
+      "actual": 8
+    },
+    "local-5": {
+      "file": "mihomo/segments/023-downloadpatch.yaml",
+      "rules": 63,
+      "actual": 63
+    },
+    "local-6": {
+      "file": "mihomo/segments/026-steamdownload.yaml",
+      "rules": 49,
+      "actual": 49
+    },
+    "local-7": {
+      "file": "mihomo/segments/032-gameplatform.yaml",
+      "rules": 27,
+      "actual": 27
+    },
+    "local-8": {
+      "file": "mihomo/segments/038-dmmdlfz.yaml",
+      "rules": 110,
+      "actual": 110
+    },
+    "local-9": {
+      "file": "mihomo/segments/041-notjp.yaml",
+      "rules": 5,
+      "actual": 5
+    },
+    "local-10": {
+      "file": "mihomo/segments/052-windowsoft.yaml",
+      "rules": 7,
+      "actual": 7
+    },
+    "local-11": {
+      "file": "mihomo/segments/053-kaspersky.yaml",
+      "rules": 2,
+      "actual": 2
+    },
+    "local-12": {
+      "file": "mihomo/segments/054-unbanpatch.yaml",
+      "rules": 9,
+      "actual": 9
+    },
+    "local-13": {
+      "file": "mihomo/segments/060-inline.yaml",
+      "rules": 1,
+      "actual": 1
+    },
+    "external-0": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Providers/LocalAreaNetwork.yaml",
+      "rules": 37,
+      "actual": 37
+    },
+    "external-1": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/UnBan.list",
+      "rules": 31,
+      "actual": 31
+    },
+    "external-2": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Download.list",
+      "rules": 15,
+      "actual": 15
+    },
+    "external-3": {
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/0087bb74e91b335e17a79fd07a8514277f7d77b4/rule/Surge/Microsoft/Microsoft.list",
+      "rules": 670,
+      "actual": 670
+    },
+    "external-4": {
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/0087bb74e91b335e17a79fd07a8514277f7d77b4/rule/Clash/DMM/DMM_No_Resolve.yaml",
+      "rules": 20,
+      "actual": 20
+    },
+    "external-5": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/GoogleCN.list",
+      "rules": 29,
+      "actual": 29
+    },
+    "external-6": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Providers/Ruleset/GoogleFCM.yaml",
+      "rules": 44,
+      "actual": 44
+    },
+    "external-7": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Providers/Apple.yaml",
+      "rules": 29,
+      "actual": 29
+    },
+    "external-8": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/ProxyGFWlist.list",
+      "rules": 6986,
+      "actual": 6986
+    },
+    "external-9": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Providers/ChinaDomain.yaml",
+      "rules": 635,
+      "actual": 635
+    },
+    "external-10": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Providers/ChinaCompanyIp.yaml",
+      "rules": 208,
+      "actual": 208
+    }
+  },
+  "local_import": "PASS",
+  "external_import": "PASS_WITH_KNOWN_UNSUPPORTED",
+  "known_external_unsupported_count": 10,
+  "upstream_commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
+  "upstream_sha256": "0fa1f5fa40ad4233f934e2a22ff14346b6083051b2ab0fa8531f5b172421c831",
+  "scope": "Initial frozen inputs only. Re-run scripts/validate_mihomo.py for changed inputs; no Shadowrocket runtime available."
+}

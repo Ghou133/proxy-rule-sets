@@ -1,0 +1,23 @@
+{
+  "mode": "INFORMATIONAL_ONLY",
+  "same_matcher_multiple_policy_count": 1,
+  "items": [
+    {
+      "matcher": "DOMAIN-SUFFIX,steamcontent.com",
+      "occurrences": [
+        {
+          "id": "23:58",
+          "policy": "DIRECT",
+          "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+          "line": 58
+        },
+        {
+          "id": "32:10",
+          "policy": "Proxies",
+          "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+          "line": 10
+        }
+      ]
+    }
+  ]
+}
