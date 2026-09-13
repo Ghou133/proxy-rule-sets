@@ -8,7 +8,7 @@ const OPTIONS = {
   "transitHealthUrl": "",
   "healthUrl": "https://www.gstatic.com/generate_204",
   "includeLegacyRules": true,
-  "multiSubscription": false
+  "multiSubscription": true
 };
 const MANIFEST = {
   "providers": {

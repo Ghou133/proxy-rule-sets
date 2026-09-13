@@ -1,0 +1,28 @@
+[
+  {
+    "mode": "providers-only",
+    "core": {
+      "meta": true,
+      "version": "v1.19.29"
+    },
+    "http_sources": "PASS",
+    "prefix_collisions": "PASS",
+    "case_insensitive_regions": "PASS",
+    "empty_region_reject": "PASS",
+    "info_filter": "PASS",
+    "source_update": "PASS"
+  },
+  {
+    "mode": "hybrid",
+    "core": {
+      "meta": true,
+      "version": "v1.19.29"
+    },
+    "http_sources": "PASS",
+    "prefix_collisions": "PASS",
+    "case_insensitive_regions": "PASS",
+    "empty_region_reject": "PASS",
+    "info_filter": "PASS",
+    "source_update": "PASS"
+  }
+]

@@ -7,7 +7,8 @@ const OPTIONS = {
   "landingProxy": null,
   "transitHealthUrl": "",
   "healthUrl": "https://www.gstatic.com/generate_204",
-  "includeLegacyRules": true
+  "includeLegacyRules": true,
+  "multiSubscription": false
 };
 const MANIFEST = {
   "providers": {
@@ -266,7 +267,7 @@ function main(input) {
   }
   // Keep the original user node untouched; create one dedicated chained copy only.
   config.proxies = proxies.filter(p => !(previous && ["Exit", "落地出口"].includes(p.name)));
-  const informational = /剩余|剩餘|流量|到期|过期|過期|套餐|官网|官網|订阅|訂閱|公告|通知|客服|traffic|expire|subscription|website|^\s*\d+(?:\.\d+)?\s*[KMGT]B\s*[|/]\s*\d+(?:\.\d+)?\s*[KMGT]B\s*$/i;
+  const informational = /剩余|剩餘|流量|到期|过期|過期|套餐|官网|官網|订阅|訂閱|公告|通知|客服|traffic|expire|subscription|website|^\s*(?:\[[^\]]+\]\s*)?\d+(?:\.\d+)?\s*[KMGT]B\s*[|/]\s*\d+(?:\.\d+)?\s*[KMGT]B\s*$/i;
   const usable = p => p && p.name && p.type && !informational.test(p.name)
     && !/^(direct|reject|reject-drop|pass|dns|compatible)$/i.test(p.type)
     && !p["dialer-proxy"] && p.name !== "Exit"
@@ -275,32 +276,47 @@ function main(input) {
   const airport = config.proxies.filter(usable);
   const names = airport.map(p => p.name);
   const proxyProviders = config["proxy-providers"] || {};
+  // Native providers resolve remotely in Mihomo, never inside this JavaScript.
+  if (OPTIONS.multiSubscription) {
+    const entries = Object.entries(proxyProviders);
+    if (!entries.length) throw new Error("多订阅版：请先选择包含 proxy-providers 的本地配置");
+    const paths = new Set(), prefixes = new Set();
+    entries.forEach(([key, provider], index) => {
+      if (!provider || !["http", "file", "inline"].includes(provider.type)) throw new Error("多订阅版：provider type 必须为 http/file/inline");
+      if (provider.type === "http" && (!/^https?:\/\//.test(provider.url || "") || /YOUR_|example\.(com|invalid)/i.test(provider.url))) throw new Error("多订阅版：请在本地 YAML 填写真实订阅地址");
+      if (provider.type === "http" && !provider.proxy) provider.proxy = "DIRECT";
+      if (provider.type !== "inline") {
+        if (!provider.path || paths.has(provider.path)) throw new Error("多订阅版：每个 provider 必须使用独立缓存 path");
+        paths.add(provider.path);
+      }
+      provider.override = provider.override || {};
+      const prefix = provider.override["additional-prefix"] || "[P" + (index + 1) + "] ";
+      if (prefixes.has(prefix) || informational.test(prefix)) throw new Error("多订阅版：节点前缀必须唯一且不含订阅、流量等信息词；建议 [A]、[B]");
+      prefixes.add(prefix);
+      provider.override["additional-prefix"] = prefix;
+    });
+  }
   const providerNames = Object.keys(proxyProviders).filter(n => !(proxyProviders[n].override || {})["dialer-proxy"]);
   if (!names.length && !providerNames.length) throw new Error("没有可用的订阅节点；不会自动改为 DIRECT 中转");
   const japan = /日本|Japan|东京|東京|大阪|🇯🇵|(^|[\s_-])JPN?([\s_-]|$)/i;
   const hongkong = /香港|Hong[\s_-]*Kong|🇭🇰|(^|[\s_-])HK([\s_-]|$)/i;
   function automatic(name, members, url, providers) {
-    const group = {name, hidden: true, "empty-fallback": "REJECT", type: "url-test", proxies: members, url, interval: 120, timeout: 5000, tolerance: 80, lazy: false};
+    const group = {name, hidden: true, "empty-fallback": "REJECT", type: "url-test", proxies: members, url, interval: OPTIONS.multiSubscription ? 600 : 120, timeout: 5000, tolerance: 80, lazy: !!OPTIONS.multiSubscription};
     if (providers.length) {
       group.use = providers;
-      group["exclude-filter"] = informational.source;
+      group["exclude-filter"] = "(?i)" + informational.source;
     }
     groups.push(group);
     return name;
   }
   automatic("Auto", names, OPTIONS.healthUrl, providerNames);
-  const primary = {name: "Proxy", type: "select", proxies: ["Auto"].concat(OPTIONS.landing ? ["Exit"] : [], names), ...(providerNames.length ? {use: providerNames, "exclude-filter": informational.source} : {})};
+  const primary = {name: "Proxy", type: "select", proxies: ["Auto"].concat(OPTIONS.landing ? ["Exit"] : [], names), ...(providerNames.length ? {use: providerNames, "exclude-filter": "(?i)" + informational.source} : {})};
   groups.unshift(primary);
   function region(name, expression) {
     const members = names.filter(n => expression.test(n));
-    if (members.length) {
-      automatic(name, members, OPTIONS.healthUrl, []);
-    } else {
-      // Never quietly change an explicitly regional policy to a different region.
-      const group = {name, hidden: true, type: "select", proxies: ["REJECT"]};
-      if (providerNames.length) { group.use = providerNames; group.filter = expression.source; }
-      groups.push(group);
-    }
+    automatic(name, members, OPTIONS.healthUrl, providerNames);
+    const group = groups[groups.length - 1];
+    if (providerNames.length) group.filter = "(?i)" + expression.source;
   }
   if (OPTIONS.includeLegacyRules) {
     region("Japan", japan);

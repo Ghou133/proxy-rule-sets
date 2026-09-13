@@ -129,3 +129,67 @@ test('every preferred region retains all usable nodes as fallback, including Oth
  }
  assertGraph(out);
 });
+
+function multi(input) {
+ const file=fs.readFileSync(path.join(root,'extensions/multi-subscription.js'),'utf8');
+ const context=vm.createContext({input});
+ vm.runInContext(file+'\noutput=main(input);',context,{timeout:2000});
+ return JSON.parse(JSON.stringify(context.output));
+}
+const providersFixture=()=>({'proxy-providers':{
+ a:{type:'inline',payload:[proxy('japan 01')]},
+ b:{type:'inline',payload:[proxy('JAPAN 01')]}
+}});
+test('multi: providers only, no landing required, idempotent and no mutation',()=>{
+ const input=providersFixture(), before=JSON.stringify(input), out=multi(input);
+ assert.equal(JSON.stringify(input),before);
+ assert.deepEqual(multi(out),out);
+ assert.deepEqual(group(out,'Japan').use,['a','b']);
+ assert.deepEqual(group(out,'Japan').proxies,[]);
+ assert.equal(group(out,'Japan')['empty-fallback'],'REJECT');
+ assert.equal(group(out,'Japan').type,'url-test');
+ assert.equal(group(out,'Auto').interval,600);
+ assert.equal(group(out,'Auto').lazy,true);
+ assert.equal(out['proxy-providers'].a.override['additional-prefix'],'[P1] ');
+ assert.equal(out['proxy-providers'].b.override['additional-prefix'],'[P2] ');
+ assert.deepEqual(group(out,'AI').proxies,['Proxy']);
+ assert.ok(!group(out,'AI').use && !group(out,'DMM').use);
+});
+test('multi: hybrid regions use both inline and remote nodes, preserve networking',()=>{
+ const input={...fixture(),...providersFixture()},out=multi(input);
+ assert.deepEqual(group(out,'Japan').proxies,['日本 JP-A']);
+ assert.deepEqual(group(out,'Japan').use,['a','b']);
+ assert.deepEqual(out.dns,input.dns); assert.deepEqual(out.tun,input.tun);
+ assert.equal(out['mixed-port'],input['mixed-port']);
+ assert.ok(!out.rules.some(r=>r.includes('a.example')));
+});
+test('provider regex preserves case-insensitivity and filters prefixed info counters',()=>{
+ const out=multi(providersFixture());
+ const regex=s=>new RegExp(s.replace(/^\(\?i\)/,''),'i');
+ assert.ok(group(out,'Japan').filter.startsWith('(?i)'));
+ assert.ok(regex(group(out,'Japan').filter).test('[A] JAPAN 01'));
+ const reject=regex(group(out,'Proxy')['exclude-filter']);
+ assert.ok(reject.test('[A] TRAFFIC 20GB'));
+ assert.ok(reject.test('[B] 12.78 GB | 200 GB'));
+ assert.ok(!reject.test('[A] Japan 01'));
+});
+test('multi: missing and conflicting settings fail without leaking URL',()=>{
+ assert.throws(()=>multi(fixture()),/proxy-providers/);
+ const x=providersFixture(); x['proxy-providers'].a={type:'http',url:'https://example.invalid/SECRET',path:'a'};
+ assert.throws(()=>multi(x),e=>!e.message.includes('SECRET'));
+ const y=providersFixture(); Object.values(y['proxy-providers']).forEach(p=>p.override={'additional-prefix':'[A] '});
+ assert.throws(()=>multi(y),/前缀/);
+ const z=providersFixture(); Object.values(z['proxy-providers']).forEach(p=>{p.type='file';p.path='./same.yaml';});
+ assert.throws(()=>multi(z),/path/);
+});
+test('legacy hybrid region fix also applies to existing modes',()=>{
+ const out=transform({...fixture(),...providersFixture()});
+ assert.deepEqual(group(out,'Japan').use,['a','b']);
+ assert.equal(group(out,'Auto').interval,120);
+});
+
+test('multi: HTTP source defaults to independent DIRECT bootstrap',()=>{
+ const input={'proxy-providers':{a:{type:'http',url:'https://subscription.invalid/nodes',path:'./a.yaml'}}};
+ const out=multi(input);assert.equal(out['proxy-providers'].a.proxy,'DIRECT');
+ assert.equal(out['proxy-providers'].a.url,input['proxy-providers'].a.url);
+});

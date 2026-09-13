@@ -85,6 +85,8 @@ python -m unittest discover -s tests -v
 
 ## Clash Verge Rev 扩展
 
+[多订阅版本：本地配置与使用步骤](extensions/MULTI_SUBSCRIPTION.md)。使用原生 proxy-providers 聚合多个订阅，不需要第三方转换服务。
+
 [有落地 / 无落地全局扩展脚本](extensions/README.md)会接入本仓库保序规则，并把 ChatGPT、Claude、Gemini 统一到一个 AI 策略组。扩展脚本与规则数据独立存放，公开版本不含节点凭据。
 
 [Shadowrocket 手机配置](clients/shadowrocket/README.md)提供有落地 / 无落地两版，使用维护中的远程 AI、LAN、国内规则，无广告过滤。私人连接参数不在公开仓库中。

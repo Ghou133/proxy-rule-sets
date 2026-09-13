@@ -1,0 +1,32 @@
+# PRIVATE: replace subscription URLs locally; never commit real URLs.
+mode: rule
+proxies: []
+proxy-providers:
+  airport-a:
+    type: http
+    url: https://example.invalid/YOUR_SUBSCRIPTION_A
+    path: ./proxy_providers/airport-a.yaml
+    interval: 86400
+    proxy: DIRECT
+    override:
+      additional-prefix: '[A] '
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 1800
+      lazy: true
+  airport-b:
+    type: http
+    url: https://example.invalid/YOUR_SUBSCRIPTION_B
+    path: ./proxy_providers/airport-b.yaml
+    interval: 86400
+    proxy: DIRECT
+    override:
+      additional-prefix: '[B] '
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 1800
+      lazy: true
+rules:
+- MATCH,REJECT
