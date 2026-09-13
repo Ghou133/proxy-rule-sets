@@ -27,6 +27,8 @@ def build(root=ROOT):
                     "health-check": {"enable": True, "url": "https://www.gstatic.com/generate_204", "interval": 1800, "lazy": True}}
                 for i, label in ((1, "A"), (2, "B"))}
             options["proxyServerNameserver"] = ["https://223.5.5.5/dns-query"]
+            options["subscriptionDnsPolicies"] = {}
+            options["subscriptionHosts"] = {}
         text = ("// Clash Verge Rev 全局扩展脚本：" + ("有落地" if landing else "无落地") + "\n"
                 "// Source: https://github.com/Ghou133/proxy-rule-sets\n"
                 "// 公开模板不包含节点密码。AI 为统一策略组。\n"

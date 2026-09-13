@@ -55,3 +55,21 @@ DMM 在界面直接显示 Japan 自动选择项与全部日本节点，支持手
 私人单文件增加第三个订阅：在 `OPTIONS.subscriptionProviders` 中新增 `airport-3`，填写私人 URL、独立 `path: "./proxy_providers/airport-3.yaml"` 与 `override: {"additional-prefix": "[C] "}`，沿用其他 provider 的更新/健康检查设置。不要修改 MANIFEST 规则数据。普通双文件版则修改本地 YAML 的 `proxy-providers`。这两种入口只需维护正在使用的一种。
 
 HTTP 节点订阅默认使用 `User-Agent: clash-verge/v2.4.5`。有些服务按客户端标识返回不同协议，默认核心标识可能得到不完整节点集。可在 provider.header 中覆盖 User-Agent；不是更新服务商地址或凭据。
+
+## 订阅自带节点专用 DNS
+
+有些订阅在完整 YAML 的 `dns.nameserver-policy` / `dns.proxy-server-nameserver-policy` 中给节点域名指定专用解析器，还可能用 `hosts` 固定解析器地址。Mihomo 的节点 provider 只加载节点数据，不会自动合并这些设置。只填 URL 对这类订阅并不足够；公共 DNS 也不能替代服务商明确指定的解析器。
+
+本项目的私人生成器读取完整订阅，提取实际节点依赖并写入脚本顶部 `subscriptionDnsPolicies` 与 `subscriptionHosts`。脚本将其合并到节点 DNS 策略与 hosts，保留其他 DNS 设置；删除订阅时移除该订阅注入的依赖，冲突会报错。全部私人参数保存在仓库外。
+
+在仓库目录运行（路径按实际私人文件位置调整）：
+
+```sh
+python scripts/configure_subscriptions.py --entry ../private/multi-subscription/local-profile.yaml --template ../private/multi-subscription/multi-subscription-with-landing.js --output ../private/multi-subscription/multi-subscription-with-landing.js
+```
+
+同理可使用无落地模板。脚本已有落地参数会保留。`--entry` 中是私人 provider 地址；命令按相同客户端标识重新下载完整订阅。也可用 `--source airport-1=/path/to/full.yaml` 指定已下载的完整配置。增加机场或服务商调整 DNS 时重新生成；平时节点 provider 仍自动更新。生成器不会修改运行中的应用，需要自行保存/重载生成的脚本。
+
+DNS 来源键支持明确主机名、逗号分隔主机名和可证明适用的后缀；无法证明的选择器、循环别名或跨订阅冲突会停止生成，避免漏掉依赖。不要把含真实地址的脚本上传 GitHub。
+
+依据：[Mihomo 节点 DNS 策略](https://wiki.metacubex.one/config/dns/#proxy-server-nameserver-policy)。离线核心回归测试 `scripts/verify_subscription_dns.py` 用两个本地 DNS 模拟“公共解析失败、来源指定解析成功”，验证没有依赖真实机场或公网缓存。结果见 [报告](../artifacts/subscription_dns_verification.json)。

@@ -1,0 +1,22 @@
+[
+  {
+    "source_policy": false,
+    "expected_connection": false,
+    "matched_expectation": true,
+    "core": {
+      "meta": true,
+      "version": "v1.19.29"
+    },
+    "resolver_exercised": true
+  },
+  {
+    "source_policy": true,
+    "expected_connection": true,
+    "matched_expectation": true,
+    "core": {
+      "meta": true,
+      "version": "v1.19.29"
+    },
+    "resolver_exercised": true
+  }
+]

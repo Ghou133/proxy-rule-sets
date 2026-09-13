@@ -12,7 +12,8 @@
     "info_filter": "PASS",
     "source_update": "PASS",
     "DMM_direct_selection": "PASS",
-    "AI_direct_selection": "PASS"
+    "AI_direct_selection": "PASS",
+    "bracketed_region_codes": "PASS"
   },
   {
     "mode": "hybrid",
@@ -27,6 +28,7 @@
     "info_filter": "PASS",
     "source_update": "PASS",
     "DMM_direct_selection": "PASS",
-    "AI_direct_selection": "PASS"
+    "AI_direct_selection": "PASS",
+    "bracketed_region_codes": "PASS"
   }
 ]

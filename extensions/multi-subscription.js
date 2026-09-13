@@ -55,7 +55,9 @@ const OPTIONS = {
   },
   "proxyServerNameserver": [
     "https://223.5.5.5/dns-query"
-  ]
+  ],
+  "subscriptionDnsPolicies": {},
+  "subscriptionHosts": {}
 };
 const MANIFEST = {
   "providers": {
@@ -306,6 +308,60 @@ function main(input) {
       "proxy-server-nameserver": OPTIONS.proxyServerNameserver.slice()
     });
   }
+  if (OPTIONS.multiSubscription) {
+    const dns = config.dns || {};
+    const policy = Object.assign({}, dns["proxy-server-nameserver-policy"] || {});
+    const previousPolicy = config["x-rule-sets-subscription-dns"] || {};
+    Object.keys(previousPolicy).forEach(key => {
+      if (JSON.stringify(policy[key]) === JSON.stringify(previousPolicy[key])) delete policy[key];
+    });
+    const injected = {};
+    const sameResolvers = (a, b) => JSON.stringify(Array.isArray(a) ? a : [a]) === JSON.stringify(Array.isArray(b) ? b : [b]);
+    const selectors = key => key.split(",").map(k => k.trim().toLowerCase().replace(/\.$/, ""));
+    Object.entries(OPTIONS.subscriptionDnsPolicies || {}).forEach(([provider, entries]) => {
+      if (!Object.prototype.hasOwnProperty.call(config["proxy-providers"] || {}, provider)) return;
+      Object.entries(entries).forEach(([key, value]) => {
+        const resolvers = Array.isArray(value) ? value : [value];
+        if (!key || !resolvers.length || resolvers.some(v => typeof v !== "string" || !v.trim())) {
+          throw new Error("订阅节点 DNS 策略格式无效，请检查 subscriptionDnsPolicies");
+        }
+        const keys = selectors(key);
+        if (Object.keys(policy).some(existing => selectors(existing).some(k => keys.includes(k)) && !sameResolvers(policy[existing], value))) {
+          throw new Error("订阅节点 DNS 策略冲突，不能自动选择其中一个解析器");
+        }
+        if (!Object.prototype.hasOwnProperty.call(policy, key)) injected[key] = value;
+        policy[key] = value;
+      });
+    });
+    if (Object.keys(policy).length) {
+      dns["proxy-server-nameserver-policy"] = policy;
+      if (!(dns["proxy-server-nameserver"] || []).length) throw new Error("订阅节点 DNS 策略需要非空 proxyServerNameserver");
+      config.dns = dns;
+    } else if (config.dns) delete config.dns["proxy-server-nameserver-policy"];
+    if (Object.keys(injected).length) config["x-rule-sets-subscription-dns"] = injected;
+    else delete config["x-rule-sets-subscription-dns"];
+  }
+  if (OPTIONS.multiSubscription) {
+    const hosts = Object.assign({}, config.hosts || {});
+    const oldHosts = config["x-rule-sets-subscription-hosts"] || {};
+    Object.keys(oldHosts).forEach(key => {
+      if (JSON.stringify(hosts[key]) === JSON.stringify(oldHosts[key])) delete hosts[key];
+    });
+    const injected = {};
+    const normalize = key => key.toLowerCase().replace(/\.$/, "");
+    Object.entries(OPTIONS.subscriptionHosts || {}).forEach(([provider, entries]) => {
+      if (!Object.prototype.hasOwnProperty.call(config["proxy-providers"] || {}, provider)) return;
+      Object.entries(entries).forEach(([key, value]) => {
+        const existing = Object.keys(hosts).find(k => normalize(k) === normalize(key));
+        if (existing && JSON.stringify(hosts[existing]) !== JSON.stringify(value)) throw new Error("订阅节点 hosts 依赖冲突，不能自动覆盖");
+        if (!existing) { hosts[key] = value; injected[key] = value; }
+      });
+    });
+    if (Object.keys(hosts).length) config.hosts = hosts;
+    else delete config.hosts;
+    if (Object.keys(injected).length) config["x-rule-sets-subscription-hosts"] = injected;
+    else delete config["x-rule-sets-subscription-hosts"];
+  }
   const marker = "rule-sets-extension-v2";
   const previous = /^rule-sets-extension-v[12]$/.test(config["x-rule-sets-extension"] || "");
   const proxies = Array.isArray(config.proxies) ? config.proxies : [];
@@ -361,8 +417,8 @@ function main(input) {
   }
   const providerNames = Object.keys(proxyProviders).filter(n => !(proxyProviders[n].override || {})["dialer-proxy"]);
   if (!names.length && !providerNames.length) throw new Error("没有可用的订阅节点；不会自动改为 DIRECT 中转");
-  const japan = /日本|Japan|东京|東京|大阪|🇯🇵|(^|[\s_-])JPN?([\s_-]|$)/i;
-  const hongkong = /香港|Hong[\s_-]*Kong|🇭🇰|(^|[\s_-])HK([\s_-]|$)/i;
+  const japan = /日本|Japan|东京|東京|大阪|🇯🇵|(^|[^A-Za-z])JPN?([^A-Za-z]|$)/i;
+  const hongkong = /香港|Hong[\s_-]*Kong|🇭🇰|(^|[^A-Za-z])HK([^A-Za-z]|$)/i;
   function automatic(name, members, url, providers) {
     const group = {name, hidden: true, "empty-fallback": "REJECT", type: "url-test", proxies: members, url, interval: OPTIONS.multiSubscription ? 600 : 120, timeout: 5000, tolerance: 80, lazy: !!OPTIONS.multiSubscription};
     if (providers.length) {
@@ -391,9 +447,9 @@ function main(input) {
   if (OPTIONS.landing) {
     const regions = [
       ["JP", japan], ["HK", hongkong],
-      ["SG", /新加坡|Singapore|🇸🇬|(^|[\s_-])SG([\s_-]|$)/i],
-      ["TW", /台湾|台灣|Taiwan|🇹🇼|(^|[\s_-])TW([\s_-]|$)/i],
-      ["US", /美国|美國|United[\s_-]*States|🇺🇸|(^|[\s_-])USA?([\s_-]|$)/i]
+      ["SG", /新加坡|Singapore|🇸🇬|(^|[^A-Za-z])SG([^A-Za-z]|$)/i],
+      ["TW", /台湾|台灣|Taiwan|🇹🇼|(^|[^A-Za-z])TW([^A-Za-z]|$)/i],
+      ["US", /美国|美國|United[\s_-]*States|🇺🇸|(^|[^A-Za-z])USA?([^A-Za-z]|$)/i]
     ];
     const known = regions.map(r => "(?:" + r[1].source + ")").join("|");
     regions.push(["Other", new RegExp("^(?!.*(?:" + known + ")).*$", "i")]);

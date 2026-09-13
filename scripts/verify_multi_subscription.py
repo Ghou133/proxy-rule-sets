@@ -51,11 +51,13 @@ def verify(core, directory, hybrid):
             assert "[B] japan 01" in api("/proxies/AI")["all"]
             assert api("/proxies/Hongkong")["now"]=="REJECT"
             assert not any("TRAFFIC" in n or "12.78" in n for n in api("/proxies/Proxy")["all"])
-            payloads["/b"]=[node("Japan 02")]
+            payloads["/b"]=[node("[A]JP Node 02"),node("[A]HK Node 01")]
             api("/providers/proxies/b","PUT")
-            assert "[B] Japan 02" in api("/proxies/Japan")["all"]
+            assert "[B] [A]JP Node 02" in api("/proxies/Japan")["all"]
             assert "[B] japan 01" not in api("/proxies/Japan")["all"]
-            return {"mode":"hybrid" if hybrid else "providers-only","core":version,"http_sources":"PASS","prefix_collisions":"PASS","case_insensitive_regions":"PASS","empty_region_reject":"PASS","info_filter":"PASS","source_update":"PASS","DMM_direct_selection":"PASS","AI_direct_selection":"PASS"}
+            assert "[B] [A]JP Node 02" in api("/proxies/DMM")["all"]
+            assert "[B] [A]HK Node 01" not in api("/proxies/DMM")["all"]
+            return {"mode":"hybrid" if hybrid else "providers-only","core":version,"http_sources":"PASS","prefix_collisions":"PASS","case_insensitive_regions":"PASS","empty_region_reject":"PASS","info_filter":"PASS","source_update":"PASS","DMM_direct_selection":"PASS","AI_direct_selection":"PASS","bracketed_region_codes":"PASS"}
     finally:
         if process:
             process.terminate()

@@ -260,3 +260,47 @@ test('HTTP subscriptions use Verge identification without replacing custom heade
  input['proxy-providers'].a.header={'user-agent':['custom-client']};
  assert.deepEqual(multi(input)['proxy-providers'].a.header,{'user-agent':['custom-client']});
 });
+
+test('source-specific node DNS survives reapply and is removed with its source',()=>{
+ const c=vm.createContext({input:providersFixture()});
+ vm.runInContext(fs.readFileSync(path.join(root,'extensions/multi-subscription.js'),'utf8')+`;OPTIONS.subscriptionProviders=null;OPTIONS.subscriptionDnsPolicies={a:{'node.fixture.invalid':['https://resolver.fixture.invalid/dns-query']}};first=main(input);second=main(first);const changed=JSON.parse(JSON.stringify(second));delete changed['proxy-providers'].a;removed=main(changed);`,c);
+ const first=JSON.parse(JSON.stringify(c.first));
+ assert.deepEqual(first,JSON.parse(JSON.stringify(c.second)));
+ assert.ok(first.dns['proxy-server-nameserver-policy']['node.fixture.invalid']);
+ assert.ok(!c.removed.dns['proxy-server-nameserver-policy']);
+});
+
+test('conflicting source-specific DNS fails without leaking resolver details',()=>{
+ const c=vm.createContext({input:providersFixture()});
+ const file=fs.readFileSync(path.join(root,'extensions/multi-subscription.js'),'utf8');
+ assert.throws(()=>vm.runInContext(file+`;OPTIONS.subscriptionProviders=null;OPTIONS.subscriptionDnsPolicies={a:{'node.fixture.invalid':['https://secret-a.invalid/dns-query']},b:{'node.fixture.invalid':['https://secret-b.invalid/dns-query']}};main(input);`,c),e=>/冲突/.test(e.message)&&!e.message.includes('secret'));
+});
+
+test('inherited comma DNS selectors cannot silently conflict with imported node policy',()=>{
+ const c=vm.createContext({input:{...providersFixture(),dns:{'proxy-server-nameserver-policy':{'NODE.fixture.invalid.,other.invalid':['1.1.1.1']}}}});
+ assert.throws(()=>vm.runInContext(fs.readFileSync(path.join(root,'extensions/multi-subscription.js'),'utf8')+`;OPTIONS.subscriptionProviders=null;OPTIONS.subscriptionDnsPolicies={a:{'node.fixture.invalid':['8.8.8.8']}};main(input);`,c),/冲突/);
+});
+test('source hosts bootstrap dependencies are scoped and preserve unrelated hosts',()=>{
+ const c=vm.createContext({input:{...providersFixture(),hosts:{localhost:'127.0.0.1'}}});
+ vm.runInContext(fs.readFileSync(path.join(root,'extensions/multi-subscription.js'),'utf8')+`;OPTIONS.subscriptionProviders=null;OPTIONS.subscriptionHosts={a:{'resolver.fixture.invalid':'192.0.2.1'}};first=main(input);second=main(first);const changed=JSON.parse(JSON.stringify(second));delete changed['proxy-providers'].a;removed=main(changed);`,c);
+ assert.deepEqual(JSON.parse(JSON.stringify(c.first)),JSON.parse(JSON.stringify(c.second)));
+ assert.equal(c.first.hosts['resolver.fixture.invalid'],'192.0.2.1');
+ assert.deepEqual(JSON.parse(JSON.stringify(c.removed.hosts)),{localhost:'127.0.0.1'});
+});
+
+test('bracketed provider labels do not hide JP nodes from DMM',()=>{
+ const nodes=['[A]JP Node 01','[A]JP Node 02','[A]HK Node 01','[A]SG Node 01','[A]US Node 01','ProjectJPNetwork'];
+ const out=transform({proxies:nodes.map(proxy)});
+ assert.deepEqual(group(out,'DMM').proxies,['Japan','[A]JP Node 01','[A]JP Node 02']);
+ const multiOut=multi({'proxy-providers':{b:{type:'inline',payload:nodes.map(proxy),override:{'additional-prefix':'[B] '}}}});
+ const filter=new RegExp(group(multiOut,'DMM').filter.replace(/^\(\?i\)/,''),'i');
+ assert.ok(filter.test('[B] [A]JP Node 01'));
+ assert.ok(filter.test('【B】JP01'));
+ assert.ok(!filter.test('[B] [A]HK Node 01'));
+ assert.ok(!filter.test('ProjectJPNetwork'));
+ const landed=transform({proxies:nodes.map(proxy)},true,{landingProxy:landing});
+ assert.ok(group(landed,'JP').proxies[0].includes('JP'));
+ assert.ok(group(landed,'HK').proxies[0].includes('HK'));
+ assert.ok(group(landed,'SG').proxies[0].includes('SG'));
+ assert.ok(group(landed,'US').proxies[0].includes('US'));
+});
