@@ -14,7 +14,7 @@ def build(root=ROOT):
     manifest = {"providers": fragment["rule-providers"], "rules": fragment["rules"], "ai": ai}
     core = (root / "extensions/src/main.js").read_text("utf-8")
     output = {}
-    for name, landing, multi in (("with-landing.js", True, False), ("without-landing.js", False, False), ("multi-subscription.js", False, True)):
+    for name, landing, multi in (("with-landing.js", True, False), ("without-landing.js", False, False), ("multi-subscription.js", False, True), ("multi-subscription-with-landing.js", True, True)):
         options = {"landing": landing, "landingNodeName": "落地节点", "landingProxy": None,
                    "transitHealthUrl": "", "healthUrl": "https://www.gstatic.com/generate_204", "includeLegacyRules": True}
         options["multiSubscription"] = multi

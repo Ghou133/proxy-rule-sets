@@ -69,7 +69,7 @@ def port():
         return sock.getsockname()[1]
 
 
-def verify(binary, directory, provider_mode=False):
+def verify(binary, directory, provider_mode=False, multi=False):
     servers=[server() for _ in range(5)]
     origin,jp1,jp2,sg,exit_server=servers
     def proxy(name,srv):
@@ -84,7 +84,7 @@ def verify(binary, directory, provider_mode=False):
     payload={'input':input_config,'options':{'landingProxy':proxy('Exit',exit_server),
              'healthUrl':health,'transitHealthUrl':health,'includeLegacyRules':False}}
     runner="const fs=require('fs'),vm=require('vm');const c=JSON.parse(fs.readFileSync(0,'utf8'));vm.createContext(c);vm.runInContext(fs.readFileSync(process.argv[1],'utf8')+';Object.assign(OPTIONS,options);result=main(input);',c);process.stdout.write(JSON.stringify(c.result));"
-    transformed=subprocess.run(['node','-e',runner,str(ROOT/'extensions/with-landing.js')],
+    transformed=subprocess.run(['node','-e',runner,str(ROOT/'extensions'/('multi-subscription-with-landing.js' if multi else 'with-landing.js'))],
              input=json.dumps(payload),text=True,encoding='utf-8',capture_output=True,check=True)
     config=json.loads(transformed.stdout)
     # Local fixture rules replace remote data only in this isolated test instance.
@@ -104,6 +104,8 @@ def verify(binary, directory, provider_mode=False):
         with HTTP.open(request,timeout=8) as response:
             raw=response.read()
             return json.loads(raw) if raw else None
+    def expected(name):
+        return ('[P1] ' if name.startswith('Singapore') else '[P2] ') + name if multi else name
     query='?url='+quote(health,safe='')+'&timeout=2000'
     def check_group(): api('/group/JP/delay'+query)
     try:
@@ -119,30 +121,30 @@ def verify(binary, directory, provider_mode=False):
             api('/proxies/Relay','PUT',{'name':'JP'})
             api('/proxies/AI','PUT',{'name':'Exit'})
             check_group()
-            assert api('/proxies/JP')['now']=='Japan 01'
+            assert api('/proxies/JP')['now']==expected('Japan 01')
             api('/proxies/AI/delay'+query)
             jp1.available=False
             check_group()
-            assert api('/proxies/JP')['now']=='Japan 02'
+            assert api('/proxies/JP')['now']==expected('Japan 02')
             jp2.available=False
             check_group()
-            assert api('/proxies/JP')['now']=='Singapore 01'
+            assert api('/proxies/JP')['now']==expected('Singapore 01')
             assert api('/proxies/Relay')['now']=='JP'
             api('/proxies/AI/delay'+query)
             jp1.available=True
             check_group()
-            assert api('/proxies/JP')['now']=='Japan 01'
+            assert api('/proxies/JP')['now']==expected('Japan 01')
             exit_server.available=False
             try: api('/proxies/AI/delay'+query)
             except HTTPError: pass
             else: raise AssertionError('AI bypassed unavailable Exit')
             assert api('/proxies/AI')['now']=='Exit'
             api('/proxies/AI','PUT',{'name':'Proxy'})
-            api('/proxies/Proxy','PUT',{'name':'Singapore 01'})
+            api('/proxies/Proxy','PUT',{'name':expected('Singapore 01')})
             # Independent request URL avoids reusing a failed test's connection pool.
             manual_query='?url='+quote(health+'manual',safe='')+'&timeout=2000'
             api('/proxies/AI/delay'+manual_query)
-            return {'mode':'providers' if provider_mode else 'inline','preferred_region':'PASS',
+            return {'mode':'multi-landing' if multi else ('providers' if provider_mode else 'inline'),'preferred_region':'PASS',
                     'within_region_failover':'PASS','cross_region_failover':'PASS',
                     'preferred_region_recovery':'PASS','exit_failure_blocks_AI':'PASS','manual_bypass':'PASS'}
     finally:
@@ -160,6 +162,7 @@ if __name__=='__main__':
     args=parser.parse_args()
     with tempfile.TemporaryDirectory(prefix='relay-fixture-') as temp:
         results=[verify(args.core,Path(temp)/mode,mode=='providers') for mode in ('inline','providers')]
+        results.append(verify(args.core,Path(temp)/'multi-landing',True,True))
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(results,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(json.dumps(results))

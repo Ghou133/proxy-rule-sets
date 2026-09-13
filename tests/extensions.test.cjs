@@ -38,7 +38,7 @@ function assertGraph(config) {
 test('subscription routing is replaced; only compact English groups remain', () => {
  const out=transform(fixture(),true,{landingProxy:landing});
  assert.equal(out['proxy-groups'][0].name,'Proxy');
- assert.deepEqual(out['proxy-groups'].filter(g=>!g.hidden).map(g=>g.name),['Proxy','AI','Relay']);
+ assert.deepEqual(out['proxy-groups'].filter(g=>!g.hidden).map(g=>g.name),['Proxy','AI','DMM','Relay']);
  assert.ok(group(out,'Proxy').proxies.includes('Exit'));
  assert.ok(out['proxy-groups'].every(g=>/^[A-Za-z]+$/.test(g.name)));
  assert.ok(!out['rule-providers'].original);
@@ -63,11 +63,12 @@ test('Relay selects preferred regions, with automatic fallback to other nodes',(
  assert.equal(group(out,'Latency'),undefined);
  assert.equal(group(out,'Relay').type,'select');
 });
-test('without landing has two visible groups and no chain',()=>{
+test('without landing has Proxy AI DMM visible and no chain',()=>{
  const out=transform(fixture());
- assert.deepEqual(out['proxy-groups'].filter(g=>!g.hidden).map(g=>g.name),['Proxy','AI']);
+ assert.deepEqual(out['proxy-groups'].filter(g=>!g.hidden).map(g=>g.name),['Proxy','AI','DMM']);
  assert.ok(!group(out,'Proxy').proxies.includes('Exit'));
- assert.deepEqual(group(out,'AI').proxies,['Proxy']); assertGraph(out);
+ assert.deepEqual(group(out,'AI').proxies,['Auto','日本 JP-A','新加坡 SG-GPT','香港 HK-A']);
+ assert.ok(!group(out,'AI').use); assertGraph(out);
  assert.ok(!out.proxies.some(p=>p.name==='Exit'));
 });
 test('idempotent reapplication and switching modes',()=>{
@@ -152,8 +153,9 @@ test('multi: providers only, no landing required, idempotent and no mutation',()
  assert.equal(group(out,'Auto').lazy,true);
  assert.equal(out['proxy-providers'].a.override['additional-prefix'],'[P1] ');
  assert.equal(out['proxy-providers'].b.override['additional-prefix'],'[P2] ');
- assert.deepEqual(group(out,'AI').proxies,['Proxy']);
- assert.ok(!group(out,'AI').use && !group(out,'DMM').use);
+ assert.deepEqual(group(out,'AI').proxies,['Auto']);
+ assert.deepEqual(group(out,'AI').use,['a','b']);
+ assert.deepEqual(group(out,'DMM').use,['a','b']);
 });
 test('multi: hybrid regions use both inline and remote nodes, preserve networking',()=>{
  const input={...fixture(),...providersFixture()},out=multi(input);
@@ -192,4 +194,33 @@ test('multi: HTTP source defaults to independent DIRECT bootstrap',()=>{
  const input={'proxy-providers':{a:{type:'http',url:'https://subscription.invalid/nodes',path:'./a.yaml'}}};
  const out=multi(input);assert.equal(out['proxy-providers'].a.proxy,'DIRECT');
  assert.equal(out['proxy-providers'].a.url,input['proxy-providers'].a.url);
+});
+
+test('all desktop no-landing AI selectors expose every usable node directly',()=>{
+ for(const out of [transform(fixture()),multi({...fixture(),...providersFixture()})]) {
+  assert.deepEqual(group(out,'AI').proxies,['Auto','日本 JP-A','新加坡 SG-GPT','香港 HK-A']);
+  assert.ok(!group(out,'AI').proxies.includes('Proxy'));
+ }
+});
+test('independent multi landing version retains strict Exit and all providers',()=>{
+ const file=fs.readFileSync(path.join(root,'extensions/multi-subscription-with-landing.js'),'utf8');
+ const c=vm.createContext({input:providersFixture(),landing});
+ vm.runInContext(file+';OPTIONS.landingProxy=landing;output=main(input);',c);
+ const out=JSON.parse(JSON.stringify(c.output));
+ assert.deepEqual(group(out,'AI').proxies,['Exit','Proxy']);
+ assert.ok(group(out,'Proxy').proxies.includes('Exit'));
+ assert.deepEqual(group(out,'JP').use,['a','b']);
+ assert.equal(out.proxies.find(p=>p.name==='Exit')['dialer-proxy'],'Relay');
+});
+
+test('DMM exposes Japan nodes directly in all four PC variants',()=>{
+ for(const name of ['with-landing.js','without-landing.js','multi-subscription.js','multi-subscription-with-landing.js']) {
+  const c=vm.createContext({input:{...fixture(),...providersFixture()},landing});
+  vm.runInContext(fs.readFileSync(path.join(root,'extensions',name),'utf8')+';OPTIONS.landingProxy=landing;output=main(input);',c);
+  const dmm=JSON.parse(JSON.stringify(c.output['proxy-groups'].find(g=>g.name==='DMM')));
+  assert.deepEqual(dmm.proxies,['Japan','日本 JP-A']);
+  assert.deepEqual(dmm.use,['a','b']);assert.ok(!dmm.hidden);
+  const filter=new RegExp(dmm.filter.replace(/^\(\?i\)/,''),'i');
+  assert.ok(filter.test('[B] JAPAN 02'));assert.ok(!filter.test('[B] Hong Kong 01'));
+ }
 });

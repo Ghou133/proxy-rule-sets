@@ -10,7 +10,9 @@
     "case_insensitive_regions": "PASS",
     "empty_region_reject": "PASS",
     "info_filter": "PASS",
-    "source_update": "PASS"
+    "source_update": "PASS",
+    "DMM_direct_selection": "PASS",
+    "AI_direct_selection": "PASS"
   },
   {
     "mode": "hybrid",
@@ -23,6 +25,8 @@
     "case_insensitive_regions": "PASS",
     "empty_region_reject": "PASS",
     "info_filter": "PASS",
-    "source_update": "PASS"
+    "source_update": "PASS",
+    "DMM_direct_selection": "PASS",
+    "AI_direct_selection": "PASS"
   }
 ]

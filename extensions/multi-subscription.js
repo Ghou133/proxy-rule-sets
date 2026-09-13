@@ -321,7 +321,9 @@ function main(input) {
   if (OPTIONS.includeLegacyRules) {
     region("Japan", japan);
     region("Hongkong", hongkong);
-    groups.push({name: "DMM", hidden: true, type: "select", proxies: ["Japan"]});
+    groups.push({name: "DMM", type: "select", proxies: ["Japan"].concat(names.filter(n => japan.test(n))),
+      ...(providerNames.length ? {use: providerNames, filter: "(?i)" + japan.source,
+        "exclude-filter": "(?i)" + informational.source} : {})});
   }
   if (OPTIONS.landing) {
     const regions = [
@@ -355,7 +357,11 @@ function main(input) {
     config.proxies.push(landing);
   }
   // A select group never changes exit on failure. Airport bypass requires manual selection.
-  groups.splice(1, 0, {name: "AI", type: "select", proxies: OPTIONS.landing ? ["Exit", "Proxy"] : ["Proxy"]});
+  const aiGroup = OPTIONS.landing
+    ? {name: "AI", type: "select", proxies: ["Exit", "Proxy"]}
+    : {name: "AI", type: "select", proxies: ["Auto"].concat(names),
+       ...(providerNames.length ? {use: providerNames, "exclude-filter": "(?i)" + informational.source} : {})};
+  groups.splice(1, 0, aiGroup);
   // Replace subscription routing wholesale; retain subscription nodes and other settings only.
   const providers = {};
   const prefix = [];
