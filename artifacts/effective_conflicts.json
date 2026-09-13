@@ -1,0 +1,659 @@
+{
+  "same_matcher_multiple_policy_count": 35,
+  "items": [
+    {
+      "matcher": "DOMAIN-SUFFIX,azureedge-test.net",
+      "locations": [
+        {
+          "file": "upstream/owned/be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708/boost.list",
+          "line": 2,
+          "parent_line": 5,
+          "policy": "Proxies"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 84,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,azureedge.net",
+      "locations": [
+        {
+          "file": "upstream/owned/be9a9182ece181ed0aee62f033a63422f9f9cb7f0d0eeaaf3805413e261af708/boost.list",
+          "line": 3,
+          "parent_line": 5,
+          "policy": "Proxies"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 85,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,ol.epicgames.com",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list",
+          "line": 4,
+          "parent_line": 7,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+          "line": 18,
+          "parent_line": 32,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,steamserver.net",
+      "locations": [
+        {
+          "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+          "line": 15,
+          "parent_line": 23,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "upstream/owned/b084186c0d3bf21bef2415eac391a062b7066450e3df01d79adbcb5b4b22a0de/steamdownload.list",
+          "line": 3,
+          "parent_line": 26,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 6967,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,akamaized.net",
+      "locations": [
+        {
+          "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+          "line": 57,
+          "parent_line": 23,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 297,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,steamcontent.com",
+      "locations": [
+        {
+          "file": "upstream/owned/29c161e45ad6604a27b02321f2dc2c710d945aec9b5f329ba8c8500ff047ed6e/DownloadPatch.list",
+          "line": 58,
+          "parent_line": 23,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+          "line": 10,
+          "parent_line": 32,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,helpshift.com",
+      "locations": [
+        {
+          "file": "upstream/owned/c75a9764499cfd45bd42bc72cd1a25bcf727c72f5e77f02536505f917922d652/gameplatform.list",
+          "line": 19,
+          "parent_line": 32,
+          "policy": "Proxies"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 216,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,azurewebsites.net",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 103,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 534,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,bing.com",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 118,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 673,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,edgesuite.net",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 186,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 1634,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,here.com",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 217,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 2731,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,hockeyapp.net",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 220,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 6953,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,live.com",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 250,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 3511,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,microsoft.com",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 294,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 3721,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,msn.com",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 453,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 3856,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,msn.com.tw",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 456,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 3857,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,skype.com",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 565,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 5074,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,tenor.com",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 589,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 5451,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,livefilestore.com",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 669,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 6909,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,onedrive.com",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 671,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 4233,
+          "parent_line": 56,
+          "policy": "Proxies"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 6911,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,spoprod-a.akamaihd.net",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 674,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 6915,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-KEYWORD,1drv",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 676,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 6906,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-KEYWORD,onedrive",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 677,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 6907,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-KEYWORD,skydrive",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+          "line": 678,
+          "parent_line": 34,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 6908,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,dmm.com",
+      "locations": [
+        {
+          "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+          "line": 4,
+          "parent_line": 38,
+          "policy": "Japan"
+        },
+        {
+          "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+          "line": 17,
+          "parent_line": 38,
+          "policy": "Japan"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 1472,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,dmm.co.jp",
+      "locations": [
+        {
+          "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+          "line": 5,
+          "parent_line": 38,
+          "policy": "Japan"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 1471,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,wikiwiki.jp",
+      "locations": [
+        {
+          "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+          "line": 15,
+          "parent_line": 38,
+          "policy": "Japan"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 6338,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,ggpht.com",
+      "locations": [
+        {
+          "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+          "line": 16,
+          "parent_line": 38,
+          "policy": "Japan"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 2216,
+          "parent_line": 56,
+          "policy": "Proxies"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 6826,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,nicovideo.jp",
+      "locations": [
+        {
+          "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+          "line": 54,
+          "parent_line": 38,
+          "policy": "Japan"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 4065,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,dmc.nico",
+      "locations": [
+        {
+          "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+          "line": 100,
+          "parent_line": 38,
+          "policy": "Japan"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 1468,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,getchu.com",
+      "locations": [
+        {
+          "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+          "line": 101,
+          "parent_line": 38,
+          "policy": "Japan"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 2191,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,dlsite.com",
+      "locations": [
+        {
+          "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+          "line": 102,
+          "parent_line": 38,
+          "policy": "Japan"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 1463,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,dlsite.jp",
+      "locations": [
+        {
+          "file": "upstream/owned/12fca706752106deee84275d36fdf364230e6d4e8a15584f5beff6233abaa7f9/DmmDLFz.list",
+          "line": 103,
+          "parent_line": 38,
+          "policy": "Japan"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 1464,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,2mdn.net",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list",
+          "line": 3,
+          "parent_line": 44,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 6823,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    },
+    {
+      "matcher": "DOMAIN-SUFFIX,recaptcha.net",
+      "locations": [
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list",
+          "line": 23,
+          "parent_line": 44,
+          "policy": "DIRECT"
+        },
+        {
+          "file": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+          "line": 4735,
+          "parent_line": 56,
+          "policy": "Proxies"
+        }
+      ],
+      "action": "INFORMATIONAL_ONLY"
+    }
+  ]
+}

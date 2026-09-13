@@ -1,25 +1,17 @@
-# Compatibility and third-party YAML audit
+# Locally maintained third-party rules
 
-Own-source PROCESS-NAME is emitted for Mihomo only. Eight Windows process rules cannot be represented reliably by Shadowrocket on iOS; preserved in unsupported/shadowrocket.list. FINAL stays a parent terminal action, not a provider entry. GEOIP,CN stays typed and retains resolution behavior. No domain/IP ranges were rewritten.
+| Source | Canonical | Mihomo | Shadowrocket | License |
+|---|---:|---:|---:|---|
+| ACL4SSR/ACL4SSR/unban | 31 | 31 | 31 | CC-BY-SA-4.0 |
+| ACL4SSR/ACL4SSR/download | 22 | 15 | 2 | CC-BY-SA-4.0 |
+| blackmatrix7/ios_rule_script/microsoft | 673 | 670 | 668 | GPL-2.0 |
+| ACL4SSR/ACL4SSR/googlecn | 29 | 29 | 29 | CC-BY-SA-4.0 |
+| ACL4SSR/ACL4SSR/proxygfwlist | 6986 | 6986 | 6986 | CC-BY-SA-4.0 |
 
-| Third-party reference | Original | YAML | Choice | Reason |
-|---|---:|---:|---|---|
-| ACL4SSR/ACL4SSR/LocalAreaNetwork.list | 37 | 37 | yaml / classical | Ordered matcher sequence verified equal (including no-resolve) |
-| ACL4SSR/ACL4SSR/UnBan.list | 31 | 52 | text / classical | Candidate differs; original typed text reference preserved |
-| ACL4SSR/ACL4SSR/Download.list | 22 | 2 | text / classical | Candidate differs; original typed text reference preserved |
-| blackmatrix7/ios_rule_script/Microsoft.list | 673 | 670 | text / classical | Candidate differs; original typed text reference preserved |
-| blackmatrix7/ios_rule_script/DMM.list | 20 | 20 | yaml / classical | Ordered matcher sequence verified equal (including no-resolve) |
-| ACL4SSR/ACL4SSR/GoogleCN.list | 29 | 48 | text / classical | Candidate differs; original typed text reference preserved |
-| ACL4SSR/ACL4SSR/GoogleFCM.list | 44 | 44 | yaml / classical | Ordered matcher sequence verified equal (including no-resolve) |
-| ACL4SSR/ACL4SSR/Apple.list | 29 | 29 | yaml / classical | Ordered matcher sequence verified equal (including no-resolve) |
-| ACL4SSR/ACL4SSR/ProxyGFWlist.list | 6986 | 4319 | text / classical | Candidate differs; original typed text reference preserved |
-| ACL4SSR/ACL4SSR/ChinaDomain.list | 635 | 635 | yaml / classical | Ordered matcher sequence verified equal (including no-resolve) |
-| ACL4SSR/ACL4SSR/ChinaCompanyIp.list | 208 | 208 | yaml / ipcidr | Ordered matcher sequence verified equal (including no-resolve) |
+Every output file includes original repository/file URLs, pinned commit, license and modification date. All original occurrences remain in canonical/vendor, frozen source and per-source ledgers. Unsupported rules remain in unsupported/vendor. No sorting, deduplication, matcher changes or inferred policies. Separate license namespaces are retained; these copies are not merged into the unlicensed own-policy files.
 
-DMM uses DMM_No_Resolve.yaml. ChinaCompanyIp uses behavior: ipcidr and no-resolve on the parent RULE-SET call; the expanded matcher sequence was compared exactly. Other YAML substitutions require the entire normalized sequence to match, including duplicate multiplicity. Different same-name YAML files are not substituted.
+Default updates rebuild these files from their frozen snapshots. To intentionally synchronize from original upstream, run `python scripts/update_rules.py --refresh-vendored`; this stores new immutable snapshots and regenerates reports. Normal runtime loads this repository's Raw files. Six equivalent third-party YAML references remain remote.
 
-**Unavoidable Mihomo gaps in original third-party text:** ACL4SSR Download contains 7 URL-REGEX rules; Microsoft contains 3 USER-AGENT rules. Mihomo does not implement these matcher types. Original URLs are preserved; the core skips these entries with warnings. These are explicitly reported external compatibility gaps, not locally silently dropped rules. No YAML variant can make these types work without changing semantics. Do not treat this as complete cross-client routing equivalence.
+Mihomo cannot implement 7 URL-REGEX and 3 USER-AGENT entries. These are retained, not approximated. Shadowrocket exports conservative verified syntax only: Windows process rules and the 10 unverified regex/agent rules remain in its unsupported ledger. No iOS runtime equivalence is claimed.
 
-Original third-party text is used directly by Shadowrocket; its process/regex behavior is not certified. No Shadowrocket device was available. GEOIP depends on each client's database, so database-level equivalence is outside this project.
-
-Evidence: [subconverter inline syntax](https://github.com/tindy2013/subconverter/blob/master/README-cn.md), [Mihomo parser](https://github.com/MetaCubeX/mihomo/blob/Meta/rules/parser.go), [Mihomo classical restrictions](https://github.com/MetaCubeX/mihomo/blob/Meta/rules/provider/classical_strategy.go). Repository commit dates and content hashes for each checked external reference are in third_party_yaml_audit.json. Repo activity is observed, not a promise of future maintenance.
+Original YAML comparison evidence remains in third_party_yaml_audit.json. The former text-fallback choices are replaced by local vendor files in the actual usage example. Parent FINAL remains unsupported in provider payloads and is emitted only as parent MATCH/FINAL.

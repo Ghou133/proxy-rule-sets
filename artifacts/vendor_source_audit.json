@@ -1,0 +1,199 @@
+[
+  {
+    "source": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list",
+      "repository": "ACL4SSR/ACL4SSR",
+      "branch": "master",
+      "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+      "sha256": "016837560f1f0eeb576f81600c95b547bd82e27ba27a175a3b5010de9bd18ffa",
+      "pinned_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/UnBan.list",
+      "snapshot": "upstream/vendor/acl4ssr/016837560f1f0eeb576f81600c95b547bd82e27ba27a175a3b5010de9bd18ffa/UnBan.list",
+      "fetched_at": "2026-09-13T12:22:13.455938+00:00",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license_path": "upstream/vendor/acl4ssr/licenses/7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297/LICENCE",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "namespace": "acl4ssr",
+      "name": "unban",
+      "parent_line": 7,
+      "policy": "DIRECT"
+    },
+    "input_valid_rules": 31,
+    "types": {
+      "DOMAIN-SUFFIX": 19,
+      "DOMAIN": 12
+    },
+    "outputs": {
+      "mihomo": {
+        "file": "mihomo/vendor/acl4ssr/unban.yaml",
+        "rules": 31,
+        "unsupported": 0
+      },
+      "shadowrocket": {
+        "file": "shadowrocket/vendor/acl4ssr/unban.list",
+        "rules": 31,
+        "unsupported": 0
+      }
+    },
+    "accounting": "artifacts/vendor/acl4ssr/unban.json"
+  },
+  {
+    "source": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list",
+      "repository": "ACL4SSR/ACL4SSR",
+      "branch": "master",
+      "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+      "sha256": "62b72d16b8f2bcbc80eb2c7af35dc03b31c4d82e732af6d227c2a311f04bdadc",
+      "pinned_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Download.list",
+      "snapshot": "upstream/vendor/acl4ssr/62b72d16b8f2bcbc80eb2c7af35dc03b31c4d82e732af6d227c2a311f04bdadc/Download.list",
+      "fetched_at": "2026-09-13T12:22:13.630742+00:00",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license_path": "upstream/vendor/acl4ssr/licenses/7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297/LICENCE",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "namespace": "acl4ssr",
+      "name": "download",
+      "parent_line": 24,
+      "policy": "DIRECT"
+    },
+    "input_valid_rules": 22,
+    "types": {
+      "PROCESS-NAME": 13,
+      "DOMAIN-SUFFIX": 1,
+      "DOMAIN-KEYWORD": 1,
+      "URL-REGEX": 7
+    },
+    "outputs": {
+      "mihomo": {
+        "file": "mihomo/vendor/acl4ssr/download.yaml",
+        "rules": 15,
+        "unsupported": 7
+      },
+      "shadowrocket": {
+        "file": "shadowrocket/vendor/acl4ssr/download.list",
+        "rules": 2,
+        "unsupported": 20
+      }
+    },
+    "accounting": "artifacts/vendor/acl4ssr/download.json"
+  },
+  {
+    "source": {
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+      "repository": "blackmatrix7/ios_rule_script",
+      "branch": "master",
+      "commit": "0087bb74e91b335e17a79fd07a8514277f7d77b4",
+      "sha256": "a2854b28dc9f903a64933c74fff5b50166e9bbebc70fdfce18c592f75793ff14",
+      "pinned_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/0087bb74e91b335e17a79fd07a8514277f7d77b4/rule/Surge/Microsoft/Microsoft.list",
+      "snapshot": "upstream/vendor/blackmatrix7/a2854b28dc9f903a64933c74fff5b50166e9bbebc70fdfce18c592f75793ff14/Microsoft.list",
+      "fetched_at": "2026-09-13T12:22:14.065041+00:00",
+      "license": "GPL-2.0",
+      "license_url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+      "license_path": "upstream/vendor/blackmatrix7/licenses/8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643/LICENSE",
+      "license_sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "namespace": "blackmatrix7",
+      "name": "microsoft",
+      "parent_line": 34,
+      "policy": "DIRECT"
+    },
+    "input_valid_rules": 673,
+    "types": {
+      "DOMAIN": 1,
+      "DOMAIN-SUFFIX": 663,
+      "DOMAIN-KEYWORD": 4,
+      "USER-AGENT": 3,
+      "PROCESS-NAME": 2
+    },
+    "outputs": {
+      "mihomo": {
+        "file": "mihomo/vendor/blackmatrix7/microsoft.yaml",
+        "rules": 670,
+        "unsupported": 3
+      },
+      "shadowrocket": {
+        "file": "shadowrocket/vendor/blackmatrix7/microsoft.list",
+        "rules": 668,
+        "unsupported": 5
+      }
+    },
+    "accounting": "artifacts/vendor/blackmatrix7/microsoft.json"
+  },
+  {
+    "source": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list",
+      "repository": "ACL4SSR/ACL4SSR",
+      "branch": "master",
+      "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+      "sha256": "00ffcc16d0eb1898cba4f9c2cc2ce76a8f70bef7a03aea436dad79982b77c8ca",
+      "pinned_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/GoogleCN.list",
+      "snapshot": "upstream/vendor/acl4ssr/00ffcc16d0eb1898cba4f9c2cc2ce76a8f70bef7a03aea436dad79982b77c8ca/GoogleCN.list",
+      "fetched_at": "2026-09-13T12:22:14.199194+00:00",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license_path": "upstream/vendor/acl4ssr/licenses/7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297/LICENCE",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "namespace": "acl4ssr",
+      "name": "googlecn",
+      "parent_line": 44,
+      "policy": "DIRECT"
+    },
+    "input_valid_rules": 29,
+    "types": {
+      "DOMAIN-SUFFIX": 29
+    },
+    "outputs": {
+      "mihomo": {
+        "file": "mihomo/vendor/acl4ssr/googlecn.yaml",
+        "rules": 29,
+        "unsupported": 0
+      },
+      "shadowrocket": {
+        "file": "shadowrocket/vendor/acl4ssr/googlecn.list",
+        "rules": 29,
+        "unsupported": 0
+      }
+    },
+    "accounting": "artifacts/vendor/acl4ssr/googlecn.json"
+  },
+  {
+    "source": {
+      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+      "repository": "ACL4SSR/ACL4SSR",
+      "branch": "master",
+      "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+      "sha256": "72d5f97cb3adedd7ef632962effda4aa3b9953da20427cd6050d55d1184de5ea",
+      "pinned_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/ProxyGFWlist.list",
+      "snapshot": "upstream/vendor/acl4ssr/72d5f97cb3adedd7ef632962effda4aa3b9953da20427cd6050d55d1184de5ea/ProxyGFWlist.list",
+      "fetched_at": "2026-09-13T12:22:14.413930+00:00",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license_path": "upstream/vendor/acl4ssr/licenses/7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297/LICENCE",
+      "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+      "namespace": "acl4ssr",
+      "name": "proxygfwlist",
+      "parent_line": 56,
+      "policy": "Proxies"
+    },
+    "input_valid_rules": 6986,
+    "types": {
+      "DOMAIN-SUFFIX": 6869,
+      "DOMAIN-KEYWORD": 26,
+      "IP-CIDR": 81,
+      "DOMAIN": 7,
+      "IP-CIDR6": 3
+    },
+    "outputs": {
+      "mihomo": {
+        "file": "mihomo/vendor/acl4ssr/proxygfwlist.yaml",
+        "rules": 6986,
+        "unsupported": 0
+      },
+      "shadowrocket": {
+        "file": "shadowrocket/vendor/acl4ssr/proxygfwlist.list",
+        "rules": 6986,
+        "unsupported": 0
+      }
+    },
+    "accounting": "artifacts/vendor/acl4ssr/proxygfwlist.json"
+  }
+]

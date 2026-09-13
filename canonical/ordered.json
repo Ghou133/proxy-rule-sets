@@ -5189,8 +5189,10 @@
         "only_original_count": 12,
         "only_yaml_count": 33,
         "mihomo_unsupported": [],
-        "materialized": false,
-        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+        "materialized": true,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed",
+        "local_canonical": "canonical/vendor/acl4ssr/unban.list",
+        "local_accounting": "artifacts/vendor/acl4ssr/unban.json"
       }
     },
     {
@@ -5325,8 +5327,10 @@
             "reason": "Not supported by Mihomo classical parser"
           }
         ],
-        "materialized": false,
-        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+        "materialized": true,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed",
+        "local_canonical": "canonical/vendor/acl4ssr/download.list",
+        "local_accounting": "artifacts/vendor/acl4ssr/download.json"
       }
     },
     {
@@ -5462,8 +5466,10 @@
             "reason": "Not supported by Mihomo classical parser"
           }
         ],
-        "materialized": false,
-        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+        "materialized": true,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed",
+        "local_canonical": "canonical/vendor/blackmatrix7/microsoft.list",
+        "local_accounting": "artifacts/vendor/blackmatrix7/microsoft.json"
       }
     },
     {
@@ -5651,8 +5657,10 @@
         "only_original_count": 0,
         "only_yaml_count": 19,
         "mihomo_unsupported": [],
-        "materialized": false,
-        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+        "materialized": true,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed",
+        "local_canonical": "canonical/vendor/acl4ssr/googlecn.list",
+        "local_accounting": "artifacts/vendor/acl4ssr/googlecn.json"
       }
     },
     {
@@ -5780,8 +5788,10 @@
         "only_original_count": 3207,
         "only_yaml_count": 540,
         "mihomo_unsupported": [],
-        "materialized": false,
-        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
+        "materialized": true,
+        "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed",
+        "local_canonical": "canonical/vendor/acl4ssr/proxygfwlist.list",
+        "local_accounting": "artifacts/vendor/acl4ssr/proxygfwlist.json"
       }
     },
     {

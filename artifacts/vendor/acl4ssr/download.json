@@ -1,0 +1,288 @@
+{
+  "source": {
+    "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list",
+    "repository": "ACL4SSR/ACL4SSR",
+    "branch": "master",
+    "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+    "sha256": "62b72d16b8f2bcbc80eb2c7af35dc03b31c4d82e732af6d227c2a311f04bdadc",
+    "pinned_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Download.list",
+    "snapshot": "upstream/vendor/acl4ssr/62b72d16b8f2bcbc80eb2c7af35dc03b31c4d82e732af6d227c2a311f04bdadc/Download.list",
+    "fetched_at": "2026-09-13T12:22:13.630742+00:00",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "license_path": "upstream/vendor/acl4ssr/licenses/7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297/LICENCE",
+    "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "namespace": "acl4ssr",
+    "name": "download",
+    "parent_line": 24,
+    "policy": "DIRECT"
+  },
+  "records": [
+    {
+      "line": 2,
+      "raw": "PROCESS-NAME,aria2c.exe",
+      "matcher": "PROCESS-NAME,aria2c.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 3,
+      "raw": "PROCESS-NAME,fdm.exe",
+      "matcher": "PROCESS-NAME,fdm.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 4,
+      "raw": "PROCESS-NAME,Folx.exe",
+      "matcher": "PROCESS-NAME,Folx.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 5,
+      "raw": "PROCESS-NAME,NetTransport.exe",
+      "matcher": "PROCESS-NAME,NetTransport.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 6,
+      "raw": "PROCESS-NAME,Thunder.exe",
+      "matcher": "PROCESS-NAME,Thunder.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 7,
+      "raw": "PROCESS-NAME,Transmission.exe",
+      "matcher": "PROCESS-NAME,Transmission.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 8,
+      "raw": "PROCESS-NAME,uTorrent.exe",
+      "matcher": "PROCESS-NAME,uTorrent.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 9,
+      "raw": "PROCESS-NAME,WebTorrent.exe",
+      "matcher": "PROCESS-NAME,WebTorrent.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 10,
+      "raw": "PROCESS-NAME,WebTorrent Helper.exe",
+      "matcher": "PROCESS-NAME,WebTorrent Helper.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 11,
+      "raw": "PROCESS-NAME,qbittorrent.exe",
+      "matcher": "PROCESS-NAME,qbittorrent.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 13,
+      "raw": "DOMAIN-SUFFIX,smtp",
+      "matcher": "DOMAIN-SUFFIX,smtp",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 14,
+      "raw": "DOMAIN-KEYWORD,aria2",
+      "matcher": "DOMAIN-KEYWORD,aria2",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 15,
+      "raw": "URL-REGEX,(Subject|HELO|SMTP)",
+      "matcher": "URL-REGEX,(Subject|HELO|SMTP)",
+      "status": "UNSUPPORTED",
+      "reason": "Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.",
+      "targets": {
+        "mihomo": "UNSUPPORTED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 16,
+      "raw": "URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com",
+      "matcher": "URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com",
+      "status": "UNSUPPORTED",
+      "reason": "Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.",
+      "targets": {
+        "mihomo": "UNSUPPORTED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 17,
+      "raw": "URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)",
+      "matcher": "URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)",
+      "status": "UNSUPPORTED",
+      "reason": "Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.",
+      "targets": {
+        "mihomo": "UNSUPPORTED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 18,
+      "raw": "URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?",
+      "matcher": "URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?",
+      "status": "UNSUPPORTED",
+      "reason": "Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.",
+      "targets": {
+        "mihomo": "UNSUPPORTED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 20,
+      "raw": "URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)",
+      "matcher": "URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)",
+      "status": "UNSUPPORTED",
+      "reason": "Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.",
+      "targets": {
+        "mihomo": "UNSUPPORTED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 21,
+      "raw": "PROCESS-NAME,DownloadService.exe",
+      "matcher": "PROCESS-NAME,DownloadService.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 23,
+      "raw": "URL-REGEX,(.+\\.|^)(360|so)\\.(cn|com)",
+      "matcher": "URL-REGEX,(.+\\.|^)(360|so)\\.(cn|com)",
+      "status": "UNSUPPORTED",
+      "reason": "Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.",
+      "targets": {
+        "mihomo": "UNSUPPORTED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 25,
+      "raw": "PROCESS-NAME,Weiyun.exe",
+      "matcher": "PROCESS-NAME,Weiyun.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 27,
+      "raw": "PROCESS-NAME,baidunetdisk.exe",
+      "matcher": "PROCESS-NAME,baidunetdisk.exe",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    },
+    {
+      "line": 29,
+      "raw": "URL-REGEX,assets\\d+\\.xboxlive\\.(com|cn)",
+      "matcher": "URL-REGEX,assets\\d+\\.xboxlive\\.(com|cn)",
+      "status": "UNSUPPORTED",
+      "reason": "Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.",
+      "targets": {
+        "mihomo": "UNSUPPORTED",
+        "shadowrocket": "UNSUPPORTED"
+      }
+    }
+  ],
+  "totals": {
+    "input_valid_rules": 22,
+    "generated": 15,
+    "unsupported": 7,
+    "ambiguous": 0,
+    "external_dependency": 0,
+    "invalid_with_evidence": 0
+  },
+  "per_target": {
+    "mihomo": {
+      "generated": 15,
+      "unsupported": 7,
+      "ambiguous": 0,
+      "external_dependency": 0,
+      "invalid_with_evidence": 0
+    },
+    "shadowrocket": {
+      "generated": 2,
+      "unsupported": 20,
+      "ambiguous": 0,
+      "external_dependency": 0,
+      "invalid_with_evidence": 0
+    }
+  }
+}

@@ -158,5 +158,55 @@
     "file": "shadowrocket/segments/060-inline.list",
     "rules": 1,
     "purpose": "Ordered usage segment"
+  },
+  {
+    "file": "mihomo/vendor/acl4ssr/unban.yaml",
+    "rules": 31,
+    "purpose": "Local maintained copy; CC-BY-SA-4.0"
+  },
+  {
+    "file": "shadowrocket/vendor/acl4ssr/unban.list",
+    "rules": 31,
+    "purpose": "Local maintained copy; CC-BY-SA-4.0"
+  },
+  {
+    "file": "mihomo/vendor/acl4ssr/download.yaml",
+    "rules": 15,
+    "purpose": "Local maintained copy; CC-BY-SA-4.0"
+  },
+  {
+    "file": "shadowrocket/vendor/acl4ssr/download.list",
+    "rules": 2,
+    "purpose": "Local maintained copy; CC-BY-SA-4.0"
+  },
+  {
+    "file": "mihomo/vendor/blackmatrix7/microsoft.yaml",
+    "rules": 670,
+    "purpose": "Local maintained copy; GPL-2.0"
+  },
+  {
+    "file": "shadowrocket/vendor/blackmatrix7/microsoft.list",
+    "rules": 668,
+    "purpose": "Local maintained copy; GPL-2.0"
+  },
+  {
+    "file": "mihomo/vendor/acl4ssr/googlecn.yaml",
+    "rules": 29,
+    "purpose": "Local maintained copy; CC-BY-SA-4.0"
+  },
+  {
+    "file": "shadowrocket/vendor/acl4ssr/googlecn.list",
+    "rules": 29,
+    "purpose": "Local maintained copy; CC-BY-SA-4.0"
+  },
+  {
+    "file": "mihomo/vendor/acl4ssr/proxygfwlist.yaml",
+    "rules": 6986,
+    "purpose": "Local maintained copy; CC-BY-SA-4.0"
+  },
+  {
+    "file": "shadowrocket/vendor/acl4ssr/proxygfwlist.list",
+    "rules": 6986,
+    "purpose": "Local maintained copy; CC-BY-SA-4.0"
   }
 ]

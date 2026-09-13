@@ -1,0 +1,38 @@
+{
+  "totals": {
+    "input_valid_rules": 8029,
+    "generated": 8012,
+    "unsupported": 11,
+    "ambiguous": 0,
+    "external_dependency": 6,
+    "invalid_with_evidence": 0
+  },
+  "per_target": {
+    "mihomo": {
+      "input_valid_rules": 8029,
+      "generated": 8012,
+      "unsupported": 11,
+      "ambiguous": 0,
+      "external_dependency": 6,
+      "invalid_with_evidence": 0
+    },
+    "shadowrocket": {
+      "input_valid_rules": 8029,
+      "generated": 7989,
+      "unsupported": 34,
+      "ambiguous": 0,
+      "external_dependency": 6,
+      "invalid_with_evidence": 0
+    }
+  },
+  "unexplained_loss": 0,
+  "scope": "Own leaf records + local vendor leaf records + remaining remote reference units; no container/leaf double count",
+  "own_ledger": "artifacts/expanded_source_accounting.json",
+  "vendor_ledgers": [
+    "artifacts/vendor/acl4ssr/unban.json",
+    "artifacts/vendor/acl4ssr/download.json",
+    "artifacts/vendor/blackmatrix7/microsoft.json",
+    "artifacts/vendor/acl4ssr/googlecn.json",
+    "artifacts/vendor/acl4ssr/proxygfwlist.json"
+  ]
+}

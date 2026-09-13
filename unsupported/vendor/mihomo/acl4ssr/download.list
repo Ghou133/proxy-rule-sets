@@ -1,0 +1,21 @@
+# Source repository: https://github.com/ACL4SSR/ACL4SSR
+# Original file: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+# Pinned commit: 75f0101039d71724b6e998b34604c2e053580e0c
+# License: CC-BY-SA-4.0 https://creativecommons.org/licenses/by-sa/4.0/
+# Modified 2026-09-13 by Rule Sets Maintainer: whitespace/format only; source order and duplicates retained.
+# Unsupported target rules are preserved in unsupported/vendor/; see per-source accounting.
+# No warranty. Original source and full license are included under upstream/vendor/.
+# source line 15; Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.
+URL-REGEX,(Subject|HELO|SMTP)
+# source line 16; Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.
+URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com
+# source line 17; Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.
+URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)
+# source line 18; Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.
+URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?
+# source line 20; Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.
+URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
+# source line 23; Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.
+URL-REGEX,(.+\.|^)(360|so)\.(cn|com)
+# source line 29; Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.
+URL-REGEX,assets\d+\.xboxlive\.(com|cn)

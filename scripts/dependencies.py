@@ -76,16 +76,21 @@ def candidate_path(repository, path):
     raise ValueError("New external repository requires a reviewed YAML mapping")
 
 
-def verify_external(root, references, offline):
+def verify_external(root, references, offline, refresh_vendored=False):
     lock = root / "upstream/external_metadata.json"
     if offline:
         evidence = json.loads(lock.read_text("utf-8"))
         if [r["url"] for r in evidence] != [r["url"] for r in references]:
             raise ValueError("External reference set changed; online re-verification required")
         return evidence
-    repositories = list(dict.fromkeys("/".join(r["url"].split("/")[3:5]) for r in references))
+    vendor_path = root / "upstream/vendor_metadata.json"
+    frozen_urls = {r["url"] for r in json.loads(vendor_path.read_text("utf-8"))} if vendor_path.exists() and not refresh_vendored else set()
+    cached = {r["url"]: r for r in json.loads(lock.read_text("utf-8"))} if lock.exists() else {}
+    repositories = list(dict.fromkeys("/".join(r["url"].split("/")[3:5]) for r in references if r["url"] not in frozen_urls))
     heads = {repo: json.loads(fetch(f"https://api.github.com/repos/{repo}/commits/master")) for repo in repositories}
     def verify(ref):
+        if ref["url"] in frozen_urls:
+            return {**cached[ref["url"]], "policy": ref["policy"], "parent_line": ref["line"]}
         _, _, _, owner, repo, branch, *rest = ref["url"].split("/")
         repository, path = owner + "/" + repo, "/".join(rest)
         target = candidate_path(repository, path)
@@ -133,11 +138,11 @@ def provider_yaml(values):
     return "payload:\n" + "".join("  - " + json.dumps(r, ensure_ascii=False) + "\n" for r in values)
 
 
-def extend_project(root, source, metadata, files, raw_base, offline=False):
+def extend_project(root, source, metadata, files, raw_base, offline=False, refresh_vendored=False):
     parents = parse(source)[1]
     owned = own_sources(root, parents, metadata, offline)
     own_by_line = {m["parent_line"]: (m, data) for m, data in owned}
-    third = verify_external(root, [r for r in parents if r["status"] == "EXTERNAL_DEPENDENCY" and r["line"] not in own_by_line], offline)
+    third = verify_external(root, [r for r in parents if r["status"] == "EXTERNAL_DEPENDENCY" and r["line"] not in own_by_line], offline, refresh_vendored)
     third_by_line = {r["parent_line"]: r for r in third}
     # Replace base projections with expanded projections, while retaining original 4.ini audit.
     files = {k: v for k, v in files.items() if not k.startswith(("canonical/", "mihomo/", "shadowrocket/", "unsupported/"))}
@@ -339,7 +344,8 @@ GitHub Actions 提供测试及每周更新 PR，不自动合并；需在仓库�
 
 来源为 Ghou133/Ghou133.github.io；第三方分别为 ACL4SSR/ACL4SSR 与 blackmatrix7/ios_rule_script。所有 attribution 与许可范围见 [UPSTREAM.md](UPSTREAM.md)。上游完整树未发现 LICENSE/LICENCE/COPYING；不为规则数据擅自声明 MIT。第三方原文件只远程引用，不复制整份内容。原配置中的装饰、教程和代理组只保留于冻结证据。
 """
-    return files
+    from vendor_rules import materialize
+    return materialize(root, files, third, raw_base, offline, refresh_vendored)
 
 
 def usage(sequence, records, raw_base):

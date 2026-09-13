@@ -76,7 +76,7 @@ def main():
             result = {"core": subprocess.check_output([str(args.binary.resolve()), "-v"], text=True).strip(),
                       "binary_sha256": hashlib.sha256(args.binary.read_bytes()).hexdigest(),
                       "providers": {name: {**entry, "actual": state[name]["ruleCount"]} for name, entry in expected.items()},
-                      "local_import": "PASS", "external_import": "PASS_WITH_KNOWN_UNSUPPORTED",
+                      "local_import": "PASS", "external_import": "PASS_WITH_KNOWN_UNSUPPORTED" if any(e["mihomo_unsupported"] for e in external) else "PASS",
                       "known_external_unsupported_count": sum(len(e["mihomo_unsupported"]) for e in external)}
             (work / "result.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
             print(json.dumps(result, indent=2))

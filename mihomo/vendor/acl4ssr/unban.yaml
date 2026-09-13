@@ -1,0 +1,39 @@
+# Source repository: https://github.com/ACL4SSR/ACL4SSR
+# Original file: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+# Pinned commit: 75f0101039d71724b6e998b34604c2e053580e0c
+# License: CC-BY-SA-4.0 https://creativecommons.org/licenses/by-sa/4.0/
+# Modified 2026-09-13 by Rule Sets Maintainer: whitespace/format only; source order and duplicates retained.
+# Unsupported target rules are preserved in unsupported/vendor/; see per-source accounting.
+# No warranty. Original source and full license are included under upstream/vendor/.
+payload:
+  - "DOMAIN-SUFFIX,ol.epicgames.com"
+  - "DOMAIN-SUFFIX,dizhensubao.getui.com"
+  - "DOMAIN,dl.google.com"
+  - "DOMAIN-SUFFIX,googletraveladservices.com"
+  - "DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net"
+  - "DOMAIN,origin-a.akamaihd.net"
+  - "DOMAIN,fairplay.l.qq.com"
+  - "DOMAIN,livew.l.qq.com"
+  - "DOMAIN,vd.l.qq.com"
+  - "DOMAIN,errlog.umeng.com"
+  - "DOMAIN,msg.umeng.com"
+  - "DOMAIN,msg.umengcloud.com"
+  - "DOMAIN,tracking.miui.com"
+  - "DOMAIN,app.adjust.com"
+  - "DOMAIN,bdtj.tagtic.cn"
+  - "DOMAIN,rewards.hypixel.net"
+  - "DOMAIN-SUFFIX,koodomobile.com"
+  - "DOMAIN-SUFFIX,koodomobile.ca"
+  - "DOMAIN-SUFFIX,synology.me"
+  - "DOMAIN-SUFFIX,DiskStation.me"
+  - "DOMAIN-SUFFIX,i234.me"
+  - "DOMAIN-SUFFIX,myDS.me"
+  - "DOMAIN-SUFFIX,DSCloud.biz"
+  - "DOMAIN-SUFFIX,DSCloud.me"
+  - "DOMAIN-SUFFIX,DSCloud.mobi"
+  - "DOMAIN-SUFFIX,DSmyNAS.com"
+  - "DOMAIN-SUFFIX,DSmyNAS.net"
+  - "DOMAIN-SUFFIX,DSmyNAS.org"
+  - "DOMAIN-SUFFIX,FamilyDS.com"
+  - "DOMAIN-SUFFIX,FamilyDS.net"
+  - "DOMAIN-SUFFIX,FamilyDS.org"

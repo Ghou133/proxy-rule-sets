@@ -1,4 +1,14 @@
-# Initial verification
+# Verification
+
+## Local third-party copies revision
+
+This section supersedes the initial-scope counts below. Twenty automated tests pass, including full vendor source/license checksum verification, every-source-line accounting, attribution headers, duplicate/order-preserving projections, explicit unsupported outputs, local usage URLs and frozen default rebuild without vendor network access.
+
+Actual Mihomo v1.19.30 imported all 19 local YAML files and 6 remaining remote references with exact expected counts. No unsupported rules remain inside the generated Mihomo provider payloads; the 10 unsupported vendor rules are retained separately. Effective accounting is 8029 = 8012 generated + 11 unsupported + 0 ambiguous + 6 external dependencies + 0 invalid. Shadowrocket accounting is 8029 = 7989 + 34 + 0 + 6 + 0; no iOS runtime was available.
+
+The complete effective rule stream has 130 exact duplicate occurrences and 35 same-matcher/multiple-policy observations. All are preserved. Each locally maintained third-party file includes its source repository, original URL, commit, license and modification notice. Corresponding original source and license texts accompany the generated files.
+
+## Initial scope (historical evidence)
 
 Inputs: upstream commit `a29c67805b1dd7721fe896d0a64eb93ba7e29813`, original 4.ini SHA-256 `0fa1f5fa40ad4233f934e2a22ff14346b6083051b2ab0fa8531f5b172421c831`. This is an initial verification record, not a claim that future changed inputs have passed.
 

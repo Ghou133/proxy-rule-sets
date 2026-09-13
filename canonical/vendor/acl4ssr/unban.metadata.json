@@ -1,0 +1,21 @@
+{
+  "source": {
+    "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list",
+    "repository": "ACL4SSR/ACL4SSR",
+    "branch": "master",
+    "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+    "sha256": "016837560f1f0eeb576f81600c95b547bd82e27ba27a175a3b5010de9bd18ffa",
+    "pinned_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/UnBan.list",
+    "snapshot": "upstream/vendor/acl4ssr/016837560f1f0eeb576f81600c95b547bd82e27ba27a175a3b5010de9bd18ffa/UnBan.list",
+    "fetched_at": "2026-09-13T12:22:13.455938+00:00",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "license_path": "upstream/vendor/acl4ssr/licenses/7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297/LICENCE",
+    "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "namespace": "acl4ssr",
+    "name": "unban",
+    "parent_line": 7,
+    "policy": "DIRECT"
+  },
+  "accounting": "artifacts/vendor/acl4ssr/unban.json"
+}

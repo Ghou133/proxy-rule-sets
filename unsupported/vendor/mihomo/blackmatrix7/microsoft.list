@@ -1,0 +1,13 @@
+# Source repository: https://github.com/blackmatrix7/ios_rule_script
+# Original file: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
+# Pinned commit: 0087bb74e91b335e17a79fd07a8514277f7d77b4
+# License: GPL-2.0 https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+# Modified 2026-09-13 by Rule Sets Maintainer: whitespace/format only; source order and duplicates retained.
+# Unsupported target rules are preserved in unsupported/vendor/; see per-source accounting.
+# No warranty. Original source and full license are included under upstream/vendor/.
+# source line 679; Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.
+USER-AGENT,Microsoft*
+# source line 680; Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.
+USER-AGENT,OneDrive*
+# source line 681; Mihomo does not support this matcher; Shadowrocket provider compatibility unverified. Preserved verbatim, no approximation.
+USER-AGENT,OneDriveiOSApp*

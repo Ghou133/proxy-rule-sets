@@ -1,5 +1,4 @@
-# Rules-only fragment. Replace explicit policy/raw placeholders.
-# Original external text includes 10 unsupported Mihomo rules; see compatibility report.
+# Ordered rules-only fragment; replace policy placeholders. Unsupported rules are retained outside provider payloads.
 rule-providers:
   source-005:
     type: http
@@ -18,9 +17,9 @@ rule-providers:
   source-007:
     type: http
     behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-    path: ./ruleset/source-007.list
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/vendor/acl4ssr/unban.yaml
+    path: ./ruleset/source-007.yaml
     interval: 86400
   source-023:
     type: http
@@ -32,9 +31,9 @@ rule-providers:
   source-024:
     type: http
     behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
-    path: ./ruleset/source-024.list
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/vendor/acl4ssr/download.yaml
+    path: ./ruleset/source-024.yaml
     interval: 86400
   source-026:
     type: http
@@ -53,9 +52,9 @@ rule-providers:
   source-034:
     type: http
     behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
-    path: ./ruleset/source-034.list
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/vendor/blackmatrix7/microsoft.yaml
+    path: ./ruleset/source-034.yaml
     interval: 86400
   source-036:
     type: http
@@ -81,9 +80,9 @@ rule-providers:
   source-044:
     type: http
     behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-    path: ./ruleset/source-044.list
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/vendor/acl4ssr/googlecn.yaml
+    path: ./ruleset/source-044.yaml
     interval: 86400
   source-045:
     type: http
@@ -123,9 +122,9 @@ rule-providers:
   source-056:
     type: http
     behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
-    path: ./ruleset/source-056.list
+    format: yaml
+    url: <GITHUB_RAW_BASE>/mihomo/vendor/acl4ssr/proxygfwlist.yaml
+    path: ./ruleset/source-056.yaml
     interval: 86400
   source-058:
     type: http

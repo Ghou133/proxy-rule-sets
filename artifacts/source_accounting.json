@@ -52,7 +52,8 @@
       "matcher": "RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list",
       "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list",
       "status": "EXTERNAL_DEPENDENCY",
-      "reason": "External content not fetched or materialized"
+      "reason": "Explicitly authorized local third-party copy; full leaf accounting in artifacts/vendor/",
+      "materialized": true
     },
     {
       "line": 23,
@@ -140,7 +141,8 @@
       "matcher": "RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list",
       "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list",
       "status": "EXTERNAL_DEPENDENCY",
-      "reason": "External content not fetched or materialized"
+      "reason": "Explicitly authorized local third-party copy; full leaf accounting in artifacts/vendor/",
+      "materialized": true
     },
     {
       "line": 26,
@@ -255,7 +257,8 @@
       "matcher": "RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
       "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
       "status": "EXTERNAL_DEPENDENCY",
-      "reason": "External content not fetched or materialized"
+      "reason": "Explicitly authorized local third-party copy; full leaf accounting in artifacts/vendor/",
+      "materialized": true
     },
     {
       "line": 36,
@@ -420,7 +423,8 @@
       "matcher": "RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list",
       "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list",
       "status": "EXTERNAL_DEPENDENCY",
-      "reason": "External content not fetched or materialized"
+      "reason": "Explicitly authorized local third-party copy; full leaf accounting in artifacts/vendor/",
+      "materialized": true
     },
     {
       "line": 45,
@@ -513,7 +517,8 @@
       "matcher": "RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
       "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
       "status": "EXTERNAL_DEPENDENCY",
-      "reason": "External content not fetched or materialized"
+      "reason": "Explicitly authorized local third-party copy; full leaf accounting in artifacts/vendor/",
+      "materialized": true
     },
     {
       "line": 58,

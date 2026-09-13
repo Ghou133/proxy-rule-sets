@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 import update_rules as u
 import dependencies as d
+import vendor_rules as v
 
 
 def read_json(name):
@@ -202,6 +203,48 @@ class RuleTests(unittest.TestCase):
                 again = u.snapshot(root)
             self.assertEqual(two, again)
             self.assertNotEqual(one["snapshot"], two["snapshot"])
+
+    def test_vendor_full_source_and_license_accounting(self):
+        for spec in read_json("upstream/vendor_metadata.json"):
+            data = (ROOT / spec["snapshot"]).read_bytes()
+            self.assertEqual(hashlib.sha256(data).hexdigest(), spec["sha256"])
+            license_bytes = (ROOT / spec["license_path"]).read_bytes()
+            self.assertEqual(hashlib.sha256(license_bytes).hexdigest(), spec["license_sha256"])
+            path = f"artifacts/vendor/{spec['namespace']}/{spec['name']}.json"
+            ledger = read_json(path)
+            self.assertEqual(d.typed_lines(data), [(r["line"], r["raw"]) for r in ledger["records"]])
+            self.assertEqual(ledger["totals"]["input_valid_rules"], sum(ledger["totals"][s.lower()] for s in u.STATUSES))
+
+    def test_vendor_projections_keep_duplicates_and_attribution(self):
+        v.validate_vendor(self.files)
+        for output in read_json("artifacts/vendor_outputs.json"):
+            source = output["source"]
+            for name in [output["canonical"], *(o["file"] for o in output["outputs"].values())]:
+                text = self.files[name]
+                self.assertIn(source["url"], text)
+                self.assertIn(source["repository"], text)
+                self.assertIn(source["license"], text)
+            ledger = read_json(output["accounting"])
+            for target in ("mihomo", "shadowrocket"):
+                expected = [r["matcher"] for r in ledger["records"] if r["targets"][target] != "GENERATED"]
+                name = f"unsupported/vendor/{target}/{source['namespace']}/{source['name']}.list"
+                self.assertEqual(v.noncomments(self.files.get(name, "")), expected)
+
+    def test_effective_accounting_and_local_usage_urls(self):
+        report = read_json("artifacts/effective_source_accounting.json")
+        for totals in [report["totals"], *report["per_target"].values()]:
+            self.assertEqual(totals["input_valid_rules"], sum(totals[s.lower()] for s in u.STATUSES))
+        example = yaml.safe_load(self.files["examples/mihomo-rules.yaml"])
+        for item in read_json("artifacts/vendor_outputs.json"):
+            source = item["source"]
+            url = example["rule-providers"][f"source-{source['parent_line']:03d}"]["url"]
+            self.assertTrue(url.endswith("/" + item["outputs"]["mihomo"]["file"]))
+            self.assertNotEqual(url, source["url"])
+
+    def test_default_vendor_rebuild_never_fetches_original(self):
+        with patch.object(v, "fetch", side_effect=AssertionError("Must rebuild frozen vendor data without network")):
+            specs = v.prepare(ROOT, read_json("upstream/external_metadata.json"), False, False)
+        self.assertEqual(len(specs), len(read_json("upstream/vendor_metadata.json")))
 
 
 if __name__ == "__main__":

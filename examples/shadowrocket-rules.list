@@ -1,22 +1,22 @@
 # Preserve this call order. Replace explicit policy/raw placeholders.
 RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/segments/005-boost.list,<YOUR_POLICY_FOR_Proxies>
 RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list,DIRECT
-RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list,DIRECT
+RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/vendor/acl4ssr/unban.list,DIRECT
 RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/segments/023-downloadpatch.list,DIRECT
-RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list,DIRECT
+RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/vendor/acl4ssr/download.list,DIRECT
 RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/segments/026-steamdownload.list,DIRECT
 RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/segments/032-gameplatform.list,<YOUR_POLICY_FOR_Proxies>
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list,DIRECT
+RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/vendor/blackmatrix7/microsoft.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DMM/DMM.list,<YOUR_POLICY_FOR_DMM>
 RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/segments/038-dmmdlfz.list,<YOUR_POLICY_FOR_Japan>
 RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/segments/041-notjp.list,<YOUR_POLICY_FOR_Hongkong>
-RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list,DIRECT
+RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/vendor/acl4ssr/googlecn.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list,DIRECT
 RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/segments/052-windowsoft.list,DIRECT
 RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/segments/053-kaspersky.list,DIRECT
 RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/segments/054-unbanpatch.list,DIRECT
-RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list,<YOUR_POLICY_FOR_Proxies>
+RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/vendor/acl4ssr/proxygfwlist.list,<YOUR_POLICY_FOR_Proxies>
 RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list,DIRECT
 RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/segments/060-inline.list,DIRECT

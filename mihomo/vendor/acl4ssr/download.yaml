@@ -1,0 +1,23 @@
+# Source repository: https://github.com/ACL4SSR/ACL4SSR
+# Original file: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+# Pinned commit: 75f0101039d71724b6e998b34604c2e053580e0c
+# License: CC-BY-SA-4.0 https://creativecommons.org/licenses/by-sa/4.0/
+# Modified 2026-09-13 by Rule Sets Maintainer: whitespace/format only; source order and duplicates retained.
+# Unsupported target rules are preserved in unsupported/vendor/; see per-source accounting.
+# No warranty. Original source and full license are included under upstream/vendor/.
+payload:
+  - "PROCESS-NAME,aria2c.exe"
+  - "PROCESS-NAME,fdm.exe"
+  - "PROCESS-NAME,Folx.exe"
+  - "PROCESS-NAME,NetTransport.exe"
+  - "PROCESS-NAME,Thunder.exe"
+  - "PROCESS-NAME,Transmission.exe"
+  - "PROCESS-NAME,uTorrent.exe"
+  - "PROCESS-NAME,WebTorrent.exe"
+  - "PROCESS-NAME,WebTorrent Helper.exe"
+  - "PROCESS-NAME,qbittorrent.exe"
+  - "DOMAIN-SUFFIX,smtp"
+  - "DOMAIN-KEYWORD,aria2"
+  - "PROCESS-NAME,DownloadService.exe"
+  - "PROCESS-NAME,Weiyun.exe"
+  - "PROCESS-NAME,baidunetdisk.exe"

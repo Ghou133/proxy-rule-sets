@@ -1,12 +1,12 @@
 {
-  "files_scanned": 81,
+  "files_scanned": 127,
   "checks": [
     "github_token",
     "private_key",
-    "proxy_subscription_or_node",
+    "node_uri",
     "url_credentials",
     "url_secret_query"
   ],
   "findings": [],
-  "scope": "Project text, including frozen sources. No credentials supplied or written. Heuristic scan plus manual source/URL review; not a universal secret detector."
+  "scope": "Repository text including all frozen local third-party rules; heuristic scan plus source/URL review. No credentials copied."
 }

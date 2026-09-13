@@ -72,66 +72,65 @@
       "rules": 1,
       "actual": 1
     },
+    "local-14": {
+      "file": "mihomo/vendor/acl4ssr/download.yaml",
+      "rules": 15,
+      "actual": 15
+    },
+    "local-15": {
+      "file": "mihomo/vendor/acl4ssr/googlecn.yaml",
+      "rules": 29,
+      "actual": 29
+    },
+    "local-16": {
+      "file": "mihomo/vendor/acl4ssr/proxygfwlist.yaml",
+      "rules": 6986,
+      "actual": 6986
+    },
+    "local-17": {
+      "file": "mihomo/vendor/acl4ssr/unban.yaml",
+      "rules": 31,
+      "actual": 31
+    },
+    "local-18": {
+      "file": "mihomo/vendor/blackmatrix7/microsoft.yaml",
+      "rules": 670,
+      "actual": 670
+    },
     "external-0": {
       "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Providers/LocalAreaNetwork.yaml",
       "rules": 37,
       "actual": 37
     },
     "external-1": {
-      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/UnBan.list",
-      "rules": 31,
-      "actual": 31
-    },
-    "external-2": {
-      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Download.list",
-      "rules": 15,
-      "actual": 15
-    },
-    "external-3": {
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/0087bb74e91b335e17a79fd07a8514277f7d77b4/rule/Surge/Microsoft/Microsoft.list",
-      "rules": 670,
-      "actual": 670
-    },
-    "external-4": {
       "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/0087bb74e91b335e17a79fd07a8514277f7d77b4/rule/Clash/DMM/DMM_No_Resolve.yaml",
       "rules": 20,
       "actual": 20
     },
-    "external-5": {
-      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/GoogleCN.list",
-      "rules": 29,
-      "actual": 29
-    },
-    "external-6": {
+    "external-2": {
       "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Providers/Ruleset/GoogleFCM.yaml",
       "rules": 44,
       "actual": 44
     },
-    "external-7": {
+    "external-3": {
       "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Providers/Apple.yaml",
       "rules": 29,
       "actual": 29
     },
-    "external-8": {
-      "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/ProxyGFWlist.list",
-      "rules": 6986,
-      "actual": 6986
-    },
-    "external-9": {
+    "external-4": {
       "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Providers/ChinaDomain.yaml",
       "rules": 635,
       "actual": 635
     },
-    "external-10": {
+    "external-5": {
       "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/Providers/ChinaCompanyIp.yaml",
       "rules": 208,
       "actual": 208
     }
   },
   "local_import": "PASS",
-  "external_import": "PASS_WITH_KNOWN_UNSUPPORTED",
-  "known_external_unsupported_count": 10,
-  "upstream_commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813",
-  "upstream_sha256": "0fa1f5fa40ad4233f934e2a22ff14346b6083051b2ab0fa8531f5b172421c831",
-  "scope": "Initial frozen inputs only. Re-run scripts/validate_mihomo.py for changed inputs; no Shadowrocket runtime available."
+  "external_import": "PASS",
+  "known_external_unsupported_count": 0,
+  "scope": "Local vendor revision: 19 local YAML and 6 remaining remote references. Unsupported local source rules retained outside payloads.",
+  "upstream_commit": "a29c67805b1dd7721fe896d0a64eb93ba7e29813"
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Conservative subconverter rule-data importer. Never expand, sort or deduplicate rules."""
+"""Conservative importer: expand only authorized sources; never sort or deduplicate."""
 from __future__ import annotations
 
 import argparse
@@ -396,6 +396,7 @@ def main():
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--audit-only", action="store_true")
     parser.add_argument("--raw-base")
+    parser.add_argument("--refresh-vendored", action="store_true", help="Explicitly refresh locally maintained third-party snapshots")
     args = parser.parse_args()
     metadata = json.loads((ROOT / "upstream/metadata.json").read_text("utf-8")) if args.offline else snapshot(ROOT)
     source = (ROOT / metadata["snapshot"]).read_bytes()
@@ -415,7 +416,9 @@ def main():
         print(files["artifacts/source_audit.md"])
         return
     from dependencies import extend_project, validate_project
-    files = extend_project(ROOT, source, metadata, files, config.get("raw_base", "<GITHUB_RAW_BASE>"), offline=args.offline)
+    if args.offline and args.refresh_vendored:
+        raise ValueError("--refresh-vendored requires network access")
+    files = extend_project(ROOT, source, metadata, files, config.get("raw_base", "<GITHUB_RAW_BASE>"), offline=args.offline, refresh_vendored=args.refresh_vendored)
     validate_project(files)
     manifest = ROOT / "artifacts/generated_manifest.json"
     previous = json.loads(manifest.read_text("utf-8")) if manifest.exists() else []
@@ -430,7 +433,7 @@ def main():
     write(manifest, json_text(list(files)))
     if config:
         write(config_path, json_text(config))
-    print(json_text(json.loads(files["artifacts/expanded_source_accounting.json"])["totals"]))
+    print(json_text(json.loads(files["artifacts/effective_source_accounting.json"])["totals"]))
 
 
 if __name__ == "__main__":

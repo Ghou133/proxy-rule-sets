@@ -1,0 +1,21 @@
+{
+  "source": {
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
+    "repository": "blackmatrix7/ios_rule_script",
+    "branch": "master",
+    "commit": "0087bb74e91b335e17a79fd07a8514277f7d77b4",
+    "sha256": "a2854b28dc9f903a64933c74fff5b50166e9bbebc70fdfce18c592f75793ff14",
+    "pinned_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/0087bb74e91b335e17a79fd07a8514277f7d77b4/rule/Surge/Microsoft/Microsoft.list",
+    "snapshot": "upstream/vendor/blackmatrix7/a2854b28dc9f903a64933c74fff5b50166e9bbebc70fdfce18c592f75793ff14/Microsoft.list",
+    "fetched_at": "2026-09-13T12:22:14.065041+00:00",
+    "license": "GPL-2.0",
+    "license_url": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+    "license_path": "upstream/vendor/blackmatrix7/licenses/8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643/LICENSE",
+    "license_sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "namespace": "blackmatrix7",
+    "name": "microsoft",
+    "parent_line": 34,
+    "policy": "DIRECT"
+  },
+  "accounting": "artifacts/vendor/blackmatrix7/microsoft.json"
+}

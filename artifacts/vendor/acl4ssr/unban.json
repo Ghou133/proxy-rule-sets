@@ -1,0 +1,387 @@
+{
+  "source": {
+    "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list",
+    "repository": "ACL4SSR/ACL4SSR",
+    "branch": "master",
+    "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
+    "sha256": "016837560f1f0eeb576f81600c95b547bd82e27ba27a175a3b5010de9bd18ffa",
+    "pinned_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/75f0101039d71724b6e998b34604c2e053580e0c/Clash/UnBan.list",
+    "snapshot": "upstream/vendor/acl4ssr/016837560f1f0eeb576f81600c95b547bd82e27ba27a175a3b5010de9bd18ffa/UnBan.list",
+    "fetched_at": "2026-09-13T12:22:13.455938+00:00",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "license_path": "upstream/vendor/acl4ssr/licenses/7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297/LICENCE",
+    "license_sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "namespace": "acl4ssr",
+    "name": "unban",
+    "parent_line": 7,
+    "policy": "DIRECT"
+  },
+  "records": [
+    {
+      "line": 4,
+      "raw": "DOMAIN-SUFFIX,ol.epicgames.com",
+      "matcher": "DOMAIN-SUFFIX,ol.epicgames.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 7,
+      "raw": "DOMAIN-SUFFIX,dizhensubao.getui.com",
+      "matcher": "DOMAIN-SUFFIX,dizhensubao.getui.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 10,
+      "raw": "DOMAIN,dl.google.com",
+      "matcher": "DOMAIN,dl.google.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 11,
+      "raw": "DOMAIN-SUFFIX,googletraveladservices.com",
+      "matcher": "DOMAIN-SUFFIX,googletraveladservices.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 14,
+      "raw": "DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net",
+      "matcher": "DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 17,
+      "raw": "DOMAIN,origin-a.akamaihd.net",
+      "matcher": "DOMAIN,origin-a.akamaihd.net",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 20,
+      "raw": "DOMAIN,fairplay.l.qq.com",
+      "matcher": "DOMAIN,fairplay.l.qq.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 21,
+      "raw": "DOMAIN,livew.l.qq.com",
+      "matcher": "DOMAIN,livew.l.qq.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 22,
+      "raw": "DOMAIN,vd.l.qq.com",
+      "matcher": "DOMAIN,vd.l.qq.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 27,
+      "raw": "DOMAIN,errlog.umeng.com",
+      "matcher": "DOMAIN,errlog.umeng.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 28,
+      "raw": "DOMAIN,msg.umeng.com",
+      "matcher": "DOMAIN,msg.umeng.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 29,
+      "raw": "DOMAIN,msg.umengcloud.com",
+      "matcher": "DOMAIN,msg.umengcloud.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 32,
+      "raw": "DOMAIN,tracking.miui.com",
+      "matcher": "DOMAIN,tracking.miui.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 35,
+      "raw": "DOMAIN,app.adjust.com",
+      "matcher": "DOMAIN,app.adjust.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 36,
+      "raw": "DOMAIN,bdtj.tagtic.cn",
+      "matcher": "DOMAIN,bdtj.tagtic.cn",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 39,
+      "raw": "DOMAIN,rewards.hypixel.net",
+      "matcher": "DOMAIN,rewards.hypixel.net",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 42,
+      "raw": "DOMAIN-SUFFIX,koodomobile.com",
+      "matcher": "DOMAIN-SUFFIX,koodomobile.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 43,
+      "raw": "DOMAIN-SUFFIX,koodomobile.ca",
+      "matcher": "DOMAIN-SUFFIX,koodomobile.ca",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 46,
+      "raw": "DOMAIN-SUFFIX,synology.me",
+      "matcher": "DOMAIN-SUFFIX,synology.me",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 47,
+      "raw": "DOMAIN-SUFFIX,DiskStation.me",
+      "matcher": "DOMAIN-SUFFIX,DiskStation.me",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 48,
+      "raw": "DOMAIN-SUFFIX,i234.me",
+      "matcher": "DOMAIN-SUFFIX,i234.me",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 49,
+      "raw": "DOMAIN-SUFFIX,myDS.me",
+      "matcher": "DOMAIN-SUFFIX,myDS.me",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 50,
+      "raw": "DOMAIN-SUFFIX,DSCloud.biz",
+      "matcher": "DOMAIN-SUFFIX,DSCloud.biz",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 51,
+      "raw": "DOMAIN-SUFFIX,DSCloud.me",
+      "matcher": "DOMAIN-SUFFIX,DSCloud.me",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 52,
+      "raw": "DOMAIN-SUFFIX,DSCloud.mobi",
+      "matcher": "DOMAIN-SUFFIX,DSCloud.mobi",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 53,
+      "raw": "DOMAIN-SUFFIX,DSmyNAS.com",
+      "matcher": "DOMAIN-SUFFIX,DSmyNAS.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 54,
+      "raw": "DOMAIN-SUFFIX,DSmyNAS.net",
+      "matcher": "DOMAIN-SUFFIX,DSmyNAS.net",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 55,
+      "raw": "DOMAIN-SUFFIX,DSmyNAS.org",
+      "matcher": "DOMAIN-SUFFIX,DSmyNAS.org",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 56,
+      "raw": "DOMAIN-SUFFIX,FamilyDS.com",
+      "matcher": "DOMAIN-SUFFIX,FamilyDS.com",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 57,
+      "raw": "DOMAIN-SUFFIX,FamilyDS.net",
+      "matcher": "DOMAIN-SUFFIX,FamilyDS.net",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    },
+    {
+      "line": 58,
+      "raw": "DOMAIN-SUFFIX,FamilyDS.org",
+      "matcher": "DOMAIN-SUFFIX,FamilyDS.org",
+      "status": "GENERATED",
+      "reason": "Policyless provider rule; matcher preserved",
+      "targets": {
+        "mihomo": "GENERATED",
+        "shadowrocket": "GENERATED"
+      }
+    }
+  ],
+  "totals": {
+    "input_valid_rules": 31,
+    "generated": 31,
+    "unsupported": 0,
+    "ambiguous": 0,
+    "external_dependency": 0,
+    "invalid_with_evidence": 0
+  },
+  "per_target": {
+    "mihomo": {
+      "generated": 31,
+      "unsupported": 0,
+      "ambiguous": 0,
+      "external_dependency": 0,
+      "invalid_with_evidence": 0
+    },
+    "shadowrocket": {
+      "generated": 31,
+      "unsupported": 0,
+      "ambiguous": 0,
+      "external_dependency": 0,
+      "invalid_with_evidence": 0
+    }
+  }
+}

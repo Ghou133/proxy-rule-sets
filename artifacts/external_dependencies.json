@@ -24,130 +24,6 @@
     "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
   },
   {
-    "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list",
-    "policy": "DIRECT",
-    "parent_line": 7,
-    "repository": "ACL4SSR/ACL4SSR",
-    "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
-    "repository_last_commit_at": "2026-09-12T02:36:23Z",
-    "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/UnBan.yaml",
-    "original_sha256": "016837560f1f0eeb576f81600c95b547bd82e27ba27a175a3b5010de9bd18ffa",
-    "yaml_sha256": "017365034b76942e796cf7aa46fcb7c3382c2d5db1d229e4109151d46f4a7602",
-    "original_count": 31,
-    "yaml_count": 52,
-    "ordered_equal": false,
-    "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list",
-    "format": "text",
-    "behavior": "classical",
-    "call_params": [],
-    "reason": "Candidate differs; original typed text reference preserved",
-    "only_original_count": 12,
-    "only_yaml_count": 33,
-    "mihomo_unsupported": [],
-    "materialized": false,
-    "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
-  },
-  {
-    "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list",
-    "policy": "DIRECT",
-    "parent_line": 24,
-    "repository": "ACL4SSR/ACL4SSR",
-    "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
-    "repository_last_commit_at": "2026-09-12T02:36:23Z",
-    "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Download.yaml",
-    "original_sha256": "62b72d16b8f2bcbc80eb2c7af35dc03b31c4d82e732af6d227c2a311f04bdadc",
-    "yaml_sha256": "2b465c1b883d1fc6875a1cc31c223aaf2e36c052e0bfcfa90af176abd478abd6",
-    "original_count": 22,
-    "yaml_count": 2,
-    "ordered_equal": false,
-    "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list",
-    "format": "text",
-    "behavior": "classical",
-    "call_params": [],
-    "reason": "Candidate differs; original typed text reference preserved",
-    "only_original_count": 20,
-    "only_yaml_count": 0,
-    "mihomo_unsupported": [
-      {
-        "line": 15,
-        "rule": "URL-REGEX,(Subject|HELO|SMTP)",
-        "reason": "Not supported by Mihomo classical parser"
-      },
-      {
-        "line": 16,
-        "rule": "URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com",
-        "reason": "Not supported by Mihomo classical parser"
-      },
-      {
-        "line": 17,
-        "rule": "URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)",
-        "reason": "Not supported by Mihomo classical parser"
-      },
-      {
-        "line": 18,
-        "rule": "URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?",
-        "reason": "Not supported by Mihomo classical parser"
-      },
-      {
-        "line": 20,
-        "rule": "URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)",
-        "reason": "Not supported by Mihomo classical parser"
-      },
-      {
-        "line": 23,
-        "rule": "URL-REGEX,(.+\\.|^)(360|so)\\.(cn|com)",
-        "reason": "Not supported by Mihomo classical parser"
-      },
-      {
-        "line": 29,
-        "rule": "URL-REGEX,assets\\d+\\.xboxlive\\.(com|cn)",
-        "reason": "Not supported by Mihomo classical parser"
-      }
-    ],
-    "materialized": false,
-    "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
-  },
-  {
-    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
-    "policy": "DIRECT",
-    "parent_line": 34,
-    "repository": "blackmatrix7/ios_rule_script",
-    "commit": "0087bb74e91b335e17a79fd07a8514277f7d77b4",
-    "repository_last_commit_at": "2026-09-11T20:24:14Z",
-    "yaml_candidate_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml",
-    "original_sha256": "a2854b28dc9f903a64933c74fff5b50166e9bbebc70fdfce18c592f75793ff14",
-    "yaml_sha256": "a289a1d52394e92ceee26a5c83953cd292609717d39fb2970d189dc7877b2a4d",
-    "original_count": 673,
-    "yaml_count": 670,
-    "ordered_equal": false,
-    "selected_url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list",
-    "format": "text",
-    "behavior": "classical",
-    "call_params": [],
-    "reason": "Candidate differs; original typed text reference preserved",
-    "only_original_count": 3,
-    "only_yaml_count": 0,
-    "mihomo_unsupported": [
-      {
-        "line": 679,
-        "rule": "USER-AGENT,Microsoft*",
-        "reason": "Not supported by Mihomo classical parser"
-      },
-      {
-        "line": 680,
-        "rule": "USER-AGENT,OneDrive*",
-        "reason": "Not supported by Mihomo classical parser"
-      },
-      {
-        "line": 681,
-        "rule": "USER-AGENT,OneDriveiOSApp*",
-        "reason": "Not supported by Mihomo classical parser"
-      }
-    ],
-    "materialized": false,
-    "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
-  },
-  {
     "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/DMM/DMM.list",
     "policy": "DMM",
     "parent_line": 36,
@@ -167,30 +43,6 @@
     "reason": "Ordered matcher sequence verified equal (including no-resolve)",
     "only_original_count": 0,
     "only_yaml_count": 0,
-    "mihomo_unsupported": [],
-    "materialized": false,
-    "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
-  },
-  {
-    "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list",
-    "policy": "DIRECT",
-    "parent_line": 44,
-    "repository": "ACL4SSR/ACL4SSR",
-    "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
-    "repository_last_commit_at": "2026-09-12T02:36:23Z",
-    "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCN.yaml",
-    "original_sha256": "00ffcc16d0eb1898cba4f9c2cc2ce76a8f70bef7a03aea436dad79982b77c8ca",
-    "yaml_sha256": "131781f1f036062eb2531c490c1cb810ead87e7c38d601ab9ad4d0bdaadb0f82",
-    "original_count": 29,
-    "yaml_count": 48,
-    "ordered_equal": false,
-    "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list",
-    "format": "text",
-    "behavior": "classical",
-    "call_params": [],
-    "reason": "Candidate differs; original typed text reference preserved",
-    "only_original_count": 0,
-    "only_yaml_count": 19,
     "mihomo_unsupported": [],
     "materialized": false,
     "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
@@ -239,30 +91,6 @@
     "reason": "Ordered matcher sequence verified equal (including no-resolve)",
     "only_original_count": 0,
     "only_yaml_count": 0,
-    "mihomo_unsupported": [],
-    "materialized": false,
-    "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
-  },
-  {
-    "url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
-    "policy": "Proxies",
-    "parent_line": 56,
-    "repository": "ACL4SSR/ACL4SSR",
-    "commit": "75f0101039d71724b6e998b34604c2e053580e0c",
-    "repository_last_commit_at": "2026-09-12T02:36:23Z",
-    "yaml_candidate_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml",
-    "original_sha256": "72d5f97cb3adedd7ef632962effda4aa3b9953da20427cd6050d55d1184de5ea",
-    "yaml_sha256": "c8f4eab7ae2ab1913a42d280d1f6964a408461d42530e622a556614f64440b33",
-    "original_count": 6986,
-    "yaml_count": 4319,
-    "ordered_equal": false,
-    "selected_url": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
-    "format": "text",
-    "behavior": "classical",
-    "call_params": [],
-    "reason": "Candidate differs; original typed text reference preserved",
-    "only_original_count": 3207,
-    "only_yaml_count": 540,
     "mihomo_unsupported": [],
     "materialized": false,
     "maintenance_note": "Repository head activity observed; future availability or per-file maintenance not guaranteed"
