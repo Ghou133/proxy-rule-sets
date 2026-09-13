@@ -18,6 +18,8 @@ def build(root=ROOT):
         options = {"landing": landing, "landingNodeName": "落地节点", "landingProxy": None,
                    "transitHealthUrl": "", "healthUrl": "https://www.gstatic.com/generate_204", "includeLegacyRules": True}
         options["multiSubscription"] = multi
+        if multi:
+            options["subscriptionProviders"] = None
         text = ("// Clash Verge Rev 全局扩展脚本：" + ("有落地" if landing else "无落地") + "\n"
                 "// Source: https://github.com/Ghou133/proxy-rule-sets\n"
                 "// 公开模板不包含节点密码。AI 为统一策略组。\n"

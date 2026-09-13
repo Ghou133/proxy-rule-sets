@@ -39,3 +39,9 @@ python scripts/verify_multi_subscription.py --core /path/to/mihomo --output arti
 该测试启动独立临时核心与本机模拟订阅，不读取、连接或重载用户正在运行的代理配置。
 
 DMM 在界面直接显示 Japan 自动选择项与全部日本节点，支持手动挑选。按名称匹配日本，不代表已验证 DMM 解锁。
+
+## Script execution failed
+
+普通多订阅模板需要输入包含 `proxy-providers` 的本地 YAML。仍选择机场单订阅并直接粘贴模板，会因缺失节点源而失败；Clash Verge 可能只显示笼统运行错误。有落地模板还必须在私人副本填写落地参数。
+
+也可使用私人单文件入口：在脚本顶部 `OPTIONS.subscriptionProviders` 填入本地 YAML 的 `proxy-providers` 对象。该方式替换当前订阅节点池，保留当前网络设置，不需要另建本地配置。**含真实地址的脚本不能公开上传**。公开模板该字段保持 null。已有节点提供者中的落地不会自动按名称检索，应明确填写私人 `landingProxy`。

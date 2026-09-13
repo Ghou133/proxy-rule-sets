@@ -249,6 +249,11 @@ const MANIFEST = {
 // Configuration is transformed in memory. No filesystem/network APIs are used here.
 function main(input) {
   const config = JSON.parse(JSON.stringify(input));
+  // Optional private single-file entry; sources replace the selected subscription pool.
+  if (OPTIONS.multiSubscription && OPTIONS.subscriptionProviders) {
+    config["proxy-providers"] = JSON.parse(JSON.stringify(OPTIONS.subscriptionProviders));
+    config.proxies = [];
+  }
   const marker = "rule-sets-extension-v2";
   const previous = /^rule-sets-extension-v[12]$/.test(config["x-rule-sets-extension"] || "");
   const proxies = Array.isArray(config.proxies) ? config.proxies : [];

@@ -224,3 +224,15 @@ test('DMM exposes Japan nodes directly in all four PC variants',()=>{
   assert.ok(filter.test('[B] JAPAN 02'));assert.ok(!filter.test('[B] Hong Kong 01'));
  }
 });
+
+test('private single-file multi entry replaces original node pool without changing networking',()=>{
+ const input=fixture(), sources=providersFixture()['proxy-providers'];
+ const c=vm.createContext({input,sources,landing});
+ vm.runInContext(fs.readFileSync(path.join(root,'extensions/multi-subscription-with-landing.js'),'utf8')+';OPTIONS.subscriptionProviders=sources;OPTIONS.landingProxy=landing;output=main(input);',c);
+ const out=JSON.parse(JSON.stringify(c.output));
+ assert.deepEqual(out.proxies.map(p=>p.name),['Exit']);
+ assert.deepEqual(group(out,'Proxy').use,['a','b']);
+ assert.deepEqual(group(out,'AI').proxies,['Exit','Proxy']);
+ assert.deepEqual(out.dns,input.dns);assert.deepEqual(out.tun,input.tun);
+ assert.deepEqual(input,fixture());
+});
