@@ -253,3 +253,10 @@ test('public multi scripts offer two safe editable subscription placeholders',()
   assert.notEqual(sources['airport-1'].path,sources['airport-2'].path);
  }
 });
+
+test('HTTP subscriptions use Verge identification without replacing custom header',()=>{
+ const input={'proxy-providers':{a:{type:'http',url:'https://subscription.invalid/nodes',path:'./a.yaml'}}};
+ assert.deepEqual(multi(input)['proxy-providers'].a.header['User-Agent'],['clash-verge/v2.4.5']);
+ input['proxy-providers'].a.header={'user-agent':['custom-client']};
+ assert.deepEqual(multi(input)['proxy-providers'].a.header,{'user-agent':['custom-client']});
+});

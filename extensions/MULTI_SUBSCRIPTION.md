@@ -53,3 +53,5 @@ DMM 在界面直接显示 Japan 自动选择项与全部日本节点，支持手
 多订阅默认 `OPTIONS.proxyServerNameserver = ["https://223.5.5.5/dns-query"]`，仅替换 `dns.proxy-server-nameserver`，避免继承某机场的本机专用解析器后其他机场节点无法解析。其余 DNS 设置保留。需要自行指定可靠解析器时修改此数组；设置 null 可保留输入值。显式 DoH 避免系统 DNS 被 TUN/Fake-IP 截获后返回合成地址；解析服务可达性仍取决于网络。
 
 私人单文件增加第三个订阅：在 `OPTIONS.subscriptionProviders` 中新增 `airport-3`，填写私人 URL、独立 `path: "./proxy_providers/airport-3.yaml"` 与 `override: {"additional-prefix": "[C] "}`，沿用其他 provider 的更新/健康检查设置。不要修改 MANIFEST 规则数据。普通双文件版则修改本地 YAML 的 `proxy-providers`。这两种入口只需维护正在使用的一种。
+
+HTTP 节点订阅默认使用 `User-Agent: clash-verge/v2.4.5`。有些服务按客户端标识返回不同协议，默认核心标识可能得到不完整节点集。可在 provider.header 中覆盖 User-Agent；不是更新服务商地址或凭据。

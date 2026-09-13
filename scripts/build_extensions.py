@@ -22,6 +22,7 @@ def build(root=ROOT):
             options["subscriptionProviders"] = {
                 f"airport-{i}": {"type": "http", "url": "这里填订阅地址",
                     "path": f"./proxy_providers/airport-{i}.yaml", "interval": 86400, "proxy": "DIRECT",
+                    "header": {"User-Agent": ["clash-verge/v2.4.5"]},
                     "override": {"additional-prefix": f"[{label}] "},
                     "health-check": {"enable": True, "url": "https://www.gstatic.com/generate_204", "interval": 1800, "lazy": True}}
                 for i, label in ((1, "A"), (2, "B"))}

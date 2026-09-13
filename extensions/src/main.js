@@ -47,6 +47,12 @@ function main(input) {
     entries.forEach(([key, provider], index) => {
       if (!provider || !["http", "file", "inline"].includes(provider.type)) throw new Error("多订阅版：provider type 必须为 http/file/inline");
       if (provider.type === "http" && (!/^https?:\/\//.test(provider.url || "") || /YOUR_|example\.(com|invalid)/i.test(provider.url))) throw new Error("多订阅版：请在本地 YAML 填写真实订阅地址");
+      if (provider.type === "http") {
+        provider.header = provider.header || {};
+        if (!Object.keys(provider.header).some(k => k.toLowerCase() === "user-agent")) {
+          provider.header["User-Agent"] = ["clash-verge/v2.4.5"];
+        }
+      }
       if (provider.type === "http" && !provider.proxy) provider.proxy = "DIRECT";
       if (provider.type !== "inline") {
         if (!provider.path || paths.has(provider.path)) throw new Error("多订阅版：每个 provider 必须使用独立缓存 path");
