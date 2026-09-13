@@ -440,7 +440,7 @@ function main(input) {
   if (OPTIONS.includeLegacyRules) {
     region("Japan", japan);
     region("Hongkong", hongkong);
-    groups.push({name: "DMM", type: "select", proxies: ["Japan"].concat(names.filter(n => japan.test(n))),
+    groups.push({name: "DMM", type: "select", proxies: ["Japan"].concat(OPTIONS.landing ? ["Exit"] : [], names.filter(n => japan.test(n))),
       ...(providerNames.length ? {use: providerNames, filter: "(?i)" + japan.source,
         "exclude-filter": "(?i)" + informational.source} : {})});
   }

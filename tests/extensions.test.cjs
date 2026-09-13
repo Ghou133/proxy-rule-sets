@@ -218,7 +218,7 @@ test('DMM exposes Japan nodes directly in all four PC variants',()=>{
   const c=vm.createContext({input:{...fixture(),...providersFixture()},landing});
   vm.runInContext(fs.readFileSync(path.join(root,'extensions',name),'utf8')+';OPTIONS.subscriptionProviders=null;OPTIONS.landingProxy=landing;output=main(input);',c);
   const dmm=JSON.parse(JSON.stringify(c.output['proxy-groups'].find(g=>g.name==='DMM')));
-  assert.deepEqual(dmm.proxies,['Japan','日本 JP-A']);
+  assert.deepEqual(dmm.proxies,name==='with-landing.js'||name==='multi-subscription-with-landing.js' ? ['Japan','Exit','日本 JP-A'] : ['Japan','日本 JP-A']);
   assert.deepEqual(dmm.use,['a','b']);assert.ok(!dmm.hidden);
   const filter=new RegExp(dmm.filter.replace(/^\(\?i\)/,''),'i');
   assert.ok(filter.test('[B] JAPAN 02'));assert.ok(!filter.test('[B] Hong Kong 01'));

@@ -38,3 +38,5 @@ python scripts/build_extensions.py 生成四版（含多订阅两版）。node -
 PC 多订阅另提供 [无落地](multi-subscription.js) / [有落地](multi-subscription-with-landing.js)，使用同一份 [本地入口模板与说明](MULTI_SUBSCRIPTION.md)。所有 PC 无落地版 AI 都可直接选择全部可用节点，不必进入 Proxy。
 
 DMM 为可见手动选择组：Japan 自动选择项 + 全部日本节点（包括远程 provider）。地区由节点名称筛选，实际是否支持 DMM 需自行确认。
+
+有落地两版的 DMM 额外提供 Exit 手动选项，仍默认 Japan；无落地版没有 Exit。
