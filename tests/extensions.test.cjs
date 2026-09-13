@@ -34,79 +34,72 @@ function assertGraph(config) {
   }
   for (const name of nodes.keys()) visit(name, new Set());
 }
-test('one AI group; all three AI providers target it', () => {
-  const output = transform(fixture());
-  assert.equal(output['proxy-groups'].filter(g => /^(AI|OpenAI|ChatGPT|Claude|Gemini)$/.test(g.name)).length, 1);
-  assert.deepEqual(output.rules.slice(0, 3), ['RULE-SET,rsx-ai-0,AI', 'RULE-SET,rsx-ai-1,AI', 'RULE-SET,rsx-ai-2,AI']);
-  assert.ok(output.rules.includes('RULE-SET,original,AI'));
-  assert.ok(output.rules.includes('IP-CIDR,192.0.2.0/24,AI,no-resolve'));
-  assert.equal(group(output, '原选择').proxies[1], 'AI');
-  assertGraph(output);
+
+test('subscription routing is replaced; only compact English groups remain', () => {
+ const out=transform(fixture(),true,{landingProxy:landing});
+ assert.deepEqual(out['proxy-groups'].filter(g=>!g.hidden).map(g=>g.name),['AI','Proxy','Relay']);
+ assert.ok(out['proxy-groups'].every(g=>/^[A-Za-z]+$/.test(g.name)));
+ assert.ok(!out['rule-providers'].original);
+ assert.ok(!out.rules.some(r=>r.includes('a.example')||r.includes('original')));
+ assert.equal(out.rules.at(-1),'MATCH,Proxy'); assertGraph(out);
 });
-test('without landing adds no chained proxy or transit group', () => {
-  const output = transform(fixture());
-  assert.ok(!output.proxies.some(p => p.name === '落地出口'));
-  assert.ok(!group(output, '中转节点'));
-  assert.equal(group(output, 'AI').proxies[0], '机场出口');
+test('AI has one manual selector, landing first, no automatic bypass',()=>{
+ const out=transform(fixture(),true,{landingProxy:landing});
+ assert.equal(group(out,'AI').type,'select');
+ assert.deepEqual(group(out,'AI').proxies,['Exit','Proxy']);
+ assert.ok(!out['proxy-groups'].some(g=>g.type==='fallback'));
+ assert.equal(out.proxies.find(p=>p.name==='Exit')['dialer-proxy'],'Relay');
+ assert.deepEqual(out.rules.slice(0,3),['RULE-SET,rsx-ai-0,AI','RULE-SET,rsx-ai-1,AI','RULE-SET,rsx-ai-2,AI']);
 });
-test('landing uses physical Japanese fronts then other nodes, never DIRECT', () => {
-  const output = transform(fixture(), true, {landingProxy: landing, transitHealthUrl: 'https://health.invalid/'});
-  assert.deepEqual(group(output, '中转节点').proxies, ['中转·日本优选', '中转·其他地区']);
-  assert.deepEqual(group(output, '中转·日本优选').proxies, ['日本 JP-A']);
-  assert.ok(group(output, '中转·其他地区').proxies.includes('新加坡 SG-GPT'));
-  assert.equal(output.proxies.find(p => p.name === '落地出口')['dialer-proxy'], '中转节点');
-  assert.equal(group(output, 'AI').proxies[0], '落地出口');
-  assert.equal(group(output, '中转节点').url, 'https://health.invalid/');
-  assertGraph(output);
+test('all regions participate in relay; manual selection remains available',()=>{
+ const out=transform(fixture(),true,{landingProxy:landing,transitHealthUrl:'https://health.invalid/'});
+ assert.deepEqual(group(out,'Latency').proxies,['日本 JP-A','新加坡 SG-GPT','香港 HK-A']);
+ assert.deepEqual(group(out,'Relay').proxies,['Latency','日本 JP-A','新加坡 SG-GPT','香港 HK-A']);
+ assert.equal(group(out,'Latency').url,'https://health.invalid/');
+ assert.equal(group(out,'Relay').type,'select');
 });
-test('reapplication is byte-structurally idempotent for both modes', () => {
-  for (const withLanding of [true, false]) {
-    const options = withLanding ? {landingProxy: landing} : {};
-    const first = transform(fixture(), withLanding, options);
-    assert.deepEqual(transform(first, withLanding, options), first);
-  }
+test('without landing has two visible groups and no chain',()=>{
+ const out=transform(fixture());
+ assert.deepEqual(out['proxy-groups'].filter(g=>!g.hidden).map(g=>g.name),['AI','Proxy']);
+ assert.deepEqual(group(out,'AI').proxies,['Proxy']); assertGraph(out);
+ assert.ok(!out.proxies.some(p=>p.name==='Exit'));
 });
-test('switching landing mode removes only owned chain and keeps subscription', () => {
-  const output = transform(transform(fixture(), true, {landingProxy: landing}));
-  assertGraph(output);
-  assert.ok(!output.proxies.some(p => p.name === '落地出口'));
-  assert.ok(!group(output, '中转节点'));
-  assert.equal(group(output, 'AI').proxies[0], '机场出口');
+test('idempotent reapplication and switching modes',()=>{
+ for(const mode of [true,false]) {
+  const opts=mode?{landingProxy:landing}:{};
+  const first=transform(fixture(),mode,opts);
+  assert.deepEqual(transform(first,mode,opts),first);
+ }
+ const out=transform(transform(fixture(),true,{landingProxy:landing}));
+ assert.ok(!out.proxies.some(p=>p.name==='Exit')); assertGraph(out);
 });
-test('rules retain duplicates, order and terminal; DNS/TUN/proxy settings untouched', () => {
-  const input = fixture(); const saved = JSON.stringify(input); const output = transform(input);
-  assert.equal(JSON.stringify(input), saved);
-  assert.deepEqual(output.dns, input.dns); assert.deepEqual(output.tun, input.tun);
-  assert.equal(output['mixed-port'], input['mixed-port']);
-  assert.deepEqual(output.proxies, input.proxies);
-  assert.deepEqual(output.rules.slice(-5), ['DOMAIN,a.example,DIRECT','RULE-SET,original,AI','IP-CIDR,192.0.2.0/24,AI,no-resolve','DOMAIN,a.example,DIRECT','MATCH,原选择']);
-  const legacy = output.rules.filter(r => /^RULE-SET,rsx-source-/.test(r));
-  assert.equal(legacy.length, 21);
-  assert.ok(legacy[19].endsWith(',DIRECT,no-resolve'));
+test('input immutable; DNS TUN ports and subscription nodes retained',()=>{
+ const input=fixture(),before=JSON.stringify(input),out=transform(input);
+ assert.equal(JSON.stringify(input),before);
+ for(const key of ['dns','tun','mixed-port','proxies']) assert.deepEqual(out[key],input[key]);
+ assert.equal(out.rules.filter(r=>r.startsWith('RULE-SET,rsx-source-')).length,21);
 });
-test('existing landing node is copied without altering original', () => {
-  const input = fixture(); input.proxies.push({...landing, name: 'MyExit'});
-  const output = transform(input, true, {landingNodeName: 'MyExit'});
-  assert.deepEqual(output.proxies.find(p => p.name === 'MyExit'), input.proxies.at(-1));
-  assert.ok(!group(output, '中转·其他地区').proxies.includes('MyExit'));
-  assertGraph(output);
+test('existing landing excluded from relay and retained unchanged',()=>{
+ const input=fixture(); input.proxies.push({...landing,name:'MyExit'});
+ const out=transform(input,true,{landingNodeName:'MyExit'});
+ assert.deepEqual(out.proxies.find(p=>p.name==='MyExit'),input.proxies.at(-1));
+ assert.ok(!group(out,'Latency').proxies.includes('MyExit')); assertGraph(out);
 });
-test('missing landing, missing usable node and reserved names fail explicitly', () => {
-  assert.throws(() => transform(fixture(), true), /landingProxy/);
-  assert.throws(() => transform({}), /没有可用/);
-  const input = fixture(); input['proxy-groups'].push({name:'机场自动',type:'select',proxies:['日本 JP-A']});
-  assert.throws(() => transform(input), /同名/);
+test('missing prerequisites fail; old subscription group names are safe to replace',()=>{
+ assert.throws(()=>transform(fixture(),true),/landingProxy/);
+ assert.throws(()=>transform({}),/没有可用/);
+ const input=fixture(); input['proxy-groups'].push({name:'Proxy',type:'select',proxies:['日本 JP-A']});
+ assertGraph(transform(input)); input.proxies.push(proxy('Proxy'));
+ assert.throws(()=>transform(input),/同名/);
 });
-test('provider-only subscriptions supported without pretending Japanese discovery', () => {
-  const output = transform({'proxy-providers': {source: {type:'file',path:'./proxy.yaml'}}, rules:[]}, true, {landingProxy:landing});
-  assert.equal(group(output, '中转·日本优选'), undefined);
-  assert.deepEqual(group(output, '中转·其他地区').use, ['source']);
-  assert.deepEqual(group(output, '地区·日本').proxies, ['REJECT']);
-  assert.equal(output.rules.at(-1), 'MATCH,其他流量');
-  assertGraph(output);
+test('provider pools support relay without geographic filters',()=>{
+ const out=transform({'proxy-providers':{source:{type:'file',path:'./proxy.yaml'}}},true,{landingProxy:landing});
+ assert.deepEqual(group(out,'Latency').use,['source']);
+ assert.equal(group(out,'Latency').filter,undefined);
+ assert.equal(group(out,'Latency')['empty-fallback'],'REJECT'); assertGraph(out);
 });
-test('AI-only option preserves subscription rules and avoids legacy providers', () => {
-  const output = transform(fixture(), false, {includeLegacyRules:false});
-  assert.equal(output.rules.length, fixture().rules.length + 3);
-  assert.ok(!Object.keys(output['rule-providers']).some(k => k.startsWith('rsx-source-')));
+test('AI-only option still replaces subscription routing',()=>{
+ const out=transform(fixture(),false,{includeLegacyRules:false});
+ assert.equal(out.rules.length,4); assert.equal(Object.keys(out['rule-providers']).length,3);
+ assert.ok(!group(out,'DMM'));
 });
