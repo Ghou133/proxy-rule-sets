@@ -161,5 +161,5 @@ if __name__=='__main__':
     with tempfile.TemporaryDirectory(prefix='relay-fixture-') as temp:
         results=[verify(args.core,Path(temp)/mode,mode=='providers') for mode in ('inline','providers')]
     args.output.parent.mkdir(parents=True,exist_ok=True)
-    args.output.write_text(json.dumps(results,indent=2)+'\n',encoding='utf-8')
+    args.output.write_text(json.dumps(results,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(json.dumps(results))
