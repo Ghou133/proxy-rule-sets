@@ -254,6 +254,11 @@ function main(input) {
     config["proxy-providers"] = JSON.parse(JSON.stringify(OPTIONS.subscriptionProviders));
     config.proxies = [];
   }
+  if (OPTIONS.multiSubscription && OPTIONS.proxyServerNameserver) {
+    config.dns = Object.assign({}, config.dns || {}, {
+      "proxy-server-nameserver": OPTIONS.proxyServerNameserver.slice()
+    });
+  }
   const marker = "rule-sets-extension-v2";
   const previous = /^rule-sets-extension-v[12]$/.test(config["x-rule-sets-extension"] || "");
   const proxies = Array.isArray(config.proxies) ? config.proxies : [];

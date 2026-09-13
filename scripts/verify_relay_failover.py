@@ -83,7 +83,7 @@ def verify(binary, directory, provider_mode=False, multi=False):
     health=f'http://127.0.0.1:{origin.server_port}/'
     payload={'input':input_config,'options':{'landingProxy':proxy('Exit',exit_server),
              'healthUrl':health,'transitHealthUrl':health,'includeLegacyRules':False}}
-    runner="const fs=require('fs'),vm=require('vm');const c=JSON.parse(fs.readFileSync(0,'utf8'));vm.createContext(c);vm.runInContext(fs.readFileSync(process.argv[1],'utf8')+';Object.assign(OPTIONS,options);result=main(input);',c);process.stdout.write(JSON.stringify(c.result));"
+    runner="const fs=require('fs'),vm=require('vm');const c=JSON.parse(fs.readFileSync(0,'utf8'));vm.createContext(c);vm.runInContext(fs.readFileSync(process.argv[1],'utf8')+';Object.assign(OPTIONS,options);OPTIONS.subscriptionProviders=null;result=main(input);',c);process.stdout.write(JSON.stringify(c.result));"
     transformed=subprocess.run(['node','-e',runner,str(ROOT/'extensions'/('multi-subscription-with-landing.js' if multi else 'with-landing.js'))],
              input=json.dumps(payload),text=True,encoding='utf-8',capture_output=True,check=True)
     config=json.loads(transformed.stdout)

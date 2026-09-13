@@ -2,9 +2,11 @@
 
 多个订阅由 Mihomo 原生 `proxy-providers` 下载；不需要转换网站、服务器或后台合并程序。仅用于 PC，提供无落地、有落地两版。原有两个脚本继续保留。
 
-1. 下载 [本地配置模板](multi-subscriptions.example.yaml)，只在本地填写两个订阅 URL。优先使用服务商提供的 Clash YAML 节点订阅。
-2. 在 Clash Verge Rev 中创建本地配置，导入填写后的 YAML 并选择它。
-3. 选择 [无落地脚本](multi-subscription.js) 或 [有落地脚本](multi-subscription-with-landing.js)，将内容放入全局扩展脚本，保存后检查生效配置。旧全局覆写如另行追加代理组，需要自行停用该追加内容。
+1. 下载 [无落地脚本](multi-subscription.js) 或 [有落地脚本](multi-subscription-with-landing.js)。
+2. 在顶部 `subscriptionProviders` 中，将两个“这里填订阅地址”分别替换成真实订阅链接。`airport-1` / `airport-2`、独立缓存路径和 `[A]` / `[B]` 前缀已配好。只用一个订阅可删除另一个对象。
+3. 有落地版另需填写私人 `landingProxy`；无落地版不需要。把填写后的脚本作为 Clash Verge Rev 全局扩展脚本保存即可。
+
+可选双文件方式：使用 [本地 YAML 模板](multi-subscriptions.example.yaml)，并将脚本的 `subscriptionProviders` 设为 null，随后导入并选中该本地 YAML。不要同时维护两套订阅入口。
 
 本项目不会自动修改正在使用的配置。公开模板没有连接凭据；本地配置含私人订阅链接，请勿上传 GitHub。
 
@@ -42,6 +44,12 @@ DMM 在界面直接显示 Japan 自动选择项与全部日本节点，支持手
 
 ## Script execution failed
 
-普通多订阅模板需要输入包含 `proxy-providers` 的本地 YAML。仍选择机场单订阅并直接粘贴模板，会因缺失节点源而失败；Clash Verge 可能只显示笼统运行错误。有落地模板还必须在私人副本填写落地参数。
+当 subscriptionProviders 为 null 时，脚本需要输入包含 `proxy-providers` 的本地 YAML。仍选择机场单订阅并直接粘贴模板，会因缺失节点源而失败；Clash Verge 可能只显示笼统运行错误。有落地模板还必须在私人副本填写落地参数。
 
-也可使用私人单文件入口：在脚本顶部 `OPTIONS.subscriptionProviders` 填入本地 YAML 的 `proxy-providers` 对象。该方式替换当前订阅节点池，保留当前网络设置，不需要另建本地配置。**含真实地址的脚本不能公开上传**。公开模板该字段保持 null。已有节点提供者中的落地不会自动按名称检索，应明确填写私人 `landingProxy`。
+也可使用私人单文件入口：在脚本顶部 `OPTIONS.subscriptionProviders` 填入本地 YAML 的 `proxy-providers` 对象。该方式替换当前订阅节点池，保留当前网络设置，不需要另建本地配置。**含真实地址的脚本不能公开上传**。公开模板该字段提供两个占位 provider；使用双文件方式时才改为 null。已有节点提供者中的落地不会自动按名称检索，应明确填写私人 `landingProxy`。
+
+## 节点全部超时与 DNS
+
+多订阅默认 `OPTIONS.proxyServerNameserver = ["https://223.5.5.5/dns-query"]`，仅替换 `dns.proxy-server-nameserver`，避免继承某机场的本机专用解析器后其他机场节点无法解析。其余 DNS 设置保留。需要自行指定可靠解析器时修改此数组；设置 null 可保留输入值。显式 DoH 避免系统 DNS 被 TUN/Fake-IP 截获后返回合成地址；解析服务可达性仍取决于网络。
+
+私人单文件增加第三个订阅：在 `OPTIONS.subscriptionProviders` 中新增 `airport-3`，填写私人 URL、独立 `path: "./proxy_providers/airport-3.yaml"` 与 `override: {"additional-prefix": "[C] "}`，沿用其他 provider 的更新/健康检查设置。不要修改 MANIFEST 规则数据。普通双文件版则修改本地 YAML 的 `proxy-providers`。这两种入口只需维护正在使用的一种。

@@ -20,7 +20,7 @@ def verify(core, directory, hybrid):
     source={"proxies":[node("Japan local")] if hybrid else [],"proxy-providers":{
         key:{"type":"http","proxy":"DIRECT","url":f"http://127.0.0.1:{srv.server_port}/{key}","path":f"./{key}.yaml","override":{"additional-prefix":f"[{key.upper()}] "}}
         for key in ("a","b")}}
-    runner="const fs=require('fs'),vm=require('vm');const c={input:JSON.parse(fs.readFileSync(0,'utf8'))};vm.createContext(c);vm.runInContext(fs.readFileSync(process.argv[1],'utf8')+';output=main(input);',c);process.stdout.write(JSON.stringify(c.output));"
+    runner="const fs=require('fs'),vm=require('vm');const c={input:JSON.parse(fs.readFileSync(0,'utf8'))};vm.createContext(c);vm.runInContext(fs.readFileSync(process.argv[1],'utf8')+';OPTIONS.subscriptionProviders=null;output=main(input);',c);process.stdout.write(JSON.stringify(c.output));"
     out=subprocess.run(["node","-e",runner,str(ROOT/"extensions/multi-subscription.js")],input=json.dumps(source),capture_output=True,text=True,encoding="utf-8",check=True)
     config=json.loads(out.stdout);api_port=port()
     config.update({"rule-providers":{},"rules":["MATCH,Proxy"],"mixed-port":0,"external-controller":f"127.0.0.1:{api_port}","secret":"","dns":{"enable":False},"tun":{"enable":False},"log-level":"silent"})

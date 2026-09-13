@@ -19,7 +19,13 @@ def build(root=ROOT):
                    "transitHealthUrl": "", "healthUrl": "https://www.gstatic.com/generate_204", "includeLegacyRules": True}
         options["multiSubscription"] = multi
         if multi:
-            options["subscriptionProviders"] = None
+            options["subscriptionProviders"] = {
+                f"airport-{i}": {"type": "http", "url": "这里填订阅地址",
+                    "path": f"./proxy_providers/airport-{i}.yaml", "interval": 86400, "proxy": "DIRECT",
+                    "override": {"additional-prefix": f"[{label}] "},
+                    "health-check": {"enable": True, "url": "https://www.gstatic.com/generate_204", "interval": 1800, "lazy": True}}
+                for i, label in ((1, "A"), (2, "B"))}
+            options["proxyServerNameserver"] = ["https://223.5.5.5/dns-query"]
         text = ("// Clash Verge Rev 全局扩展脚本：" + ("有落地" if landing else "无落地") + "\n"
                 "// Source: https://github.com/Ghou133/proxy-rule-sets\n"
                 "// 公开模板不包含节点密码。AI 为统一策略组。\n"

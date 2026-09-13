@@ -134,7 +134,7 @@ test('every preferred region retains all usable nodes as fallback, including Oth
 function multi(input) {
  const file=fs.readFileSync(path.join(root,'extensions/multi-subscription.js'),'utf8');
  const context=vm.createContext({input});
- vm.runInContext(file+'\noutput=main(input);',context,{timeout:2000});
+ vm.runInContext(file+'\nOPTIONS.subscriptionProviders=null;output=main(input);',context,{timeout:2000});
  return JSON.parse(JSON.stringify(context.output));
 }
 const providersFixture=()=>({'proxy-providers':{
@@ -161,7 +161,7 @@ test('multi: hybrid regions use both inline and remote nodes, preserve networkin
  const input={...fixture(),...providersFixture()},out=multi(input);
  assert.deepEqual(group(out,'Japan').proxies,['日本 JP-A']);
  assert.deepEqual(group(out,'Japan').use,['a','b']);
- assert.deepEqual(out.dns,input.dns); assert.deepEqual(out.tun,input.tun);
+ assert.deepEqual(out.dns,{...input.dns,"proxy-server-nameserver":["https://223.5.5.5/dns-query"]}); assert.deepEqual(out.tun,input.tun);
  assert.equal(out['mixed-port'],input['mixed-port']);
  assert.ok(!out.rules.some(r=>r.includes('a.example')));
 });
@@ -205,7 +205,7 @@ test('all desktop no-landing AI selectors expose every usable node directly',()=
 test('independent multi landing version retains strict Exit and all providers',()=>{
  const file=fs.readFileSync(path.join(root,'extensions/multi-subscription-with-landing.js'),'utf8');
  const c=vm.createContext({input:providersFixture(),landing});
- vm.runInContext(file+';OPTIONS.landingProxy=landing;output=main(input);',c);
+ vm.runInContext(file+';OPTIONS.subscriptionProviders=null;OPTIONS.landingProxy=landing;output=main(input);',c);
  const out=JSON.parse(JSON.stringify(c.output));
  assert.deepEqual(group(out,'AI').proxies,['Exit','Proxy']);
  assert.ok(group(out,'Proxy').proxies.includes('Exit'));
@@ -216,7 +216,7 @@ test('independent multi landing version retains strict Exit and all providers',(
 test('DMM exposes Japan nodes directly in all four PC variants',()=>{
  for(const name of ['with-landing.js','without-landing.js','multi-subscription.js','multi-subscription-with-landing.js']) {
   const c=vm.createContext({input:{...fixture(),...providersFixture()},landing});
-  vm.runInContext(fs.readFileSync(path.join(root,'extensions',name),'utf8')+';OPTIONS.landingProxy=landing;output=main(input);',c);
+  vm.runInContext(fs.readFileSync(path.join(root,'extensions',name),'utf8')+';OPTIONS.subscriptionProviders=null;OPTIONS.landingProxy=landing;output=main(input);',c);
   const dmm=JSON.parse(JSON.stringify(c.output['proxy-groups'].find(g=>g.name==='DMM')));
   assert.deepEqual(dmm.proxies,['Japan','日本 JP-A']);
   assert.deepEqual(dmm.use,['a','b']);assert.ok(!dmm.hidden);
@@ -233,6 +233,23 @@ test('private single-file multi entry replaces original node pool without changi
  assert.deepEqual(out.proxies.map(p=>p.name),['Exit']);
  assert.deepEqual(group(out,'Proxy').use,['a','b']);
  assert.deepEqual(group(out,'AI').proxies,['Exit','Proxy']);
- assert.deepEqual(out.dns,input.dns);assert.deepEqual(out.tun,input.tun);
+ assert.deepEqual(out.dns,{...input.dns,"proxy-server-nameserver":["https://223.5.5.5/dns-query"]});assert.deepEqual(out.tun,input.tun);
  assert.deepEqual(input,fixture());
+});
+
+test('multi node DNS avoids inherited local resolver dependency',()=>{
+ const input={...providersFixture(),dns:{enable:true,nameserver:['https://example.invalid/dns-query'],'proxy-server-nameserver':['udp://127.0.0.1:7874']}};
+ const out=multi(input);
+ assert.deepEqual(out.dns['proxy-server-nameserver'],['https://223.5.5.5/dns-query']);
+ assert.deepEqual(out.dns.nameserver,input.dns.nameserver);
+});
+
+test('public multi scripts offer two safe editable subscription placeholders',()=>{
+ for(const name of ['multi-subscription.js','multi-subscription-with-landing.js']) {
+  const c=vm.createContext({});vm.runInContext(fs.readFileSync(path.join(root,'extensions',name),'utf8')+';options=OPTIONS;',c);
+  const sources=c.options.subscriptionProviders;
+  assert.equal(Object.keys(sources).length,2);
+  assert.equal(sources['airport-1'].url,'这里填订阅地址');
+  assert.notEqual(sources['airport-1'].path,sources['airport-2'].path);
+ }
 });

@@ -9,7 +9,43 @@ const OPTIONS = {
   "healthUrl": "https://www.gstatic.com/generate_204",
   "includeLegacyRules": true,
   "multiSubscription": true,
-  "subscriptionProviders": null
+  "subscriptionProviders": {
+    "airport-1": {
+      "type": "http",
+      "url": "这里填订阅地址",
+      "path": "./proxy_providers/airport-1.yaml",
+      "interval": 86400,
+      "proxy": "DIRECT",
+      "override": {
+        "additional-prefix": "[A] "
+      },
+      "health-check": {
+        "enable": true,
+        "url": "https://www.gstatic.com/generate_204",
+        "interval": 1800,
+        "lazy": true
+      }
+    },
+    "airport-2": {
+      "type": "http",
+      "url": "这里填订阅地址",
+      "path": "./proxy_providers/airport-2.yaml",
+      "interval": 86400,
+      "proxy": "DIRECT",
+      "override": {
+        "additional-prefix": "[B] "
+      },
+      "health-check": {
+        "enable": true,
+        "url": "https://www.gstatic.com/generate_204",
+        "interval": 1800,
+        "lazy": true
+      }
+    }
+  },
+  "proxyServerNameserver": [
+    "https://223.5.5.5/dns-query"
+  ]
 };
 const MANIFEST = {
   "providers": {
@@ -254,6 +290,11 @@ function main(input) {
   if (OPTIONS.multiSubscription && OPTIONS.subscriptionProviders) {
     config["proxy-providers"] = JSON.parse(JSON.stringify(OPTIONS.subscriptionProviders));
     config.proxies = [];
+  }
+  if (OPTIONS.multiSubscription && OPTIONS.proxyServerNameserver) {
+    config.dns = Object.assign({}, config.dns || {}, {
+      "proxy-server-nameserver": OPTIONS.proxyServerNameserver.slice()
+    });
   }
   const marker = "rule-sets-extension-v2";
   const previous = /^rule-sets-extension-v[12]$/.test(config["x-rule-sets-extension"] || "");
