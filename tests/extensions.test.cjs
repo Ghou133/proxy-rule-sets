@@ -37,7 +37,9 @@ function assertGraph(config) {
 
 test('subscription routing is replaced; only compact English groups remain', () => {
  const out=transform(fixture(),true,{landingProxy:landing});
- assert.deepEqual(out['proxy-groups'].filter(g=>!g.hidden).map(g=>g.name),['AI','Proxy','Relay']);
+ assert.equal(out['proxy-groups'][0].name,'Proxy');
+ assert.deepEqual(out['proxy-groups'].filter(g=>!g.hidden).map(g=>g.name),['Proxy','AI','Relay']);
+ assert.ok(group(out,'Proxy').proxies.includes('Exit'));
  assert.ok(out['proxy-groups'].every(g=>/^[A-Za-z]+$/.test(g.name)));
  assert.ok(!out['rule-providers'].original);
  assert.ok(!out.rules.some(r=>r.includes('a.example')||r.includes('original')));
@@ -54,13 +56,14 @@ test('AI has one manual selector, landing first, no automatic bypass',()=>{
 test('all regions participate in relay; manual selection remains available',()=>{
  const out=transform(fixture(),true,{landingProxy:landing,transitHealthUrl:'https://health.invalid/'});
  assert.deepEqual(group(out,'Latency').proxies,['日本 JP-A','新加坡 SG-GPT','香港 HK-A']);
- assert.deepEqual(group(out,'Relay').proxies,['Latency','日本 JP-A','新加坡 SG-GPT','香港 HK-A']);
+ assert.deepEqual(group(out,'Relay').proxies,['Latency','Auto','日本 JP-A','新加坡 SG-GPT','香港 HK-A']);
  assert.equal(group(out,'Latency').url,'https://health.invalid/');
  assert.equal(group(out,'Relay').type,'select');
 });
 test('without landing has two visible groups and no chain',()=>{
  const out=transform(fixture());
- assert.deepEqual(out['proxy-groups'].filter(g=>!g.hidden).map(g=>g.name),['AI','Proxy']);
+ assert.deepEqual(out['proxy-groups'].filter(g=>!g.hidden).map(g=>g.name),['Proxy','AI']);
+ assert.ok(!group(out,'Proxy').proxies.includes('Exit'));
  assert.deepEqual(group(out,'AI').proxies,['Proxy']); assertGraph(out);
  assert.ok(!out.proxies.some(p=>p.name==='Exit'));
 });
@@ -102,4 +105,13 @@ test('AI-only option still replaces subscription routing',()=>{
  const out=transform(fixture(),false,{includeLegacyRules:false});
  assert.equal(out.rules.length,4); assert.equal(Object.keys(out['rule-providers']).length,3);
  assert.ok(!group(out,'DMM'));
+});
+
+test('pure usage counters never become Auto or Relay candidates',()=>{
+ const input=fixture(); input.proxies.push(proxy('12.78 GB | 200 GB'));
+ const out=transform(input,true,{landingProxy:landing});
+ for(const name of ['Auto','Latency','Proxy','Relay']) {
+  assert.ok(!group(out,name).proxies.includes('12.78 GB | 200 GB'));
+ }
+ assertGraph(out);
 });

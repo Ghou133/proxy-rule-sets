@@ -26,6 +26,8 @@ def build(root=ROOT):
         output["extensions/" + name] = text
     for path, text in output.items():
         write(root / path, text)
+    from build_shadowrocket import build as build_shadowrocket
+    build_shadowrocket(root=root)
     return output
 
 

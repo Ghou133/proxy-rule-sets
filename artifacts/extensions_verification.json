@@ -1,29 +1,43 @@
 {
-  "revision": 2,
-  "status": "VALIDATED_NOT_INSTALLED",
-  "javascript_tests_passed": 10,
-  "python_tests_passed": 20,
-  "core": "Mihomo v1.19.29",
+  "revision": 3,
+  "status": "GENERATED_NOT_INSTALLED",
+  "javascript_tests_passed": 11,
+  "python_tests_passed": 27,
+  "mihomo_core": "v1.19.29",
   "isolated_config_checks": [
     "with-landing: PASS",
     "without-landing: PASS"
   ],
   "live_script_and_runtime_unchanged": true,
+  "deterministic_rebuild": true,
   "visible_groups": {
     "with": [
-      "AI",
       "Proxy",
+      "AI",
       "Relay"
     ],
     "without": [
-      "AI",
-      "Proxy"
+      "Proxy",
+      "AI"
     ]
   },
+  "proxy_exit_option": true,
+  "relay_auto_option": true,
   "AI_default": "Exit",
   "AI_bypass": "manual selection only",
   "transit_regions": "unrestricted",
   "subscription_rules_and_groups": "replaced",
+  "private_credentials_published": false,
+  "android": "cancelled by user",
+  "shadowrocket": {
+    "configuration_checks": "static validation passed",
+    "remote_sources_validated": 4,
+    "advertising_rules_removed": 1,
+    "China_RULE_SET": 63,
+    "China_DOMAIN_SET": 3689,
+    "chain_binding": "Requires manual Exit > Proxy Through > Relay in Shadowrocket",
+    "iOS_import_and_network_tests": "not performed; no device access"
+  },
   "hidden_groups_require_frontend_support": true,
   "live_failure_injection_performed": false
 }

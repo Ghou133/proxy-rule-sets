@@ -20,7 +20,7 @@ function main(input) {
   }
   // Keep the original user node untouched; create one dedicated chained copy only.
   config.proxies = proxies.filter(p => !(previous && ["Exit", "落地出口"].includes(p.name)));
-  const informational = /剩余|剩餘|流量|到期|过期|過期|套餐|官网|官網|订阅|訂閱|公告|通知|客服|traffic|expire|subscription|website/i;
+  const informational = /剩余|剩餘|流量|到期|过期|過期|套餐|官网|官網|订阅|訂閱|公告|通知|客服|traffic|expire|subscription|website|^\s*\d+(?:\.\d+)?\s*[KMGT]B\s*[|/]\s*\d+(?:\.\d+)?\s*[KMGT]B\s*$/i;
   const usable = p => p && p.name && p.type && !informational.test(p.name)
     && !/^(direct|reject|reject-drop|pass|dns|compatible)$/i.test(p.type)
     && !p["dialer-proxy"] && p.name !== "Exit"
@@ -43,7 +43,8 @@ function main(input) {
     return name;
   }
   automatic("Auto", names, OPTIONS.healthUrl, providerNames);
-  groups.push({name: "Proxy", type: "select", proxies: ["Auto"].concat(names), ...(providerNames.length ? {use: providerNames, "exclude-filter": informational.source} : {})});
+  const primary = {name: "Proxy", type: "select", proxies: ["Auto"].concat(OPTIONS.landing ? ["Exit"] : [], names), ...(providerNames.length ? {use: providerNames, "exclude-filter": informational.source} : {})};
+  groups.unshift(primary);
   function region(name, expression) {
     const members = names.filter(n => expression.test(n));
     if (members.length) {
@@ -62,14 +63,14 @@ function main(input) {
   }
   if (OPTIONS.landing) {
     automatic("Latency", names, OPTIONS.transitHealthUrl || OPTIONS.healthUrl, providerNames);
-    groups.push({name: "Relay", type: "select", proxies: ["Latency"].concat(names),
+    groups.push({name: "Relay", type: "select", proxies: ["Latency", "Auto"].concat(names),
       ...(providerNames.length ? {use: providerNames, "exclude-filter": informational.source} : {})});
     landing.name = "Exit";
     landing["dialer-proxy"] = "Relay";
     config.proxies.push(landing);
   }
   // A select group never changes exit on failure. Airport bypass requires manual selection.
-  groups.unshift({name: "AI", type: "select", proxies: OPTIONS.landing ? ["Exit", "Proxy"] : ["Proxy"]});
+  groups.splice(1, 0, {name: "AI", type: "select", proxies: OPTIONS.landing ? ["Exit", "Proxy"] : ["Proxy"]});
   // Replace subscription routing wholesale; retain subscription nodes and other settings only.
   const providers = {};
   const prefix = [];

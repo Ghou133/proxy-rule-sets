@@ -1,0 +1,69 @@
+[
+  {
+    "purpose": "AI",
+    "url": "https://raw.githubusercontent.com/iab0x00/ProxyRules/main/Rule/AI.txt",
+    "repository": "iab0x00/ProxyRules",
+    "branch": "main",
+    "commit": "823762ae7ac2fe4a444a1244c66ec59f6a2a5abf",
+    "repository_commit_at": "2026-09-08T13:12:30Z",
+    "sha256": "764e56f680ed307a3d6648c9be5fc1e6e7842b3d12c70b8374c9f7c3d4b80297",
+    "rule_count": 49,
+    "types": {
+      "DOMAIN": 22,
+      "DOMAIN-KEYWORD": 4,
+      "DOMAIN-SUFFIX": 23
+    },
+    "materialized": false,
+    "fetched_at": "2026-09-13T16:06:32.344619+00:00"
+  },
+  {
+    "purpose": "LAN",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Lan/Lan.list",
+    "repository": "blackmatrix7/ios_rule_script",
+    "branch": "master",
+    "commit": "0087bb74e91b335e17a79fd07a8514277f7d77b4",
+    "repository_commit_at": "2026-09-11T20:24:14Z",
+    "sha256": "e524edec216ed7f2fa2f3eb3fe09fe70121acf88408c2394d19b3e2331c54de7",
+    "rule_count": 140,
+    "types": {
+      "DOMAIN": 7,
+      "DOMAIN-SUFFIX": 115,
+      "IP-CIDR": 18
+    },
+    "materialized": false,
+    "fetched_at": "2026-09-13T16:06:33.313558+00:00"
+  },
+  {
+    "purpose": "China",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/China/China.list",
+    "repository": "blackmatrix7/ios_rule_script",
+    "branch": "master",
+    "commit": "0087bb74e91b335e17a79fd07a8514277f7d77b4",
+    "repository_commit_at": "2026-09-11T20:24:14Z",
+    "sha256": "65477cd1e2917a8ca09ba08132e9d9131c54c0d9e1cfcba0be2eaa8ea1a04b75",
+    "rule_count": 63,
+    "types": {
+      "DOMAIN-KEYWORD": 9,
+      "DOMAIN-SUFFIX": 2,
+      "IP-CIDR": 21,
+      "USER-AGENT": 31
+    },
+    "materialized": false,
+    "fetched_at": "2026-09-13T16:06:33.716302+00:00"
+  },
+  {
+    "purpose": "ChinaDomain",
+    "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/China/China_Domain.list",
+    "repository": "blackmatrix7/ios_rule_script",
+    "branch": "master",
+    "commit": "0087bb74e91b335e17a79fd07a8514277f7d77b4",
+    "repository_commit_at": "2026-09-11T20:24:14Z",
+    "sha256": "d35eec789ae09a6d2b6dd48ed2c52d6d811f433b1e73a92b2f9246b778fa7923",
+    "rule_count": 3689,
+    "types": {
+      "DOMAIN-SET-ENTRY": 3689
+    },
+    "materialized": false,
+    "fetched_at": "2026-09-13T16:07:32.982331+00:00"
+  }
+]
