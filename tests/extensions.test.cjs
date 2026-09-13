@@ -49,15 +49,18 @@ test('AI has one manual selector, landing first, no automatic bypass',()=>{
  const out=transform(fixture(),true,{landingProxy:landing});
  assert.equal(group(out,'AI').type,'select');
  assert.deepEqual(group(out,'AI').proxies,['Exit','Proxy']);
- assert.ok(!out['proxy-groups'].some(g=>g.type==='fallback'));
+ assert.ok(out['proxy-groups'].filter(g=>g.type==='fallback').every(g=>!g.proxies.includes('Exit')&&!g.proxies.includes('Proxy')));
  assert.equal(out.proxies.find(p=>p.name==='Exit')['dialer-proxy'],'Relay');
  assert.deepEqual(out.rules.slice(0,3),['RULE-SET,rsx-ai-0,AI','RULE-SET,rsx-ai-1,AI','RULE-SET,rsx-ai-2,AI']);
 });
-test('all regions participate in relay; manual selection remains available',()=>{
+test('Relay selects preferred regions, with automatic fallback to other nodes',()=>{
  const out=transform(fixture(),true,{landingProxy:landing,transitHealthUrl:'https://health.invalid/'});
- assert.deepEqual(group(out,'Latency').proxies,['日本 JP-A','新加坡 SG-GPT','香港 HK-A']);
- assert.deepEqual(group(out,'Relay').proxies,['Latency','Auto','日本 JP-A','新加坡 SG-GPT','香港 HK-A']);
- assert.equal(group(out,'Latency').url,'https://health.invalid/');
+ assert.deepEqual(group(out,'Relay').proxies,['JP','HK','SG']);
+ assert.deepEqual(group(out,'JP').proxies,['日本 JP-A','新加坡 SG-GPT','香港 HK-A']);
+ assert.deepEqual(group(out,'HK').proxies,['香港 HK-A','日本 JP-A','新加坡 SG-GPT']);
+ assert.equal(group(out,'JP').type,'fallback');
+ assert.equal(group(out,'JP').url,'https://health.invalid/');
+ assert.equal(group(out,'Latency'),undefined);
  assert.equal(group(out,'Relay').type,'select');
 });
 test('without landing has two visible groups and no chain',()=>{
@@ -86,7 +89,7 @@ test('existing landing excluded from relay and retained unchanged',()=>{
  const input=fixture(); input.proxies.push({...landing,name:'MyExit'});
  const out=transform(input,true,{landingNodeName:'MyExit'});
  assert.deepEqual(out.proxies.find(p=>p.name==='MyExit'),input.proxies.at(-1));
- assert.ok(!group(out,'Latency').proxies.includes('MyExit')); assertGraph(out);
+ assert.ok(!group(out,'JP').proxies.includes('MyExit')); assertGraph(out);
 });
 test('missing prerequisites fail; old subscription group names are safe to replace',()=>{
  assert.throws(()=>transform(fixture(),true),/landingProxy/);
@@ -95,11 +98,11 @@ test('missing prerequisites fail; old subscription group names are safe to repla
  assertGraph(transform(input)); input.proxies.push(proxy('Proxy'));
  assert.throws(()=>transform(input),/同名/);
 });
-test('provider pools support relay without geographic filters',()=>{
+test('provider regions prefer matching nodes but retain nonmatching fallback',()=>{
  const out=transform({'proxy-providers':{source:{type:'file',path:'./proxy.yaml'}}},true,{landingProxy:landing});
- assert.deepEqual(group(out,'Latency').use,['source']);
- assert.equal(group(out,'Latency').filter,undefined);
- assert.equal(group(out,'Latency')['empty-fallback'],'REJECT'); assertGraph(out);
+ assert.deepEqual(group(out,'JP').use,['source']);
+ assert.ok(group(out,'JP').filter.endsWith('`.*'));
+ assert.equal(group(out,'JP')['empty-fallback'],'REJECT'); assertGraph(out);
 });
 test('AI-only option still replaces subscription routing',()=>{
  const out=transform(fixture(),false,{includeLegacyRules:false});
@@ -110,8 +113,19 @@ test('AI-only option still replaces subscription routing',()=>{
 test('pure usage counters never become Auto or Relay candidates',()=>{
  const input=fixture(); input.proxies.push(proxy('12.78 GB | 200 GB'));
  const out=transform(input,true,{landingProxy:landing});
- for(const name of ['Auto','Latency','Proxy','Relay']) {
+ for(const name of ['Auto','JP','Proxy','Relay']) {
   assert.ok(!group(out,name).proxies.includes('12.78 GB | 200 GB'));
+ }
+ assertGraph(out);
+});
+
+test('every preferred region retains all usable nodes as fallback, including Other',()=>{
+ const input=fixture(); input.proxies.push(proxy('Germany DE-A'));
+ const out=transform(input,true,{landingProxy:landing});
+ assert.ok(group(out,'Relay').proxies.includes('Other'));
+ assert.equal(group(out,'Other').proxies[0],'Germany DE-A');
+ for(const name of group(out,'Relay').proxies) {
+  assert.deepEqual(new Set(group(out,name).proxies),new Set(['日本 JP-A','新加坡 SG-GPT','香港 HK-A','Germany DE-A']));
  }
  assertGraph(out);
 });

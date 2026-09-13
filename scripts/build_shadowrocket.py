@@ -24,7 +24,7 @@ def render(landing, options=None):
     head = """# Rule Sets — Shadowrocket
 # Source: https://github.com/Ghou133/proxy-rule-sets
 # Replace SUBSCRIPTION with the exact existing subscription label.
-# With landing: bind Exit > Proxy Through to Relay in the app before use.
+# With landing: bind Exit > Proxy Through to Transit in the app before use.
 # No advertising filtering. No automatic bypass of Exit in the AI selector.
 
 [General]
@@ -47,20 +47,21 @@ block-quic = all-proxy
                      "password": "YOUR_PASSWORD", "cipher": "2022-blake3-aes-128-gcm"}
         if any(any(c in str(node[k]) for c in ',\r\n') for k in ('server','port','password','cipher')):
             raise ValueError("Landing parameters contain configuration delimiters")
-        head += ("\n[Proxy]\n# In the app, explicitly set this node's Proxy Through to Relay.\n"
+        head += ("\n[Proxy]\n# In the app, explicitly set this node's Proxy Through to Transit.\n"
                  f"Exit = ss,{node['server']},{node['port']},password={node['password']},method={node['cipher']},udp=1\n")
     pool = f"{subscription},use=true,policy-regex-filter={FILTER}"
     groups = [f"Proxy = select,Auto,Nodes{',Exit' if landing else ''},policy-select-name=Auto",
               f"AI = select,{'Exit,Proxy,policy-select-name=Exit' if landing else 'Proxy,policy-select-name=Proxy'}"]
     if landing:
-        groups.append("Relay = select,Latency,Auto,Nodes,policy-select-name=Latency")
-    groups += [f"Auto = url-test,{pool},url={HEALTH},interval=600,tolerance=80,timeout=5,hidden=1",
+        groups.append(f"Relay = select,{pool}")
+    # One shared availability pool, no regional pools and no continuous lowest-latency race.
+    groups += [f"Auto = fallback,{pool},url={HEALTH},interval=1800,timeout=5,hidden=1",
                f"Nodes = select,{pool},hidden=1"]
     if landing:
         health = options.get("transitHealthUrl") or HEALTH
         if any(c in health for c in ',\r\n'):
             raise ValueError("Health URL contains configuration delimiters")
-        groups.append(f"Latency = url-test,{pool},url={health},interval=600,tolerance=80,timeout=5,hidden=1")
+        groups.append(f"Transit = fallback,Relay,Auto,url={health},interval=300,timeout=5,hidden=1")
     body = head + "\n[Proxy Group]\n" + "\n".join(groups) + "\n\n[Rule]\n"
     body += "# AI has priority over domestic rules.\n"
     body += f"RULE-SET,{SOURCES['AI']},AI\n"

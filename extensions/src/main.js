@@ -6,7 +6,7 @@ function main(input) {
   const previous = /^rule-sets-extension-v[12]$/.test(config["x-rule-sets-extension"] || "");
   const proxies = Array.isArray(config.proxies) ? config.proxies : [];
   const groups = [];
-  const reserved = ["AI", "Proxy", "Auto", "Relay", "Latency", "Exit", "Japan", "Hongkong", "DMM"];
+  const reserved = ["AI", "Proxy", "Auto", "Relay", "Exit", "Japan", "Hongkong", "DMM", "JP", "HK", "SG", "TW", "US", "Other"];
   if (proxies.some(p => reserved.includes(p.name) && !(previous && ["Exit", "落地出口"].includes(p.name)))) {
     throw new Error("订阅节点与扩展保留名称同名，请先修改节点名称");
   }
@@ -62,9 +62,32 @@ function main(input) {
     groups.push({name: "DMM", hidden: true, type: "select", proxies: ["Japan"]});
   }
   if (OPTIONS.landing) {
-    automatic("Latency", names, OPTIONS.transitHealthUrl || OPTIONS.healthUrl, providerNames);
-    groups.push({name: "Relay", type: "select", proxies: ["Latency", "Auto"].concat(names),
-      ...(providerNames.length ? {use: providerNames, "exclude-filter": informational.source} : {})});
+    const regions = [
+      ["JP", japan], ["HK", hongkong],
+      ["SG", /新加坡|Singapore|🇸🇬|(^|[\s_-])SG([\s_-]|$)/i],
+      ["TW", /台湾|台灣|Taiwan|🇹🇼|(^|[\s_-])TW([\s_-]|$)/i],
+      ["US", /美国|美國|United[\s_-]*States|🇺🇸|(^|[\s_-])USA?([\s_-]|$)/i]
+    ];
+    const known = regions.map(r => "(?:" + r[1].source + ")").join("|");
+    regions.push(["Other", new RegExp("^(?!.*(?:" + known + ")).*$", "i")]);
+    const choices = [];
+    regions.forEach(([name, expression]) => {
+      const preferred = names.filter(n => expression.test(n));
+      if (!preferred.length && !providerNames.length) return;
+      const rest = names.filter(n => !expression.test(n));
+      const group = {name, hidden: true, type: "fallback", proxies: preferred.concat(rest),
+        url: OPTIONS.transitHealthUrl || OPTIONS.healthUrl, interval: 60, timeout: 5000,
+        lazy: false, "empty-fallback": "REJECT"};
+      if (providerNames.length) {
+        group.use = providerNames;
+        // Mihomo applies multiple filter expressions in priority order, including across providers.
+        group.filter = "(?i)" + expression.source + "`.*";
+        group["exclude-filter"] = "(?i)" + informational.source;
+      }
+      groups.push(group);
+      choices.push(name);
+    });
+    groups.push({name: "Relay", type: "select", proxies: choices});
     landing.name = "Exit";
     landing["dialer-proxy"] = "Relay";
     config.proxies.push(landing);

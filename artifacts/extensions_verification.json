@@ -1,8 +1,8 @@
 {
-  "revision": 3,
+  "revision": 4,
   "status": "GENERATED_NOT_INSTALLED",
-  "javascript_tests_passed": 11,
-  "python_tests_passed": 27,
+  "javascript_tests_passed": 12,
+  "python_tests_passed": 28,
   "mihomo_core": "v1.19.29",
   "isolated_config_checks": [
     "with-landing: PASS",
@@ -22,10 +22,10 @@
     ]
   },
   "proxy_exit_option": true,
-  "relay_auto_option": true,
+  "relay_auto_option": false,
   "AI_default": "Exit",
   "AI_bypass": "manual selection only",
-  "transit_regions": "unrestricted",
+  "transit_regions": "Desktop: user chooses preference; mobile: manual node, no region pools",
   "subscription_rules_and_groups": "replaced",
   "private_credentials_published": false,
   "android": "cancelled by user",
@@ -35,9 +35,17 @@
     "advertising_rules_removed": 1,
     "China_RULE_SET": 63,
     "China_DOMAIN_SET": 3689,
-    "chain_binding": "Requires manual Exit > Proxy Through > Relay in Shadowrocket",
+    "chain_binding": "Requires manual Exit > Proxy Through > Transit in Shadowrocket",
     "iOS_import_and_network_tests": "not performed; no device access"
   },
   "hidden_groups_require_frontend_support": true,
-  "live_failure_injection_performed": false
+  "live_failure_injection_performed": false,
+  "desktop_relay": "preferred region, fallback to other regions, return on recovery",
+  "desktop_fault_injection": "12 checks passed in isolated v1.19.29 fixtures; inline and provider modes",
+  "mobile_relay": "manual node, Transit fallback to shared Auto; Exit must bind to Transit",
+  "mobile_scheduled_intervals_seconds": {
+    "Auto": 1800,
+    "Transit": 300
+  },
+  "mobile_power_measurement": "not measured on iOS"
 }

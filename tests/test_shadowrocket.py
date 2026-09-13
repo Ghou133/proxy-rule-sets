@@ -33,8 +33,9 @@ class ShadowrocketTests(unittest.TestCase):
         self.assertEqual(next(iter(groups)), 'Proxy')
         self.assertEqual(groups['Proxy'].split(',')[:4], ['select','Auto','Nodes','Exit'])
         self.assertEqual(groups['AI'], 'select,Exit,Proxy,policy-select-name=Exit')
-        self.assertEqual(groups['Relay'], 'select,Latency,Auto,Nodes,policy-select-name=Latency')
-        self.assertNotIn('fallback,', render(True))
+        self.assertTrue(groups['Relay'].startswith('select,SUBSCRIPTION,use=true,'))
+        self.assertTrue(groups['Transit'].startswith('fallback,Relay,Auto,'))
+        self.assertNotIn('Latency',groups)
         self.assertEqual(config['General']['close-if-proxy-chain-missing'], 'true')
 
     def test_graph_has_no_cycle_or_unknown_reference(self):
@@ -44,9 +45,9 @@ class ShadowrocketTests(unittest.TestCase):
                      for name,value in config['Proxy Group'].items()}
             if mode:
                 # This edge must be bound in the app; it is not assumed installed by .conf import.
-                graph['Exit'] = ['Relay']
+                graph['Exit'] = ['Transit']
             def visit(name, stack):
-                if name == 'SUBSCRIPTION': return
+                if name in {'SUBSCRIPTION','REJECT'}: return
                 self.assertIn(name, graph)
                 self.assertNotIn(name, stack)
                 for item in graph[name]: visit(item, stack | {name})
@@ -88,6 +89,17 @@ class ShadowrocketTests(unittest.TestCase):
         self.assertNotIn('](',render(True))
         self.assertIn('DOMAIN-SET,'+SOURCES['ChinaDomain']+',DIRECT',render(True))
         self.assertEqual(len(SOURCES),4)
+
+    def test_mobile_has_only_one_slow_shared_pool_and_one_light_monitor(self):
+        groups=parse(render(True))['Proxy Group']
+        tested={name:value for name,value in groups.items() if ',url=' in value}
+        self.assertEqual(set(tested),{'Auto','Transit'})
+        self.assertIn('interval=1800',tested['Auto'])
+        self.assertIn('interval=300',tested['Transit'])
+        self.assertEqual(tested['Transit'].split(',')[:3],['fallback','Relay','Auto'])
+        self.assertFalse(any(value.startswith('url-test,') for value in groups.values()))
+        self.assertNotIn(',url=',groups['Relay'])
+        self.assertEqual([k for k in groups if 'hidden=1' not in groups[k]],['Proxy','AI','Relay'])
 
 
 if __name__ == '__main__': unittest.main()

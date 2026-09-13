@@ -1,0 +1,20 @@
+[
+  {
+    "mode": "inline",
+    "preferred_region": "PASS",
+    "within_region_failover": "PASS",
+    "cross_region_failover": "PASS",
+    "preferred_region_recovery": "PASS",
+    "exit_failure_blocks_AI": "PASS",
+    "manual_bypass": "PASS"
+  },
+  {
+    "mode": "providers",
+    "preferred_region": "PASS",
+    "within_region_failover": "PASS",
+    "cross_region_failover": "PASS",
+    "preferred_region_recovery": "PASS",
+    "exit_failure_blocks_AI": "PASS",
+    "manual_bypass": "PASS"
+  }
+]
