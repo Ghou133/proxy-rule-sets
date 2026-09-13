@@ -4,7 +4,7 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/segments/005-boost.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/segments/005-boost.yaml
     path: ./ruleset/source-005.yaml
     interval: 86400
   source-006:
@@ -18,42 +18,42 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/vendor/acl4ssr/unban.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/vendor/acl4ssr/unban.yaml
     path: ./ruleset/source-007.yaml
     interval: 86400
   source-023:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/segments/023-downloadpatch.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/segments/023-downloadpatch.yaml
     path: ./ruleset/source-023.yaml
     interval: 86400
   source-024:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/vendor/acl4ssr/download.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/vendor/acl4ssr/download.yaml
     path: ./ruleset/source-024.yaml
     interval: 86400
   source-026:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/segments/026-steamdownload.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/segments/026-steamdownload.yaml
     path: ./ruleset/source-026.yaml
     interval: 86400
   source-032:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/segments/032-gameplatform.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/segments/032-gameplatform.yaml
     path: ./ruleset/source-032.yaml
     interval: 86400
   source-034:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/vendor/blackmatrix7/microsoft.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/vendor/blackmatrix7/microsoft.yaml
     path: ./ruleset/source-034.yaml
     interval: 86400
   source-036:
@@ -67,21 +67,21 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/segments/038-dmmdlfz.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/segments/038-dmmdlfz.yaml
     path: ./ruleset/source-038.yaml
     interval: 86400
   source-041:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/segments/041-notjp.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/segments/041-notjp.yaml
     path: ./ruleset/source-041.yaml
     interval: 86400
   source-044:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/vendor/acl4ssr/googlecn.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/vendor/acl4ssr/googlecn.yaml
     path: ./ruleset/source-044.yaml
     interval: 86400
   source-045:
@@ -102,28 +102,28 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/segments/052-windowsoft.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/segments/052-windowsoft.yaml
     path: ./ruleset/source-052.yaml
     interval: 86400
   source-053:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/segments/053-kaspersky.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/segments/053-kaspersky.yaml
     path: ./ruleset/source-053.yaml
     interval: 86400
   source-054:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/segments/054-unbanpatch.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/segments/054-unbanpatch.yaml
     path: ./ruleset/source-054.yaml
     interval: 86400
   source-056:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/vendor/acl4ssr/proxygfwlist.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/vendor/acl4ssr/proxygfwlist.yaml
     path: ./ruleset/source-056.yaml
     interval: 86400
   source-058:
@@ -144,7 +144,7 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/segments/060-inline.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/segments/060-inline.yaml
     path: ./ruleset/source-060.yaml
     interval: 86400
 rules:

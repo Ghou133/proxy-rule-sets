@@ -48,7 +48,7 @@ rule-providers:
     type: http
     behavior: classical
     format: yaml
-    url: <GITHUB_RAW_BASE>/mihomo/vendor/acl4ssr/download.yaml
+    url: https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/mihomo/vendor/acl4ssr/download.yaml
     path: ./ruleset/legacy-download.yaml
     interval: 86400
 rules:
@@ -60,7 +60,7 @@ rules:
 ## Shadowrocket Usage
 
 ```text
-RULE-SET,<GITHUB_RAW_BASE>/shadowrocket/vendor/acl4ssr/unban.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main/shadowrocket/vendor/acl4ssr/unban.list,DIRECT
 ```
 
 [完整保序片段](examples/shadowrocket-rules.list)。保留类型，不是 DOMAIN-SET。Windows 进程规则及未验证的 URL-REGEX/USER-AGENT 规则单独留存；没有 iOS 实机验证。
