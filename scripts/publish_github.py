@@ -26,7 +26,9 @@ def main():
     branch = run("git", "branch", "--show-current", capture=True).strip()
     raw = f"https://raw.githubusercontent.com/{info['nameWithOwner']}/{branch}"
     run(sys.executable, "scripts/update_rules.py", "--offline", "--raw-base", raw)
+    run(sys.executable, "scripts/build_extensions.py")
     run(sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v")
+    run("node", "--test", "tests/extensions.test.cjs")
     run("git", "add", "--all")
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode:
         run("git", "commit", "-m", "docs: set published rule set URLs")

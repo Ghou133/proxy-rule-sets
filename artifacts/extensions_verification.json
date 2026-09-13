@@ -1,0 +1,14 @@
+{
+  "javascript_tests": 10,
+  "python_tests": 20,
+  "global_script_modes": ["with-landing", "without-landing"],
+  "actual_core": "Mihomo v1.19.29",
+  "both_mode_configuration_checks": "PASS",
+  "proxy_graph": "ACYCLIC",
+  "AI_group_count": 1,
+  "AI_provider_counts": {"openai": 22, "anthropic": 8, "google-gemini": 41},
+  "original_rule_order_and_duplicates": "PRESERVED_AFTER_EXPLICIT_AI_AND_LEGACY_PREFIX",
+  "DNS_TUN_subscription_credentials": "UNCHANGED",
+  "public_scripts_contain_landing_credentials": false,
+  "runtime_scope": "Both configurations parsed using the installed core; the selected landing mode was loaded and tested locally. No account or regional-unlock guarantee."
+}

@@ -240,6 +240,10 @@ python -m unittest discover -s tests -v
 
 仅做类型、字段边界空格、UTF-8/LF 格式转换；不改 matcher、no-resolve、进程名内部空格，不排序、不删重复。未知语法保留并记账。完整兼容范围见 [兼容报告](artifacts/compatibility_report.md)。
 
+## Clash Verge Rev 扩展
+
+[有落地 / 无落地全局扩展脚本](extensions/README.md)会接入本仓库保序规则，并把 ChatGPT、Claude、Gemini 统一到一个 AI 策略组。扩展脚本与规则数据独立存放，公开版本不含节点凭据。
+
 ## Attribution
 
 自有来源 Ghou133/Ghou133.github.io 未声明许可证，不擅自赋予 MIT。ACL4SSR 副本及格式转换保留 CC BY-SA 4.0；blackmatrix7 副本及格式转换保留 GPLv2，分别放在独立目录。完整许可证、原始文本、来源与修改说明随仓库提供，见 [UPSTREAM.md](UPSTREAM.md)。这些第三方数据不是本仓库原创。

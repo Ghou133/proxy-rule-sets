@@ -1,0 +1,38 @@
+[
+  {
+    "name": "ChatGPT",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "branch": "meta",
+    "commit": "32f11ae6b233e34cfec618dc4ba546f80d454053",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.yaml",
+    "sha256": "19d194277b7eccade2b6d65a5a13770e028feea3e39140faaac43bd12d5a34af",
+    "rules": 22,
+    "policy": "AI",
+    "format": "yaml",
+    "behavior": "domain"
+  },
+  {
+    "name": "Claude",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "branch": "meta",
+    "commit": "32f11ae6b233e34cfec618dc4ba546f80d454053",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/anthropic.yaml",
+    "sha256": "5f1bbc6cec303a0f8010303daac24d92ac58efc905b4847e397b06320e23d0c5",
+    "rules": 8,
+    "policy": "AI",
+    "format": "yaml",
+    "behavior": "domain"
+  },
+  {
+    "name": "Gemini",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "branch": "meta",
+    "commit": "32f11ae6b233e34cfec618dc4ba546f80d454053",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google-gemini.yaml",
+    "sha256": "bf83ad16a807e314a41a94cba74eab7171b013fcfa0d8207fc966a8f5699cfac",
+    "rules": 41,
+    "policy": "AI",
+    "format": "yaml",
+    "behavior": "domain"
+  }
+]
