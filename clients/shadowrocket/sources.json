@@ -21,8 +21,8 @@
     "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Lan/Lan.list",
     "repository": "blackmatrix7/ios_rule_script",
     "branch": "master",
-    "commit": "0087bb74e91b335e17a79fd07a8514277f7d77b4",
-    "repository_commit_at": "2026-09-11T20:24:14Z",
+    "commit": "5f74cf186fccb58a1e328007361723776165027e",
+    "repository_commit_at": "2026-09-13T20:13:50Z",
     "sha256": "e524edec216ed7f2fa2f3eb3fe09fe70121acf88408c2394d19b3e2331c54de7",
     "rule_count": 140,
     "types": {
@@ -31,15 +31,15 @@
       "IP-CIDR": 18
     },
     "materialized": false,
-    "fetched_at": "2026-09-13T16:06:33.313558+00:00"
+    "fetched_at": "2026-09-14T09:06:37.786077+00:00"
   },
   {
     "purpose": "China",
     "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/China/China.list",
     "repository": "blackmatrix7/ios_rule_script",
     "branch": "master",
-    "commit": "0087bb74e91b335e17a79fd07a8514277f7d77b4",
-    "repository_commit_at": "2026-09-11T20:24:14Z",
+    "commit": "5f74cf186fccb58a1e328007361723776165027e",
+    "repository_commit_at": "2026-09-13T20:13:50Z",
     "sha256": "65477cd1e2917a8ca09ba08132e9d9131c54c0d9e1cfcba0be2eaa8ea1a04b75",
     "rule_count": 63,
     "types": {
@@ -49,21 +49,21 @@
       "USER-AGENT": 31
     },
     "materialized": false,
-    "fetched_at": "2026-09-13T16:06:33.716302+00:00"
+    "fetched_at": "2026-09-14T09:06:37.940428+00:00"
   },
   {
     "purpose": "ChinaDomain",
     "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/China/China_Domain.list",
     "repository": "blackmatrix7/ios_rule_script",
     "branch": "master",
-    "commit": "0087bb74e91b335e17a79fd07a8514277f7d77b4",
-    "repository_commit_at": "2026-09-11T20:24:14Z",
+    "commit": "5f74cf186fccb58a1e328007361723776165027e",
+    "repository_commit_at": "2026-09-13T20:13:50Z",
     "sha256": "d35eec789ae09a6d2b6dd48ed2c52d6d811f433b1e73a92b2f9246b778fa7923",
     "rule_count": 3689,
     "types": {
       "DOMAIN-SET-ENTRY": 3689
     },
     "materialized": false,
-    "fetched_at": "2026-09-13T16:07:32.982331+00:00"
+    "fetched_at": "2026-09-14T09:06:38.070010+00:00"
   }
 ]
