@@ -29,10 +29,12 @@ def audit(content, domain_set=False):
             continue
         fields = [x.strip() for x in line.split(',')]
         kind = fields[0]
-        if kind not in {'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD','IP-CIDR','IP-CIDR6','USER-AGENT'}:
+        if kind not in {'DOMAIN','DOMAIN-SUFFIX','DOMAIN-KEYWORD','DOMAIN-WILDCARD','IP-CIDR','IP-CIDR6','USER-AGENT'}:
             raise ValueError(f"Unexpected rule type at line {number}: {kind}")
         if len(fields) < 2 or len(fields) > 3 or (len(fields)==3 and fields[2]!='no-resolve'):
             raise ValueError(f"Unexpected policy or parameters at line {number}")
+        if kind == 'DOMAIN-WILDCARD' and (len(fields) != 2 or not fields[1]):
+            raise ValueError(f"Invalid DOMAIN-WILDCARD parameters at line {number}")
         if kind.startswith('DOMAIN'):
             if any(c.isspace() for c in fields[1]) or '/' in fields[1] or ':' in fields[1]:
                 raise ValueError(f"Invalid domain syntax at line {number}")

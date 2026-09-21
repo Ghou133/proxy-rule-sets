@@ -398,12 +398,17 @@ def main():
     parser.add_argument("--raw-base")
     parser.add_argument("--refresh-vendored", action="store_true", help="Explicitly refresh locally maintained third-party snapshots")
     args = parser.parse_args()
-    metadata = json.loads((ROOT / "upstream/metadata.json").read_text("utf-8")) if args.offline else snapshot(ROOT)
+    config_path = ROOT / "project.json"
+    config = json.loads(config_path.read_text("utf-8")) if config_path.exists() else {}
+    frozen_owned = config.get("owned_source_mode", "remote") == "frozen"
+    if config.get("owned_source_mode", "remote") not in {"remote", "frozen"}:
+        raise ValueError("owned_source_mode must be remote or frozen")
+    if frozen_owned and not args.offline:
+        print("Owned upstream retired: using verified frozen template and owned snapshots; third-party checks remain online.")
+    metadata = json.loads((ROOT / "upstream/metadata.json").read_text("utf-8")) if args.offline or frozen_owned else snapshot(ROOT)
     source = (ROOT / metadata["snapshot"]).read_bytes()
     if hashlib.sha256(source).hexdigest() != metadata["sha256"]:
         raise ValueError("Frozen snapshot checksum mismatch")
-    config_path = ROOT / "project.json"
-    config = json.loads(config_path.read_text("utf-8")) if config_path.exists() else {}
     if args.raw_base:
         if not re.fullmatch(r"https://raw\.githubusercontent\.com/[\w.-]+/[\w.-]+/[\w./-]+", args.raw_base):
             raise ValueError("Expected public GitHub Raw base URL without credentials/query")
@@ -418,7 +423,7 @@ def main():
     from dependencies import extend_project, validate_project
     if args.offline and args.refresh_vendored:
         raise ValueError("--refresh-vendored requires network access")
-    files = extend_project(ROOT, source, metadata, files, config.get("raw_base", "<GITHUB_RAW_BASE>"), offline=args.offline, refresh_vendored=args.refresh_vendored)
+    files = extend_project(ROOT, source, metadata, files, config.get("raw_base", "<GITHUB_RAW_BASE>"), offline=args.offline, refresh_vendored=args.refresh_vendored, frozen_owned=frozen_owned)
     validate_project(files)
     manifest = ROOT / "artifacts/generated_manifest.json"
     previous = json.loads(manifest.read_text("utf-8")) if manifest.exists() else []

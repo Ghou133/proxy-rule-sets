@@ -29,6 +29,30 @@ class RuleTests(unittest.TestCase):
         cls.records = cls.ordered["records"]
         cls.files = {name: (ROOT / name).read_text("utf-8") for name in read_json("artifacts/generated_manifest.json")}
 
+    def test_retired_owned_source_keeps_third_party_checks_online(self):
+        parents = u.parse(self.source)[1]
+        owned = d.own_sources(ROOT, parents, self.metadata, offline=True)
+        class ReachedExternalCheck(Exception):
+            pass
+        with patch.object(d, "own_sources", return_value=owned) as own, \
+             patch.object(d, "verify_external", side_effect=ReachedExternalCheck) as external:
+            with self.assertRaises(ReachedExternalCheck):
+                d.extend_project(ROOT, self.source, self.metadata, {}, "unused",
+                                 offline=False, frozen_owned=True)
+        self.assertTrue(own.call_args.args[3])
+        self.assertFalse(external.call_args.args[2])
+
+    def test_default_update_never_fetches_retired_owned_repository(self):
+        class ReachedDependencies(Exception):
+            pass
+        with patch.object(sys, "argv", ["update_rules.py"]), \
+             patch.object(u, "snapshot", side_effect=AssertionError("Retired upstream requested")), \
+             patch.object(d, "extend_project", side_effect=ReachedDependencies) as extend:
+            with self.assertRaises(ReachedDependencies):
+                u.main()
+        self.assertTrue(extend.call_args.kwargs["frozen_owned"])
+        self.assertFalse(extend.call_args.kwargs["offline"])
+
     def test_all_generated_validation(self):
         d.validate_project(self.files)
 

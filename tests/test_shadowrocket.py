@@ -18,6 +18,16 @@ def parse(text):
 
 
 class ShadowrocketTests(unittest.TestCase):
+    def test_audit_remote_domain_wildcards_without_transforming_them(self):
+        from check_shadowrocket_sources import audit
+        data = b"DOMAIN-WILDCARD,*mask*.apple-dns.net\nDOMAIN-WILDCARD,*siri*.apple.com\n"
+        self.assertEqual(audit(data), {"DOMAIN-WILDCARD": 2})
+        for rule in (b"DOMAIN-WILDCARD,", b"DOMAIN-WILDCARD,https://*.example.com",
+                     b"DOMAIN-WILDCARD,*.example.com,no-resolve",
+                     b"DOMAIN-WILDCARD,*.example.com,Proxy", b"UNKNOWN,example.com"):
+            with self.subTest(rule=rule), self.assertRaises(ValueError):
+                audit(rule)
+
     def test_generated_files_match_builder_and_encoding(self):
         for mode in (True, False):
             name = 'with-landing.conf' if mode else 'without-landing.conf'

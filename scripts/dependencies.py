@@ -138,9 +138,9 @@ def provider_yaml(values):
     return "payload:\n" + "".join("  - " + json.dumps(r, ensure_ascii=False) + "\n" for r in values)
 
 
-def extend_project(root, source, metadata, files, raw_base, offline=False, refresh_vendored=False):
+def extend_project(root, source, metadata, files, raw_base, offline=False, refresh_vendored=False, frozen_owned=False):
     parents = parse(source)[1]
-    owned = own_sources(root, parents, metadata, offline)
+    owned = own_sources(root, parents, metadata, offline or frozen_owned)
     own_by_line = {m["parent_line"]: (m, data) for m, data in owned}
     third = verify_external(root, [r for r in parents if r["status"] == "EXTERNAL_DEPENDENCY" and r["line"] not in own_by_line], offline, refresh_vendored)
     third_by_line = {r["parent_line"]: r for r in third}

@@ -1,3 +1,4 @@
 {
-  "raw_base": "https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main"
+  "raw_base": "https://raw.githubusercontent.com/Ghou133/proxy-rule-sets/main",
+  "owned_source_mode": "frozen"
 }

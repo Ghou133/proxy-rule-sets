@@ -185,7 +185,7 @@ def materialize(root, files, third, raw_base, offline=False, refresh=False):
 
 ## Upstream
 
-来源：[Ghou133/4.ini](https://raw.githubusercontent.com/Ghou133/Ghou133.github.io/refs/heads/master/archives/4.ini)。原始 commit、SHA-256、下载时间见 [metadata](upstream/metadata.json)；9 个自有引用共 280 条规则均已冻结并转换。
+原来源 `Ghou133/Ghou133.github.io` 已不可用，当前使用本仓库保存的 [4.ini 快照](upstream/4.ini)。原始 commit、SHA-256、下载时间见 [metadata](upstream/metadata.json)；9 个自有引用共 280 条规则均已冻结并转换。
 
 5 个第三方原文本与同名 YAML 不一致，因此本仓库维护其完整规范版本；6 个核对一致的第三方 YAML 继续远程引用。每个本地第三方文件都注明原仓库和许可证。默认使用冻结版本，需要同步时显式更新。
 
@@ -236,7 +236,7 @@ python scripts/update_rules.py
 python -m unittest discover -s tests -v
 ```
 
-通常更新自有上游并从冻结第三方快照重建。需要主动同步本地维护的第三方文件时：`python scripts/update_rules.py --refresh-vendored`。离线复现：`python scripts/update_rules.py --offline`。原始快照永不覆盖；相同输入重复运行不产生 Git 差异。GitHub Actions 检查并提出每周更新 PR，不自动合并。
+`project.json` 中 `owned_source_mode: frozen` 表示原自有仓库已退役：从本地模板及 9 个自有文件快照重建，校验 SHA-256 和 commit，不再访问旧仓库；第三方远程引用仍在线核对，本地维护的第三方文件默认保持冻结。恢复旧上游后可显式改回 `remote`。需要主动同步本地维护的第三方文件时：`python scripts/update_rules.py --refresh-vendored`。离线复现：`python scripts/update_rules.py --offline`。原始快照永不覆盖；相同输入重复运行不产生 Git 差异。GitHub Actions 检查并提出每周更新 PR，不自动合并。
 
 仅做类型、字段边界空格、UTF-8/LF 格式转换；不改 matcher、no-resolve、进程名内部空格，不排序、不删重复。未知语法保留并记账。完整兼容范围见 [兼容报告](artifacts/compatibility_report.md)。
 
